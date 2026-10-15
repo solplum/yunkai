@@ -11,7 +11,7 @@
 | P5 | 单文件 500 行线：ChatScreen 704 / ChatViewModel 612 | —— | 拆分提交 | 20261002 积压清偿轮 ebbb24f | **已收口**（ChatScreen 436/ChatViewModel 495/SettingsScreen 498，.parts/chrome/resume/attachments/summarize 拆件） |
 | P6 | use_skill 软预算占位文案仍切长文（双端同构瑕疵，minor） | —— | 修复+回归 | 20261002 积压清偿轮 35c803f（Android）+ 鸿蒙 aacba26（镜像 c2fb57c 已同步） | **已收口（双端）**；注：鸿蒙侧本机无 DevEco，assembleHap 未跑（16 行纯 TS 对齐已编译的 Android 同构实现） |
 | P7 | harmony 门2（真机锁屏掉线） | 鸿蒙侧独立轮 | 鸿蒙 run-all 轮 | 09-14 runall summary | 挂（鸿蒙仓，本轮安卓范围外） |
-| P8 | 开源镜像同步（2021291696/yunkai，整目录替换式） | —— | sync commit 记录源哈希推送 main | 20261002 积压清偿轮 | **已收口**（339662a：Android 5fc2c98 同步推送；Harmony 7c8b18c 前轮已同步；reports/证据目录按惯例不进镜像） |
+| P8 | 开源镜像同步（solplum/yunkai，整目录替换式） | —— | sync commit 记录源哈希推送 main | 20261002 积压清偿轮 | **已收口**（339662a：Android 5fc2c98 同步推送；Harmony 7c8b18c 前轮已同步；reports/证据目录按惯例不进镜像） |
 | P9 | 悬浮球「拖动贴边」承诺未实现（含 FLAG_LAYOUT_NO_LIMITS 无边界 clamp 可拖出屏外） | **拍板（2026-10-01）：贴边+手感一起做**——已落地：松手吸最近左右缘（180ms 减速动画）+全屏 clamp+按住提亮；模拟器实测 (20,400)→拖→吸 (0,279)/(276,319) | ✅ 已实现；手感目检挂 P13 真机轮 | 20261001-fw-round1-review W-A6 + 用户拍板 | 已收口（实现面）；目检挂 P13 |
 | P10 | Room schema 未导出 + 迁移无自动化测试（B3 崩溃缺陷即此盲区产物） | 历史版本 schema JSON 在导出开启前已不可考，MigrationTestHelper 用例只能自 v5 起逐版补 | schema 导出入仓 + 自 v5 起逐版补 helper 用例 | 20261002 积压清偿轮 d9b303a | **部分收口**（schema 5.json 入仓 + DB_MIGRATIONS 单点 + DbMigrationChainTest 4 用例；helper 用例等后续版本迁移时补） |
 | P11 | 门0 Warning 清单 16 项（A2-A5/B1-B4/C2-C7） | —— | 逐项修复+回归 | 20261002 积压清偿轮 d14bfcd/7a29db9/4f5d26d/058d0a6/475efdb | **已收口**（16/16：A2 排除表+A3 单项移除+A4 留痕+字段名+A5 执行器与双保险；B1 onDragCancel+B2 sendConv 快照+B3 五处 appScope+B4 拆分；C2 看门狗 cancel+C3 IO 线程+C4 IO 线程+C5 共享 client+C6 rethrow+C7 双形态归一；单测+烟雾回归绿） |
