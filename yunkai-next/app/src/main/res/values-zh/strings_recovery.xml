@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="rec_a11y">替我打开无障碍</string>
+    <string name="rec_default_on">默认打开</string>
+    <string name="rec_a11y_body">云开 要用「无障碍」读屏幕上的文字和按钮。打开后,云开 会替你在系统里打开它自己的无障碍服务,你已经开着的其他无障碍服务不受影响。关掉这里,云开 会把自己的无障碍服务关掉。</string>
+    <string name="rec_battery">不受省电限制</string>
+    <string name="rec_battery_body">打开后,云开 会把自己加进系统的「电池优化」例外名单,系统省电时就不会在后台停掉它,手机操作更不容易断开;可能会多用一点电。关掉这里就恢复系统默认的省电管理。</string>
+    <string name="rec_boot">重启后自动恢复</string>
+    <string name="rec_boot_body">手机重启后「无线调试」会自己关掉。打开后,云开 会在开机时替你重新打开无线调试并自动连上。为此 云开 需要「修改系统设置」的授权,只用来打开无线调试。只在你信任过的 Wi-Fi 上有效。关掉这里或解除配对,云开 都会交还这项授权。</string>
+    <string name="rec_auto_wireless">自动打开无线调试</string>
+    <string name="rec_auto_wireless_body">断开 Wi-Fi 或重启手机后,系统会把「无线调试」关掉。手机操作平时用不着它,只在重新启动时(比如 云开 更新之后)要它开着。打开后,遇到这种时候、又连着 Wi-Fi,云开 会替你打开无线调试并自动连上,但不会替你关掉它。这和「重启后自动恢复」用同一项「修改系统设置」的授权,只在你允许过的 Wi-Fi 上有效。关掉这里,云开 就不再替你打开。</string>
+    <string name="rec_need_setup">需要先完成手机操作设置</string>
+    <string name="rec_failed">没能完成,请确认手机操作已就绪后再试</string>
+    <string name="rec_working">正在处理…</string>
+    <string name="rec_restarted_at">上次在 %1$s 自动重启过无障碍服务。</string>
+    <string name="rec_not_allowed_here">这个 Wi-Fi 还没允许无线调试,云开 打不开它。请亲手打开一次,系统问时勾选「始终允许使用此网络」,以后 云开 就能自己打开。</string>
+    <string name="rec_refused">这台手机不让 云开 打开无线调试。需要时请手动打开,云开 会自己连上。</string>
+    <string name="rec_gave_up">替你打开了几次无线调试,手机操作还是没能启动,先停下了。换个 Wi-Fi 或在手机操作里点重试,云开 会再试。</string>
+    <string name="rec_permission_missing">上次开机时授权已经不在了,没能自动恢复。请关掉再打开这个开关。</string>
+    <string name="rec_setting_unavailable">这台手机不允许 云开 在开机时打开无线调试。重启后请手动打开,云开 会自己连上。</string>
+    <string name="rec_not_recovered">上次开机没能自动连上。确认连着信任过的 Wi-Fi、无线调试开着,云开 会自己连上。</string>
+</resources>

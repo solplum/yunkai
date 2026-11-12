@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timeline_expired">This record has expired</string>
+    <string name="tag_approved">You approved</string>
+    <string name="tag_declined">You declined</string>
+    <string name="tag_needs_ok">Needed your OK</string>
+    <string name="tag_takeover">Asked you to take over</string>
+    <string name="tag_barrier">Hit an obstacle</string>
+    <string name="timing_unrecorded">Time not recorded</string>
+    <string name="timing_total">about %1$s</string>
+    <string name="timing_model">model %1$s</string>
+    <string name="timing_tool">action %1$s</string>
+    <string name="timing_retry">incl. retries %1$s</string>
+    <string name="duration_ms">%1$d ms</string>
+    <string name="duration_seconds_decimal">%1$s s</string>
+    <string name="result_error_detail">Error: %1$s</string>
+    <string name="result_error">Error</string>
+    <string name="result_error_prefix">Error</string>
+    <string name="result_effective">Worked</string>
+    <string name="result_unchanged">No change</string>
+    <string name="result_completed">Done</string>
+    <string name="guard_stop">Guard stopped</string>
+    <string name="guard_warn">Guard warning</string>
+    <string name="guard_with_what">%1$s: %2$s</string>
+    <string name="guard_repeating">Repeating the same action</string>
+    <string name="guard_no_progress">Screen isn’t changing</string>
+    <string name="guard_failures">Actions keep failing</string>
+    <string name="err_ref_expired">Screen changed; needs a fresh look</string>
+    <string name="err_no_app">No app open yet</string>
+    <string name="err_invalid_args">Invalid arguments</string>
+    <string name="err_op_failed">Action failed</string>
+    <string name="err_unknown_tool">No such tool</string>
+    <string name="err_protected">Screen is protected and can’t be seen</string>
+    <string name="err_confirm_required">Needs your OK first</string>
+    <string name="err_confirm_mismatch">Doesn’t match what you approved</string>
+    <string name="err_confirm_declined">You didn’t approve</string>
+    <string name="err_not_applied">Text didn’t go in</string>
+    <string name="verify_failed">Check failed</string>
+    <string name="err_parallel_skipped">Only one action at a time</string>
+    <string name="err_no_screenshot">Couldn’t take a screenshot</string>
+    <string name="err_vision">Couldn’t read the image</string>
+    <string name="err_payment">Payment is up to you</string>
+    <string name="err_no_evidence">Result has no evidence</string>
+    <string name="err_double_click">Double-tap not supported</string>
+    <string name="verify_passed">Check passed</string>
+    <string name="verify_unverified">Couldn’t verify</string>
+    <string name="verify_none">Not checked</string>
+    <string name="outcome_partial">Only partly done</string>
+    <string name="outcome_not_possible">Didn’t get it done</string>
+    <string name="outcome_succeeded">Done</string>
+    <string name="outcome_unverified">Done, couldn’t verify</string>
+    <string name="outcome_failed">Not finished</string>
+    <string name="outcome_unfinished">Didn’t end</string>
+    <string name="duration_s">%1$d s</string>
+    <string name="duration_m_s">%1$d min %2$d s</string>
+    <string name="timeline_title">How it went</string>
+    <plurals name="timeline_total_steps">
+        <item quantity="one">%1$d step</item>
+        <item quantity="other">%1$d steps</item>
+    </plurals>
+    <string name="timeline_criteria">What counts as done</string>
+    <string name="timeline_outcome">Outcome</string>
+    <string name="timeline_check">Check</string>
+    <string name="timeline_duration">Time taken</string>
+    <string name="timeline_more">More details</string>
+    <string name="expand">Expand</string>
+    <string name="timeline_model_calls">Model calls</string>
+    <plurals name="times">
+        <item quantity="one">%1$d time</item>
+        <item quantity="other">%1$d times</item>
+    </plurals>
+    <string name="timeline_memory_used">Memory used</string>
+    <plurals name="items">
+        <item quantity="one">%1$d item</item>
+        <item quantity="other">%1$d items</item>
+    </plurals>
+    <string name="timeline_timing_note">Step times count model waits and tool runs, not time spent waiting for you.</string>
+    <plurals name="timeline_viewed_times">
+        <item quantity="one">Viewed %1$d time</item>
+        <item quantity="other">Viewed %1$d times</item>
+    </plurals>
+    <string name="effect_small_change">Changed a little</string>
+    <string name="timeline_hide_screen">Hide screen</string>
+    <string name="timeline_show_screen">See the screen at the time</string>
+    <string name="timeline_step_screen">Screen at step %1$d</string>
+</resources>

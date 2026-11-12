@@ -1,0 +1,32 @@
+### completed
+已按以往的做法走完全部步骤(3 步):
+1. phone_launch_app com.notes
+2. phone_tap 「新建」
+3. phone_type_text 输入「今天天气不错」
+请读一下 App 现在的状态核实结果;是查询类任务就从读到的内容里找出答案,然后直接回答用户。
+
+当前界面(读取结果,编号可直接用):
+### diverged, not executed
+已按以往成功的做法自动完成 1/3 步:
+1. phone_launch_app com.notes
+第 2 步预期 phone_tap 「新建」(动作前的页面对不上),实际读到的内容 com.notes:请先登录(这一步没有执行)。请从当前界面或页面接着做。
+
+当前界面(读取结果,编号可直接用):
+### diverged, executed without effect
+已按以往成功的做法自动完成 1/3 步:
+1. phone_launch_app com.notes
+第 2 步已执行,但没看到预期变化:预期 phone_tap 「新建」(动作后没有预期的变化),实际读到的内容 com.notes:备忘录、新建、全部笔记。先看清这一步有没有生效,别重复做。请从当前界面或页面接着做。
+
+当前界面(读取结果,编号可直接用):
+### diverged with error code
+已按以往成功的做法自动完成 1/3 步:
+1. phone_launch_app com.notes
+第 2 步已执行,但没看到预期变化:预期 phone_tap 「新建」(动作失败:obscured),实际读到的内容 com.notes:备忘录、新建、全部笔记。先看清这一步有没有生效,别重复做。错误码:obscured。请从当前界面或页面接着做。
+
+当前界面(读取结果,编号可直接用):
+### stopped for confirmation
+已按以往成功的做法自动完成 1/2 步:
+1. phone_launch_app com.notes
+第 2 步是「phone_tap 「提交订单」」,需要用户确认,没有执行。请从当前界面或页面接着做,按正常流程处理确认。
+
+当前界面(读取结果,编号可直接用):

@@ -1,0 +1,29 @@
+{
+  "id": "xhs-search-titles",
+  "goal": "在小红书搜索「秋季穿搭」,告诉我搜索结果里前三条笔记的标题。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "com.xingin.xhs"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.xingin.xhs"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480,
+  "variants": [
+    {
+      "goal": "打开小红书搜「秋季穿搭」,把搜索结果前三条笔记的标题告诉我。只看,不要点赞、评论、关注或分享"
+    },
+    {
+      "goal": "在小红书搜索「冬季穿搭」,告诉我搜索结果里前三条笔记的标题。只看,不要点赞、评论、关注或分享"
+    }
+  ]
+}

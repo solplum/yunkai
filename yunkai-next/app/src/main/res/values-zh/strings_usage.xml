@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="usage_24h">24 小时</string>
+    <string name="usage_7d">7 天</string>
+    <string name="usage_30d">30 天</string>
+    <string name="usage_90d">90 天</string>
+    <string name="usage_custom">自定义</string>
+    <string name="usage_title">Token 用量</string>
+    <string name="usage_none">还没有</string>
+    <string name="usage_empty_title">这段时间还没有用量</string>
+    <string name="usage_empty_body">让 云开 办件事，这里就会记下用了多少 Token。</string>
+    <string name="usage_note">数字以服务商返回的为准，只存在这台手机上。</string>
+    <string name="usage_total">总用量</string>
+    <string name="usage_trend">用量趋势</string>
+    <string name="usage_by_provider">按服务商</string>
+    <string name="usage_by_provider_hint">点一家看它的模型</string>
+    <string name="usage_by_model">按模型</string>
+    <string name="usage_all">全部</string>
+    <string name="usage_all_providers">全部服务商</string>
+    <string name="usage_others">其他</string>
+    <string name="usage_deleted">（已删除）</string>
+    <string name="usage_change_dates">改日期</string>
+    <string name="usage_last_7d">近 7 天 %1$s</string>
+    <plurals name="usage_missing">
+        <item quantity="other">有 %1$d 次调用服务商没报用量，没算进去。</item>
+    </plurals>
+    <string name="usage_hourly">每小时</string>
+    <string name="usage_daily">每天</string>
+    <string name="usage_weekly">每周</string>
+    <string name="usage_past_24h">过去 24 小时</string>
+    <string name="usage_until_today">%1$s – 今天</string>
+    <string name="usage_now">现在</string>
+    <string name="usage_today">今天</string>
+    <string name="usage_input">输入</string>
+    <string name="usage_output">输出</string>
+    <string name="usage_calls">调用</string>
+</resources>

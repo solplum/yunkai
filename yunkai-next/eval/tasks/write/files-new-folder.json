@@ -1,0 +1,23 @@
+{
+  "id": "files-new-folder",
+  "goal": "在手机自带的文件管理里,在内部存储的根目录新建一个文件夹,名字叫「Mika评测-{run}-文件夹」",
+  "apps": [
+    "{app:files}"
+  ],
+  "category": "write",
+  "partition": "tune",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "probe_equals",
+      "probe": "storage_root",
+      "expected": "Mika评测-{run}-文件夹",
+      "contains": true
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "marker": "Mika评测-{run}-文件夹",
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的"
+}

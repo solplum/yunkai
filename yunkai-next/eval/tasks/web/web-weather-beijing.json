@@ -1,0 +1,19 @@
+{
+  "id": "web-weather-beijing",
+  "goal": "查一下明天北京的天气,告诉我最高和最低气温",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "-?\\d+\\s*(°|℃|度)"
+    }
+  ],
+  "maxSteps": 25,
+  "timeoutSec": 360,
+  "note": "全程不碰虚拟屏,web_read_page 读出结果并通过核查"
+}

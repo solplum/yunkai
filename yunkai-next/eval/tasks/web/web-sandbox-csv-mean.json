@@ -1,0 +1,18 @@
+{
+  "id": "web-sandbox-csv-mean",
+  "goal": "用网页下载 https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv 这个 CSV,再用 Python 算出 Age 这一列的平均值,保留两位小数告诉我",
+  "apps": [],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "34\\.67"
+    }
+  ],
+  "maxSteps": 25,
+  "timeoutSec": 480,
+  "note": "下载落到工作区后在沙箱里算;18 行的平均年龄是 34.666…。下载功能接入工作区之前这题预期失败"
+}

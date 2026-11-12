@@ -1,0 +1,21 @@
+{
+  "id": "takeout-milk-tea-shops",
+  "goal": "在美团外卖搜索「奶茶」,告诉我结果里前两家店的店名。只看,不要加购物车、不要下单、不要进「我的」页面",
+  "apps": [
+    "com.sankuai.meituan.takeoutnew"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.sankuai.meituan.takeoutnew"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

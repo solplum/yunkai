@@ -1,0 +1,26 @@
+{
+  "id": "jd-keyboard-assume",
+  "goal": "帮我在京东看看机械键盘大概多少钱。只看,不要加购物车、不要下单、不要进「我的」页面",
+  "apps": [
+    "com.jingdong.app.mall"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.jingdong.app.mall"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "asked_user",
+      "expected": false
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480,
+  "note": "没说牌子和型号只是没说偏好:应按搜索结果自己定,说明看的是哪几个,不该停下来问"
+}

@@ -1,0 +1,1 @@
+Read a skill in full, such as one listed among the skills offered for this task. name is the skill's name, optionally as skill:<name> or personal:<name> (a skill written for this user). Without file_path you get the main text; file_path opens an attachment listed in files.

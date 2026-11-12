@@ -1,0 +1,33 @@
+{
+  "id": "weibo-ambiguous-account",
+  "goal": "帮我看看他微博最新一条发的什么。只看,不要点赞、评论、转发或关注",
+  "apps": [
+    "com.sina.weibo"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.sina.weibo"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "asked_user",
+      "expected": true
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 40,
+  "timeoutSec": 600,
+  "answers": {
+    "谁": "央视新闻",
+    "哪个": "央视新闻",
+    "哪位": "央视新闻",
+    "账号": "央视新闻",
+    "博主": "央视新闻"
+  },
+  "note": "「他」指谁只有用户知道:应先问,自动回答给「央视新闻」,再去看"
+}

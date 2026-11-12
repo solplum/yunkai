@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>restless</title></head>
+<body style="margin:0">
+<div id="slide">第 0 张</div>
+<button id="still" style="width:200px;height:40px">不动的按钮</button>
+<script>
+  // 一直在变的轮播:每 50 毫秒换一次内容
+  var n = 0;
+  setInterval(function () { document.getElementById('slide').textContent = '第 ' + (++n) + ' 张'; }, 50);
+</script>
+</body>
+</html>

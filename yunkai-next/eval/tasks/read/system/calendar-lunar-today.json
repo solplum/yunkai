@@ -1,0 +1,38 @@
+{
+  "id": "calendar-lunar-today",
+  "goal": "打开手机自带的日历,告诉我今天是农历几月几号。只看,不要新建日程",
+  "apps": [
+    "{app:calendar}"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "app:calendar"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "[正一二三四五六七八九十冬腊]+月\\s*(初|十|二十|廿|三十)[一二三四五六七八九十]?"
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    },
+    {
+      "type": "answer_regex",
+      "pattern": "[「“\\\"][^」”\\\"\\n]*农历[^」”\\\"\\n]*[」”\\\"]"
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "note": "已知限制:没有标签、用汉字写数的日期(九月十四)answer_grounded 认不出,靠人工改判;因此另要求回答引用读屏上的原文;手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的",
+  "variants": [
+    {
+      "goal": "用手机自带的日历看看今天农历是几月初几。只看,不要新建日程"
+    },
+    {
+      "goal": "今天是农历哪一天?在手机自带的日历里看一下告诉我。只看,不要新建日程"
+    }
+  ]
+}

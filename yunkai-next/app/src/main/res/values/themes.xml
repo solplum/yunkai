@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主界面的窗口底色和界面令牌的页面底色一致,启动时不闪白;深色见 values-night -->
+    <style name="Theme.Mika" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/mika_bg</item>
+    </style>
+    <color name="mika_bg">#F7F7F8</color>
+</resources>

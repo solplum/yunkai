@@ -1,0 +1,31 @@
+{
+  "id": "mem-decimals-2-use",
+  "goal": "用手机自带的计算器算 10 除以 3",
+  "apps": [
+    "{app:calculator}"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "app:calculator"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "3\\.33(?!\\d)"
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    },
+    {
+      "type": "memory_used",
+      "min": 1
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 420,
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的;第二题要用上第一题里用户说的偏好",
+  "session": "mem-decimals"
+}

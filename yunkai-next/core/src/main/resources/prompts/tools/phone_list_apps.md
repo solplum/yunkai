@@ -1,0 +1,1 @@
+List apps installed for the current user as package + label. Use an exact returned package with phone_launch_app. alsoIn names the other profiles (such as an app clone or a work profile) that have the same app installed.

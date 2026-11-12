@@ -1,0 +1,22 @@
+{
+  "id": "web-mix-bili-video-views",
+  "goal": "先用网页在 B站(https://www.bilibili.com)搜「中国国家地理」,记下搜索结果第一个视频的标题;再在 B站 App 里找到同一个视频,告诉我它的标题和 App 里显示的播放量。只看,不要点赞、投币、收藏或关注",
+  "apps": [
+    "tv.danmaku.bili"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:tv.danmaku.bili"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    }
+  ],
+  "maxSteps": 45,
+  "timeoutSec": 600,
+  "note": "网页查到线索,再到 App 里核对;标题和播放量都要在读屏里"
+}

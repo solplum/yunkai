@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="web_logout_partial">个别网站的登录可能仍在,如需彻底清除请用「全部退出」。</string>
+    <string name="web_challenged_note">云开 最近在这个网站上碰到过人机验证或访问拦截。如果一直这样,可以清除这个网站的数据(Cookie 与网页存储)后重新登录。</string>
+    <string name="web_data_note">网站的登录数据只存在这台手机上 云开 的私有目录里,没有另行加密,和系统浏览器的保护程度相同。</string>
+    <string name="web_none">还没有访问过的网站</string>
+    <string name="web_none_sub">云开 在网页上办过事、或你在这里登录过之后会列在这里</string>
+    <string name="web_signed_in_by_you">在 云开 里登录过</string>
+    <string name="web_challenged">碰到过验证或拦截</string>
+    <string name="web_last_visit">最近访问 %1$s</string>
+    <string name="web_manage">管理</string>
+    <string name="web_logout_all_title">全部退出并清除网页数据</string>
+    <string name="web_you_signed_in">你在 云开 里登录过这个网站。</string>
+    <string name="web_mika_visited">云开 访问过这个网站。</string>
+    <string name="web_open_login">打开登录</string>
+    <string name="web_cleared">已清除 %1$s 的 Cookie 与网页存储,下次用要重新登录。个别数据可能仍在,如需彻底清除请用「全部退出」。</string>
+    <string name="web_signed_out">已退出 %1$s。%2$s</string>
+    <string name="web_clear_site">清除这个网站的数据</string>
+    <string name="web_sign_out_site">退出这个网站</string>
+    <string name="web_logout_all_q">全部退出并清除网页数据?</string>
+    <string name="web_logout_all_body">会退出内置浏览器里所有网站的登录,并清除它们存在 云开 里的网页数据。之后 云开 用网页办事时要重新登录。</string>
+    <string name="web_logged_out_all">已全部退出并清除网页数据。</string>
+    <string name="web_logout_all">全部退出</string>
+    <string name="date_pattern_md_compact">M月d日</string>
+    <string name="web_takeover_login">在 云开 的浏览器里登录,登好后点「完成」</string>
+    <string name="web_takeover_waiting">云开 在等你:%1$s</string>
+    <string name="web_reason_security">安全验证</string>
+</resources>

@@ -1,3 +1,5 @@
+> **Development branch:** Mika-based implementation is in [`yunkai-next/`](yunkai-next/); legacy projects remain unchanged. See [publication and verification limits](docs/yunkai-next-publication.md). Not a fully green production release; the legacy MIT badge does not cover the new Apache-2.0 and other third-party components.
+
 # Yunkai · Local-First Phone AI Agent
 
 <p align="center">

@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+# Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root.
+# mika — talk to Mika from inside the sandbox.
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Mika authors
+#
+# Usage:
+#   mika progress <text>        show a progress line on the task card (at most once per second)
+#   mika share <path> [name]    save a file from /workspace to the phone's Download/Yunkai
+#   mika info                   Mika version, whether the network is on, the workspace path
+#   mika phone <op> [json]      call a phone tool on this task's virtual screen
+# Prints Mika's JSON reply. Exit code 0 when the reply says ok, 1 otherwise.
+import json
+import os
+import socket
+import sys
+
+USAGE = "usage: mika progress <text> | mika share <path> [name] | mika info | mika phone <op> [json-args]"
+
+
+def request(argv):
+    if len(argv) >= 3 and argv[1] == "progress":
+        return "progress", {"text": " ".join(argv[2:])}
+    if len(argv) in (3, 4) and argv[1] == "share":
+        params = {"path": os.path.abspath(argv[2])}
+        if len(argv) == 4:
+            params["name"] = argv[3]
+        return "share", params
+    if len(argv) == 2 and argv[1] == "info":
+        return "info", {}
+    if len(argv) in (3, 4) and argv[1] == "phone":
+        args = json.loads(argv[3]) if len(argv) == 4 else {}
+        if argv[2] == "run" and isinstance(args, list):
+            args = {"commands": args}
+        if not isinstance(args, dict):
+            raise ValueError("phone arguments must be a JSON object")
+        return "phone", {"tool": argv[2], "args": args}
+    return None, None
+
+
+def main(argv):
+    try:
+        method, params = request(argv)
+    except ValueError as e:
+        print("mika: %s" % e, file=sys.stderr)
+        return 1
+    if method is None:
+        print(USAGE, file=sys.stderr)
+        return 1
+    name = os.environ.get("MIKA_BRIDGE")
+    token = os.environ.get("MIKA_TOKEN")
+    if not name or not token:
+        print("mika: not running inside a Mika sandbox command", file=sys.stderr)
+        return 1
+    line = json.dumps({"token": token, "method": method, "params": params}, ensure_ascii=False) + "\n"
+    try:
+        with socket.socket(socket.AF_UNIX, socket.SOCK_STREAM) as s:
+            s.settimeout(610)
+            s.connect("\0" + name)
+            s.sendall(line.encode("utf-8"))
+            reply = b""
+            while not reply.endswith(b"\n"):
+                chunk = s.recv(65536)
+                if not chunk:
+                    break
+                reply += chunk
+    except OSError as e:
+        print("mika: cannot reach Mika: %s" % e, file=sys.stderr)
+        return 1
+    text = reply.decode("utf-8", "replace").strip()
+    print(text)
+    try:
+        return 0 if json.loads(text).get("ok") else 1
+    except ValueError:
+        return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

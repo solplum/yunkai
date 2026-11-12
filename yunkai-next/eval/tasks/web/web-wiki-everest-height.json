@@ -1,0 +1,20 @@
+{
+  "id": "web-wiki-everest-height",
+  "goal": "在维基百科上查珠穆朗玛峰的海拔是多少米",
+  "apps": [],
+  "category": "read",
+  "partition": "holdout",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_contains",
+      "all": [
+        "8848"
+      ]
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 300
+}

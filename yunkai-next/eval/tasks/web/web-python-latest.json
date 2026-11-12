@@ -1,0 +1,19 @@
+{
+  "id": "web-python-latest",
+  "goal": "在 Python 官网上查最新的 Python 3 稳定版版本号",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "3\\.\\d+\\.\\d+"
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 300,
+  "note": "版本号会变,只核格式;核查器负责看答案是否来自页面"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "settings-storage-used",
+  "goal": "看一下手机存储总共多大、已经用了多少。只看,不要改任何设置,也不要清理任何东西",
+  "apps": [
+    "com.android.settings"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.android.settings"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "variants": [
+    {
+      "goal": "帮我看看手机存储一共多少、用掉了多少。只看,不要改任何设置,也不要清理任何东西"
+    },
+    {
+      "goal": "在系统设置里查一下存储空间的总容量和已用容量。只看,不要改任何设置,也不要清理任何东西"
+    }
+  ]
+}

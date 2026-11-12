@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="metrics_model">Model thinking</string>
+    <string name="metrics_observe">Reading the screen</string>
+    <string name="metrics_act">Actions</string>
+    <string name="metrics_other">Other (waits, retries)</string>
+    <string name="metrics_title">Run stats</string>
+    <string name="metrics_sub">Time, model round trips and tokens of recent runs</string>
+    <string name="metrics_empty">No run stats yet. Ask Yunkai to do something and it’ll be recorded here.</string>
+    <string name="metrics_note">Only the last %1$d runs on this phone are counted. Time starts when Yunkai begins working; first feedback is when you first see what it’s doing.</string>
+    <string name="metrics_copy">Copy JSON</string>
+    <string name="metrics_share">Share JSON</string>
+    <string name="metrics_last_10">Last 10</string>
+    <plurals name="metrics_runs">
+        <item quantity="one">%1$d</item>
+        <item quantity="other">%1$d</item>
+    </plurals>
+    <string name="duration_h_m">%1$d h %2$d min</string>
+    <string name="metrics_total">%1$s total</string>
+    <plurals name="metrics_round_trips">
+        <item quantity="one">%1$d model round trip</item>
+        <item quantity="other">%1$d model round trips</item>
+    </plurals>
+    <string name="metrics_first_feedback_at">first feedback %1$s</string>
+    <string name="metrics_retry_wait">Of which retry waits</string>
+    <string name="metrics_input_tokens">Input tokens</string>
+    <string name="metrics_output_tokens">Output tokens</string>
+    <string name="usage_cached">Cache hits</string>
+    <string name="metrics_no_usage">No usage reported</string>
+    <string name="metrics_all_calls">All model requests</string>
+    <plurals name="metrics_all_calls_value">
+        <item quantity="one">%1$d (incl. side calls and retries)</item>
+        <item quantity="other">%1$d (incl. side calls and retries)</item>
+    </plurals>
+    <string name="metrics_steps">Steps</string>
+    <string name="metrics_observe_act">Reads / actions</string>
+    <string name="metrics_observe_act_value">%1$d / %2$d</string>
+    <string name="metrics_counted">Counted</string>
+    <plurals name="metrics_n_runs">
+        <item quantity="one">%1$d run</item>
+        <item quantity="other">%1$d runs</item>
+    </plurals>
+    <string name="metrics_success_rate">Success rate</string>
+    <string name="metrics_success_value">%1$s (%2$d/%3$d)</string>
+    <string name="metrics_median_time">Median time</string>
+    <string name="metrics_median_feedback">Median first feedback</string>
+    <string name="metrics_avg_round_trips">Avg. model round trips</string>
+    <string name="metrics_avg_round_trips_value">%1$s</string>
+    <string name="metrics_avg_tokens">Avg. tokens</string>
+    <plurals name="metrics_copied">
+        <item quantity="one">Copied the summary of %1$d run</item>
+        <item quantity="other">Copied the summaries of %1$d runs</item>
+    </plurals>
+    <string name="metrics_export_failed">Couldn’t export; the data may be too large. Try a smaller range.</string>
+    <string name="metrics_where_time">See where the time went</string>
+    <string name="metrics_overview">Overview</string>
+    <string name="metrics_time_split">Where the time went</string>
+    <string name="metrics_export">Export</string>
+    <plurals name="metrics_summary_of">
+        <item quantity="one">Summary of these %1$d run</item>
+        <item quantity="other">Summary of these %1$d runs</item>
+    </plurals>
+    <string name="metrics_summary_sub">One entry per run, for your own analysis</string>
+    <plurals name="chat_steps_n">
+        <item quantity="one">%1$d step</item>
+        <item quantity="other">%1$d steps</item>
+    </plurals>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="dev_adaptive">先读元素，必要时看图</string>
+    <string name="dev_adaptive_sub">控件信息够用时不把图片交给模型，读不清时再补图</string>
+    <string name="dev_inline">操作后带回屏幕变化</string>
+    <string name="dev_inline_sub">每次操作后顺带看一眼屏幕,少一次单独读屏</string>
+    <string name="dev_batch">有把握时连做几步</string>
+    <string name="dev_batch_sub">确定的几步一次做完,中途不再停下来问模型</string>
+    <string name="dev_deep_links">直接打开要去的页面</string>
+    <string name="dev_deep_links_sub">能用链接直达 App 里的页面,就不一层层点进去</string>
+    <string name="dev_light">简单步骤交给轻量模型</string>
+    <string name="dev_light_sub">容易的步骤让更快的轻量模型来做,难的仍由主模型做</string>
+    <string name="dev_replay">照着上次的做法做</string>
+    <string name="dev_replay_sub">做过的事按记住的操作路线快速重做,对不上就交回模型</string>
+    <string name="dev_parallel">不同对话同时进行</string>
+    <string name="dev_parallel_sub">不同对话的任务各占一块虚拟屏,一起做</string>
+    <string name="dev_compaction">长任务的摘要分条写</string>
+    <string name="dev_compaction_sub">步骤多了要压缩时,按目标、事实、进展、下一步记下来</string>
+    <string name="dev_group">做事方式</string>
+    <string name="dev_autonomy">自主模式</string>
+    <string name="dev_autonomy_sub">打开后连付款也不先问你，云开 直接做完；关着时花钱、不可逆和未知风险操作先问</string>
+    <string name="dev_note">这些开关影响 云开 做事的方式和速度，一般保持默认。</string>
+    <string name="dev_grounding">看图定位已验证</string>
+    <string name="dev_grounding_sub">看图模型 %1$s 实测过框得准再打开；关着时，它框出的位置要另有佐证才会去点。</string>
+    <string name="dev_speed">速度</string>
+    <string name="dev_experiments">实验</string>
+    <string name="dev_run_log">运行记录</string>
+</resources>

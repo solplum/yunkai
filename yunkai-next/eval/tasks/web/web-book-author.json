@@ -1,0 +1,20 @@
+{
+  "id": "web-book-author",
+  "goal": "查一下《红楼梦》的作者是谁",
+  "apps": [],
+  "category": "read",
+  "partition": "holdout",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_contains",
+      "all": [
+        "曹雪芹"
+      ]
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 300
+}

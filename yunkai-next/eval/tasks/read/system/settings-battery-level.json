@@ -1,0 +1,33 @@
+{
+  "id": "settings-battery-level",
+  "goal": "在系统设置里看一下现在电量还剩百分之多少。只看,不要改任何设置",
+  "apps": [
+    "com.android.settings"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.android.settings"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    },
+    {
+      "type": "answer_regex",
+      "pattern": "\\d{1,3}\\s*(%|％)|百分之\\s*\\d{1,3}"
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "variants": [
+    {
+      "goal": "打开系统设置,看看电池还剩多少电。只看,不要改任何设置"
+    },
+    {
+      "goal": "系统设置里显示现在的电量是百分之几?只看,不要改任何设置"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "mem-area-1-tell",
+  "goal": "记住:以后我让你算面积,结果后面都写上单位平方米。现在用手机自带的计算器算 12 乘 8 的面积",
+  "apps": [
+    "{app:calculator}"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "app:calculator"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "96\\s*平方米"
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 420,
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的;第二题要用上第一题里用户说的偏好",
+  "session": "mem-area"
+}

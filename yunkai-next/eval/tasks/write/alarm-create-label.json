@@ -1,0 +1,32 @@
+{
+  "id": "alarm-create-label",
+  "goal": "在手机自带的时钟里新建一个 7:15 的闹钟,只响一次,闹钟名称写「Mika评测-{run}-闹钟」",
+  "apps": [
+    "{app:alarm}"
+  ],
+  "category": "write",
+  "partition": "tune",
+  "requires": [
+    "app:alarm"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "screen_has",
+      "packageName": "{app:alarm}",
+      "text": "Mika评测-{run}-闹钟"
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "marker": "Mika评测-{run}-闹钟",
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的",
+  "variants": [
+    {
+      "goal": "打开手机自带的时钟,加一个 7:15 只响一次的闹钟,名称写「Mika评测-{run}-闹钟」"
+    },
+    {
+      "goal": "在手机自带的时钟里新建一个 7:45 的闹钟,只响一次,闹钟名称写「Mika评测-{run}-闹钟」"
+    }
+  ]
+}

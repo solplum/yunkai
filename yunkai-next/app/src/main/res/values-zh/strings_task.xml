@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="notif_channel_prepare">后台准备</string>
+    <string name="notif_preparing">云开 正在准备</string>
+    <string name="notif_result_title">云开 任务结果</string>
+    <string name="parallel_second_display_failed">第二块虚拟屏没能建起来,这次运行期间一次只进行一个任务</string>
+    <string name="parallel_needs_14">安卓 14 以上才支持同时进行多个任务</string>
+    <string name="parallel_low_ram">这台手机内存较小,一次只进行一个任务</string>
+    <string name="skill_suspended">这项技能最近不灵,先停用了</string>
+    <string name="skill_verified">这项技能已核实:%1$s</string>
+    <string name="skill_learned">云开 学会了一项技能:%1$s</string>
+    <string name="skill_app_draft">云开 为 %1$s 起草了 APP.md，尚未核实</string>
+    <string name="recovered_result">恢复的任务结果</string>
+    <string name="recover_delivery_failed">上次任务已完成，但结果通知送达失败；请在对话里查看</string>
+    <string name="recover_maybe_delivered">上次结果可能已送达，请先在对话里查看，避免重复处理</string>
+    <string name="recover_interrupted_turn">任务中断了，可以重新发起。</string>
+    <string name="recover_interrupted">%1$s：运行中断，可在对话里重新发起</string>
+    <string name="gate_pick_app">「%1$s」在问用哪个，请在屏幕上选一下</string>
+    <string name="gate_pick_system">系统在问用哪个，请在屏幕上选一下</string>
+    <string name="gate_finish_app">「%1$s」要你在屏幕上处理，处理好了点继续</string>
+    <string name="gate_finish_unknown">刚打开的 App 要你在屏幕上处理，处理好了点继续</string>
+    <string name="gate_moved_away">你打开了这个 App,用完点继续</string>
+    <string name="gate_move_back_failed">没能把 App 挪回 云开 的屏幕,点继续再试一次</string>
+    <string name="gate_shell_down">手机操作断开了,等它重新连上(或到设置里处理)后点继续</string>
+    <plurals name="queue_ahead">
+        <item quantity="other">排队中:前面还有 %1$d 个任务</item>
+    </plurals>
+    <string name="fail_no_main_model">还没有能用的主模型:请在设置里添加一个支持工具调用的模型。</string>
+    <string name="fail_no_web">设备没有可用的网页能力，条件检查无法运行</string>
+    <string name="task_waiting_display">排队中:等另一个任务做完再开始</string>
+    <string name="task_no_phone_helper">手机操作还没准备好:请在 云开 里完成「设置手机操作」(打开无线调试并配对一次)。网页和文件类的事不受影响。</string>
+    <string name="task_no_a11y">云开 的无障碍服务没有开启:请在系统设置的无障碍里打开 云开。</string>
+    <string name="task_error">任务出错:%1$s</string>
+    <string name="task_condition_interrupted">条件检查中断</string>
+    <string name="task_check_unfinished">定时检查未完成：%1$s</string>
+    <string name="task_may_make_sound">该 App 可能会出声</string>
+    <string name="task_notif_title">云开:%1$s</string>
+    <plurals name="task_active">
+        <item quantity="other">%1$d 个任务进行中</item>
+    </plurals>
+    <plurals name="task_behind">
+        <item quantity="other">还有 %1$d 个任务等你处理</item>
+    </plurals>
+    <string name="task_interrupted">任务运行中断，可重新发起</string>
+    <string name="task_takeover_queued">先处理完另一个任务的接管,再处理这个</string>
+    <string name="task_too_old">云开 要在单独的虚拟屏里操作 App,需要安卓 13 及以上。</string>
+    <string name="task_shell_died">手机操作助手断开了,虚拟屏随之关闭;等它重新连上后再试</string>
+    <string name="task_running">正在执行</string>
+    <string name="task_step_note">第 %1$d 步:%2$s</string>
+    <string name="task_wait_unlock">等待解锁</string>
+    <string name="task_wait_unlock_body">解锁手机后会自动继续</string>
+    <string name="task_done">任务完成</string>
+    <string name="task_reason">原因:%1$s</string>
+    <string name="task_not_done">任务没有完成</string>
+    <string name="task_stopped">任务已停止</string>
+    <string name="task_stopped_body">你停止了这个任务</string>
+</resources>

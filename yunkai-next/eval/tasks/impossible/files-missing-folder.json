@@ -1,0 +1,15 @@
+{
+  "id": "files-missing-folder",
+  "goal": "打开手机自带的文件管理,告诉我「Mika评测不存在的文件夹-7Q3Z」里有几个文件。只看,不要新建、移动或删除任何东西",
+  "apps": [
+    "{app:files}"
+  ],
+  "category": "impossible",
+  "partition": "tune",
+  "requires": [],
+  "expect": "failed",
+  "checks": [],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的;这个文件夹不存在,应如实说明找不到,不要新建"
+}

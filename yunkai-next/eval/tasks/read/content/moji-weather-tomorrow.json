@@ -1,0 +1,25 @@
+{
+  "id": "moji-weather-tomorrow",
+  "goal": "打开墨迹天气,告诉我当前城市明天的最高气温和最低气温。只看,不要添加城市或分享",
+  "apps": [
+    "com.moji.mjweather"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.moji.mjweather"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    },
+    {
+      "type": "answer_regex",
+      "pattern": "最高[\\s\\S]*最低|最低[\\s\\S]*最高|\\d+\\s*°?\\s*[~～\\-—至]\\s*\\d+"
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

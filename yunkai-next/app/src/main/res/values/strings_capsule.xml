@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="card_approve_once">Approve just this once</string>
+    <string name="card_see_process">Back to Yunkai for the full process</string>
+    <string name="card_back_to_mika">Back to Yunkai</string>
+    <string name="card_continue_last">Continue last chat</string>
+    <string name="card_screen">Background screen, tap to enlarge</string>
+    <string name="card_screen_label">Background</string>
+    <string name="card_zoomed">Enlarged background screen, tap to close</string>
+    <string name="card_zoom_hint">Yunkai is working in the background · tap to close</string>
+    <string name="card_continuing">Continue “%1$s”</string>
+    <string name="card_queued_ahead">Finish the other takeover first, then this one</string>
+    <string name="card_hint_answer">Answer Yunkai…</string>
+    <string name="card_hint_continue">Keep talking…</string>
+    <plurals name="capsule_behind">
+        <item quantity="one">After this, %1$d more is waiting for you</item>
+        <item quantity="other">After this, %1$d more are waiting for you</item>
+    </plurals>
+    <string name="capsule_hold">On hold</string>
+    <string name="capsule_handed_over">You’re on it</string>
+    <string name="capsule_running">Working</string>
+    <string name="capsule_done">Done</string>
+    <string name="capsule_failed">Didn’t work out</string>
+    <string name="capsule_stopped">Stopped</string>
+    <string name="capsule_stop">Stop doing this</string>
+    <string name="capsule_expand">Expand this task</string>
+    <string name="capsule_talk">Talk to Yunkai</string>
+    <string name="capsule_swap_side">Move to the other side</string>
+    <string name="capsule_desc_needs">%1$s, tap to handle</string>
+    <string name="capsule_desc_running">Yunkai is working: %1$s, tap for details</string>
+    <string name="capsule_desc_other">Yunkai: %1$s, tap for details</string>
+    <string name="capsule_then_tap_right">Tap the right side when done</string>
+    <string name="capsule_need_of_total">%1$d need you · %2$d in total</string>
+    <string name="capsule_of_total">%1$s · %2$d in total</string>
+    <string name="capsule_done_tap">Done · tap to see the result</string>
+    <string name="capsule_failed_tap">Didn’t work out · tap to see why</string>
+    <string name="capsule_needs_you">Needs you: %1$s</string>
+    <string name="capsule_handle_it">take a look</string>
+    <string name="capsule_needs_ok">Needs your OK: %1$s</string>
+    <string name="capsule_asks">Yunkai asks: %1$s</string>
+    <string name="capsule_hold_why">On hold: %1$s</string>
+    <string name="capsule_you_handle">Your turn</string>
+    <string name="capsule_thinking">Thinking of the next step</string>
+    <string name="capsule_continuing">Carrying on</string>
+    <string name="capsule_replay">Following a route %1$d/%2$d</string>
+    <plurals name="capsule_batch">
+        <item quantity="one">%1$d step at once</item>
+        <item quantity="other">%1$d steps at once</item>
+    </plurals>
+    <string name="and_more">" and more"</string>
+</resources>

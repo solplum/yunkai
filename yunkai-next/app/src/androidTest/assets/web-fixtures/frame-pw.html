@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>frame-pw</title></head>
+<body style="margin:0">
+<input type="password" id="framepw" value="frame-secret-7">
+<script>
+  // 父页面会把它改成文本框(「显示密码」)
+  window.reveal = function () { document.getElementById('framepw').type = 'text'; };
+</script>
+</body>
+</html>

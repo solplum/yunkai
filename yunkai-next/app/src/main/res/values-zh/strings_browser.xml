@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="browser_engine">必应</string>
+    <string name="browser_recent_source">最近打开</string>
+    <string name="browser_search_colon">搜索：%1$s</string>
+    <string name="browser_search_q">搜索「%1$s」</string>
+    <string name="browser_open_url">打开网址</string>
+    <string name="browser_just_now">刚刚</string>
+    <plurals name="browser_minutes_ago">
+        <item quantity="other">%1$d 分钟前</item>
+    </plurals>
+    <string name="browser_today_at">今天 %1$s</string>
+    <string name="browser_not_logged_in">页面上看着还没登录，登录好了再点「登录好了」。</string>
+    <string name="browser_external_link">这是打开其他应用的链接，浏览器里不打开。</string>
+    <string name="browser_bad_scheme">这个地址打不开：浏览器只打开网页（http、https）。</string>
+    <string name="browser_blocked_app_link">已拦下一个打开其他应用的链接。</string>
+    <string name="browser_no_download">浏览器里暂时不能下载文件。</string>
+    <string name="browser_crashed">网页出了问题，已经关掉，可以重新打开。</string>
+    <string name="browser_logged_in">已登录，云开 办事时也能用了。</string>
+    <string name="browser_desktop">电脑版</string>
+    <string name="browser_login_done">登录好了</string>
+    <string name="browser_close_page">关闭网页</string>
+    <string name="browser_edit_url">改网址</string>
+    <string name="browser_secure">加密连接</string>
+    <string name="browser_forward">前进</string>
+    <string name="browser_home">起始页</string>
+    <string name="share">分享</string>
+    <string name="more">更多</string>
+    <string name="browser_login_for_mika">给 云开 登录</string>
+    <string name="browser_login_for_mika_sub">" · 用 云开 办事时的%1$s打开，登录好了 云开 也能用"</string>
+    <string name="browser_mobile">手机版</string>
+    <string name="browser_copy_link">复制链接</string>
+    <string name="browser_open_outside">在其他浏览器里打开</string>
+    <string name="browser_unfavorite">从常用移除</string>
+    <string name="browser_favorite">加入常用网站</string>
+    <string name="browser_to_mobile">换回手机版</string>
+    <string name="browser_to_desktop">换成电脑版</string>
+    <string name="browser_keep_mobile">这个网站下次也用手机版</string>
+    <string name="browser_keep_desktop">这个网站下次也用电脑版</string>
+    <string name="browser_removed">已移除「%1$s」</string>
+    <string name="browser_link_copied">链接已复制</string>
+    <string name="browser_unfavorited">已从常用网站移除</string>
+    <string name="browser_favorited">已加入常用网站</string>
+    <string name="browser_switched_mobile">已换回手机版，这个网站下次也用手机版</string>
+    <string name="browser_switched_desktop">已换成电脑版，这个网站下次也用电脑版</string>
+    <string name="browser_no_share_app">没有能分享的 App</string>
+    <string name="browser_no_other_browser">没有别的浏览器能打开这个网页</string>
+    <string name="browser_leave_q">离开这个网页？</string>
+    <string name="browser_page_says">网页上的提示</string>
+    <string name="browser_leave_body">你在这个网页上做的修改可能不会保存。</string>
+    <string name="browser_leave">离开</string>
+    <string name="browser_search_hint">搜索或输入网址</string>
+    <string name="browser_engine_note">用必应搜索</string>
+    <string name="browser_typing_note">输入网址直接打开，其他内容用必应搜索</string>
+    <string name="browser_login_legend">已登录，云开 办事时也能直接用</string>
+    <string name="browser_add_hint">打开网站后，在「更多」里点「加入常用网站」</string>
+    <string name="browser_edit_favorites">整理常用网站</string>
+    <string name="browser_tap_x">点左上角的 × 移除</string>
+    <string name="browser_long_press">长按某个网站也能进来整理</string>
+    <string name="browser_favorites">常用网站</string>
+    <string name="browser_edit">整理</string>
+    <string name="browser_clear_input">清空</string>
+    <string name="browser_open_site">打开%1$s</string>
+    <string name="browser_remove_site">移除%1$s</string>
+    <string name="browser_add_favorite">添加常用网站</string>
+    <string name="browser_no_recent">还没有打开过的网页</string>
+</resources>

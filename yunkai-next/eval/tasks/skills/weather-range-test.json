@@ -1,0 +1,25 @@
+{
+  "id": "weather-range-test",
+  "goal": "打开手机自带的天气 App,告诉我当前城市明天的最高气温和最低气温。只看,不要添加或删除城市",
+  "apps": [
+    "{app:weather}"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    },
+    {
+      "type": "answer_regex",
+      "pattern": "最高[\\s\\S]*最低|最低[\\s\\S]*最高|\\d+\\s*°?\\s*[~～\\-—至]\\s*\\d+"
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的",
+  "split": "test"
+}

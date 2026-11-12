@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="rec_a11y">Turn on accessibility for me</string>
+    <string name="rec_default_on">On by default</string>
+    <string name="rec_a11y_body">Yunkai uses Accessibility to read the text and buttons on screen. With this on, Yunkai turns on its own accessibility service in system settings for you; other accessibility services you have on aren’t affected. Turn this off and Yunkai turns its own service off.</string>
+    <string name="rec_battery">Unrestricted battery</string>
+    <string name="rec_battery_body">With this on, Yunkai adds itself to the system’s battery optimization exceptions, so it isn’t stopped in the background to save power and phone control drops less often. It may use a bit more battery. Turn it off to go back to the system default.</string>
+    <string name="rec_boot">Restore after restart</string>
+    <string name="rec_boot_body">“Wireless debugging” turns itself off after a restart. With this on, Yunkai turns it back on at startup and reconnects. This needs the “Modify system settings” permission, used only to turn on Wireless debugging, and works only on Wi-Fi you’ve trusted. Turning this off or unpairing returns the permission.</string>
+    <string name="rec_auto_wireless">Turn on Wireless debugging automatically</string>
+    <string name="rec_auto_wireless_body">After Wi-Fi drops or the phone restarts, the system turns “Wireless debugging” off. Phone control normally doesn’t need it — only when restarting (for example after a Yunkai update). With this on, in those moments and while on Wi-Fi, Yunkai turns it on and reconnects, but never turns it off for you. This uses the same “Modify system settings” permission as “Restore after restart” and works only on Wi-Fi you’ve allowed. Turn it off and Yunkai stops doing this.</string>
+    <string name="rec_need_setup">Finish phone control setup first</string>
+    <string name="rec_failed">Couldn’t finish. Make sure phone control is ready and try again.</string>
+    <string name="rec_working">Working…</string>
+    <string name="rec_restarted_at">The accessibility service was restarted automatically at %1$s.</string>
+    <string name="rec_not_allowed_here">Wireless debugging isn’t allowed on this Wi-Fi yet, so Yunkai can’t turn it on. Turn it on once yourself and tick “Always allow on this network” when asked; after that Yunkai can turn it on by itself.</string>
+    <string name="rec_refused">This phone doesn’t let Yunkai turn on Wireless debugging. Turn it on yourself when needed and Yunkai will connect.</string>
+    <string name="rec_gave_up">Yunkai turned on Wireless debugging a few times but phone control still didn’t start, so it stopped. Switch Wi-Fi or tap Retry in Phone control and Yunkai will try again.</string>
+    <string name="rec_permission_missing">At the last startup the permission was gone, so it couldn’t restore. Turn this switch off and on again.</string>
+    <string name="rec_setting_unavailable">This phone doesn’t let Yunkai turn on Wireless debugging at startup. After a restart, turn it on yourself and Yunkai will connect.</string>
+    <string name="rec_not_recovered">Couldn’t reconnect automatically at the last startup. Make sure you’re on trusted Wi-Fi with Wireless debugging on, and Yunkai will connect.</string>
+</resources>

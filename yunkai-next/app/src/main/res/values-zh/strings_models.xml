@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="models_lead">每件事用哪个模型，在「用途」里选；模型来自下面连好的服务商。</string>
+    <string name="models_roles">用途</string>
+    <string name="models_providers">服务商</string>
+    <string name="models_add_provider">添加服务商</string>
+    <string name="models_key_note">API Key 只保存在这台手机上，加密存放。</string>
+    <string name="models_main_add_first">先添加一个服务商</string>
+    <string name="models_main_pick">点这里选一个</string>
+    <string name="models_same_as_main">用主模型</string>
+    <string name="models_main_not_picked">主模型还没选</string>
+    <string name="models_off">不用</string>
+    <string name="models_off_note">只靠文字读屏</string>
+    <string name="models_vision_same_note">主模型能看图时选这个</string>
+    <string name="models_light_same_note">和主模型同一个，不用另外选</string>
+    <string name="models_pick_from">从已连接的服务商里选</string>
+    <string name="models_filter_hint">输入模型名的一部分</string>
+    <string name="models_no_match">没有名字对得上的模型。</string>
+    <string name="models_model_name">模型名</string>
+    <string name="models_use">使用</string>
+    <string name="models_role_empty">还没有可选的模型。先添加一个服务商。</string>
+    <string name="models_picker_note">标签是服务商给的信息，只作参考；选哪个由你定。</string>
+    <string name="models_listing">正在列出模型…</string>
+    <string name="models_connection">连接</string>
+    <string name="models_status">状态</string>
+    <string name="models_list_failed">列模型失败</string>
+    <string name="models_url">地址</string>
+    <string name="models_key_saved">已保存</string>
+    <string name="models_key_none">没有填</string>
+    <string name="models_change">更换</string>
+    <string name="models_change_key">更换 API Key</string>
+    <string name="models_new_key_hint">粘贴新的 Key</string>
+    <string name="save">保存</string>
+    <string name="models_models">模型</string>
+    <string name="models_models_note">点一个模型，可以把它用作主模型、看图或轻量模型。</string>
+    <string name="models_no_list_note">这家不提供模型列表。要用它的模型，在「用途」里照文档填模型名。</string>
+    <string name="models_not_listed">还没列出这家的模型。</string>
+    <string name="refresh">刷新</string>
+    <string name="models_in_use">正在用这个</string>
+    <string name="models_delete">删除这个服务商</string>
+    <string name="role_main">主模型</string>
+    <string name="role_vision">看图模型</string>
+    <string name="role_light">轻量模型</string>
+    <string name="role_main_what">思考和办事</string>
+    <string name="role_vision_what">读屏时看截图</string>
+    <string name="role_light_what">判断、记东西这类小事</string>
+    <string name="role_main_hint">思考和办事都靠它。选支持工具调用的模型，办事才靠得住。</string>
+    <string name="role_vision_hint">读屏时把截图给它看，界面复杂时更准。不选也能用，只靠文字读屏。</string>
+    <string name="role_light_hint">判断任务有没有办完、整理记忆这类小事用它。选便宜、快的更合适。</string>
+    <string name="models_delete_title">删除「%1$s」？</string>
+    <string name="models_delete_body">这家的 API Key 会一起删掉。</string>
+    <string name="models_delete_unused">它没在给任何用途干活。</string>
+    <string name="models_delete_used">%1$s正在用它，删除后要重新选。</string>
+    <plurals name="models_more">
+        <item quantity="other">还有 %1$d 个，输入名字筛选</item>
+    </plurals>
+    <plurals name="models_view_all">
+        <item quantity="other">查看全部 %1$d 个模型</item>
+    </plurals>
+    <string name="models_all_title">%1$s · 全部模型</string>
+    <plurals name="models_all_note">
+        <item quantity="other">共 %1$d 个，在用的排在最前面。右上角刷新会重新向服务商要一次列表。</item>
+    </plurals>
+    <string name="models_use_as">%1$s · 用作</string>
+    <string name="models_openai_compat">OpenAI 兼容</string>
+    <string name="models_no_list">不提供模型列表</string>
+    <plurals name="models_count">
+        <item quantity="other">%1$d 个模型</item>
+    </plurals>
+    <string name="models_used_by">%1$s在用</string>
+
+    <!-- 用 ChatGPT 登录 -->
+    <string name="chatgpt_use_plan_title">用你的 ChatGPT 套餐</string>
+    <string name="chatgpt_use_plan_body">用你 ChatGPT 套餐里包含的用量（或额度余额）完成 云开 里符合条件的 AI 请求。ChatGPT Plus 和 Pro 可用。云开 本身免费，不另外收费。</string>
+    <string name="chatgpt_continue">使用 ChatGPT 继续</string>
+    <string name="chatgpt_waiting">请在浏览器里完成登录，再回到 云开。</string>
+    <string name="chatgpt_welcome_title">正在使用你的 ChatGPT 套餐</string>
+    <string name="chatgpt_welcome_body">云开 里符合条件的用量会使用你的 ChatGPT 套餐。可以在 ChatGPT 设置里管理用量。</string>
+    <string name="chatgpt_got_it">知道了</string>
+    <string name="chatgpt_account">账号</string>
+    <string name="chatgpt_signed_in">已登录</string>
+    <string name="chatgpt_signed_out">已退出登录</string>
+    <string name="chatgpt_sign_out">退出登录</string>
+    <string name="chatgpt_manage_usage">管理用量</string>
+    <string name="chatgpt_plan_note">使用 ChatGPT 套餐额度。Plus 每 5 小时的额度和其他用你套餐的 App 共用；Pro 没有 5 小时的限制。</string>
+    <string name="chatgpt_signed_out_note">这台手机上已退出登录。点「使用 ChatGPT 继续」就能接着用套餐；选好的模型都还在。</string>
+    <string name="chatgpt_revoke_unconfirmed">这台手机上已退出登录，但 ChatGPT 那边没有确认。也可以在 ChatGPT 设置里断开已连接的应用。</string>
+    <string name="chatgpt_fail_denied">已取消登录。如果授权页提示「所需权限不可用」：用套餐额度需要 ChatGPT Plus 或 Pro，免费账号可以改用其他服务商的 API Key。</string>
+    <string name="chatgpt_fail_mismatch">登录回来的信息和这次对不上，请再试一次。</string>
+    <string name="chatgpt_fail_no_client">ChatGPT 没有完成对 云开 的注册，请再试一次。</string>
+    <string name="chatgpt_fail_timed_out">登录超时了，请再试一次。</string>
+    <string name="chatgpt_fail_exchange">ChatGPT 没有接受这次登录。如果这个账号不是 Plus 或 Pro，就不能把套餐额度用在 云开 里；否则请再试一次。</string>
+    <string name="chatgpt_fail_id_token">核对不了你的 ChatGPT 账号，请再试一次。</string>
+    <string name="chatgpt_fail_no_plan">没有允许 云开 使用你的 ChatGPT 套餐。请重新登录并允许使用套餐额度（需要 Plus 或 Pro）。</string>
+    <string name="chatgpt_fail_network">连不上 ChatGPT，请检查网络后再试。</string>
+    <string name="chatgpt_page_title">云开</string>
+    <string name="chatgpt_page_done">已用 ChatGPT 登录，可以回到 云开 了。</string>
+    <string name="chatgpt_page_cancelled">已取消登录，可以回到 云开 了。</string>
+    <string name="chatgpt_page_back">回到 云开</string>
+    <string name="chatgpt_no_browser">没有找到可以登录 ChatGPT 的浏览器。</string>
+    <string name="models_unverified">没测试通过，任务可能会失败</string>
+    <string name="models_unverified_note">这家不提供模型列表，在用的 %1$s 还没测试通过，任务可能会失败。点「重新测试」用它试调用一次。</string>
+    <string name="models_retest">重新测试</string>
+</resources>

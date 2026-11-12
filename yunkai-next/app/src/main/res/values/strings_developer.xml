@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="dev_adaptive">Read elements first, images when needed</string>
+    <string name="dev_adaptive_sub">Skips sending images when the UI tree is enough; adds one when it isn’t</string>
+    <string name="dev_inline">Return screen changes after actions</string>
+    <string name="dev_inline_sub">Glances at the screen after each action, saving a separate read</string>
+    <string name="dev_batch">Do several steps when sure</string>
+    <string name="dev_batch_sub">Does certain steps in one go without stopping to ask the model</string>
+    <string name="dev_deep_links">Open the target page directly</string>
+    <string name="dev_deep_links_sub">Uses links to jump straight to pages inside apps instead of tapping through</string>
+    <string name="dev_light">Easy steps go to the light model</string>
+    <string name="dev_light_sub">The faster light model does easy steps; the main model keeps the hard ones</string>
+    <string name="dev_replay">Repeat what worked last time</string>
+    <string name="dev_replay_sub">Replays saved routes for things done before; hands back to the model if they don’t match</string>
+    <string name="dev_parallel">Run chats in parallel</string>
+    <string name="dev_parallel_sub">Tasks from different chats each get a virtual screen and run together</string>
+    <string name="dev_compaction">Structured summaries for long tasks</string>
+    <string name="dev_compaction_sub">When many steps need compressing, notes goal, facts, progress and next step</string>
+    <string name="dev_group">How Yunkai works</string>
+    <string name="dev_autonomy">Autonomous mode</string>
+    <string name="dev_autonomy_sub">When on, Yunkai doesn’t ask even before paying and just finishes; when off, it asks before spending, irreversible changes and unknown-risk actions</string>
+    <string name="dev_note">These switches affect how and how fast Yunkai works. Usually leave them at the defaults.</string>
+    <string name="dev_grounding">Vision grounding verified</string>
+    <string name="dev_grounding_sub">Turn on once vision model %1$s has been tested to locate things accurately; when off, the positions it marks need other evidence before Yunkai taps them.</string>
+    <string name="dev_speed">Speed</string>
+    <string name="dev_experiments">Experiments</string>
+    <string name="dev_run_log">Run records</string>
+</resources>

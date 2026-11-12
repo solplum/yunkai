@@ -1,0 +1,27 @@
+{
+  "id": "calc-div-train",
+  "goal": "用手机自带的计算器算 7425 除以 33,告诉我结果",
+  "apps": [
+    "{app:calculator}"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "app:calculator"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "(?<!\\d)225(?![\\d.])"
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 420,
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的",
+  "split": "train"
+}

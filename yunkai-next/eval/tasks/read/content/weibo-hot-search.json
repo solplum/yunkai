@@ -1,0 +1,21 @@
+{
+  "id": "weibo-hot-search",
+  "goal": "打开微博热搜榜,告诉我排名前三的热搜词。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "com.sina.weibo"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.sina.weibo"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>script</title>
+<style>
+  * { margin: 0; padding: 0; font-size: 14px; line-height: 20px; box-sizing: border-box; }
+  body { padding: 6px; }
+  input, button { display: block; height: 32px; width: 220px; margin-bottom: 6px; }
+  li { height: 22px; }
+</style>
+</head>
+<body>
+<ul id="list">
+  <li class="item">苹果 3 元</li>
+  <li class="item">香蕉 2 元</li>
+  <li class="item">橙子 4 元</li>
+  <li class="item">葡萄 8 元</li>
+  <li class="item">西瓜 12 元</li>
+</ul>
+<button id="inc">加一</button>
+<input id="name" aria-label="名字">
+<button id="send">提交订单</button>
+<div id="status">clicks=0</div>
+<select id="sel" aria-label="规格"><option>小</option><option>大</option></select>
+<form id="f" action="/assets/web-fixtures/host.html"><input id="pw" type="password" aria-label="密码"><input id="otp" autocomplete="one-time-code" aria-label="验证码"><input type="hidden" id="tok" value="csrf-123"></form>
+<script>
+  window.pageSecret = 42;
+  window.clicks = 0;
+  window.sends = 0;
+  document.getElementById('inc').addEventListener('click', () => {
+    window.clicks++;
+    document.getElementById('status').textContent = 'clicks=' + window.clicks;
+  });
+  document.getElementById('send').addEventListener('click', () => { window.sends++; });
+  document.getElementById('pw').value = 'hunter2';
+  document.getElementById('otp').value = '654321';
+  window.requests = 0;
+  window.submits = 0;
+  document.getElementById('f').addEventListener('submit', () => { window.submits++; });
+</script>
+</body>
+</html>

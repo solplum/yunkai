@@ -1,0 +1,27 @@
+{
+  "id": "mem-rate-1-tell",
+  "goal": "记住:我说的「汇率」一律按 7.1 算。现在用手机自带的计算器算 100 乘以汇率",
+  "apps": [
+    "{app:calculator}"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "app:calculator"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "(?<![\\d.])710(?![\\d])"
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 420,
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的;第二题要用上第一题里用户说的偏好",
+  "session": "mem-rate"
+}

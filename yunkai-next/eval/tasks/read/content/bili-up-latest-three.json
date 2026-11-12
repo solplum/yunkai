@@ -1,0 +1,22 @@
+{
+  "id": "bili-up-latest-three",
+  "goal": "在 B站搜「中国国家地理」,进入这个账号的主页,切到投稿列表按最新发布排,告诉我最新三个视频的标题和播放量。只看,不要点赞、投币、收藏或关注",
+  "apps": [
+    "tv.danmaku.bili"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:tv.danmaku.bili"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 50,
+  "timeoutSec": 720,
+  "note": "长链路:搜索 → 用户结果 → 主页 → 投稿 → 排序 → 读三条"
+}

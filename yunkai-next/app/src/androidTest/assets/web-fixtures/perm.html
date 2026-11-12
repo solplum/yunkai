@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>perm</title></head>
+<body>
+<script>
+  // 页面申请定位和摄像头:都应被拒绝,不弹框
+  window.geo = 'pending';
+  window.cam = 'pending';
+  try {
+    navigator.geolocation.getCurrentPosition(function () { window.geo = 'granted'; }, function () { window.geo = 'denied'; });
+  } catch (e) { window.geo = 'denied'; }
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function () { window.cam = 'granted'; }, function (e) { window.cam = e.name; });
+  } else {
+    window.cam = 'unavailable';
+  }
+</script>
+</body>
+</html>

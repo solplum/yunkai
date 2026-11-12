@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="progress_replay">Replaying a known route (step %1$d/%2$d)</string>
+    <plurals name="progress_batch">
+        <item quantity="one">Running %1$d step at once</item>
+        <item quantity="other">Running %1$d steps at once</item>
+    </plurals>
+    <string name="payment_item">Item: %1$s</string>
+    <string name="payment_amount">Amount: %1$s</string>
+    <string name="payment_address">Address: %1$s</string>
+    <string name="state_on">On</string>
+    <string name="state_off">Off</string>
+    <string name="state_not_running">Not running</string>
+    <string name="stop_summarizing">Wrapping up what was done…</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="channel_progress">Task progress</string>
+    <string name="notif_normal">Normal</string>
+    <plurals name="notif_lowered">
+        <item quantity="one">%1$d won’t pop up</item>
+        <item quantity="other">%1$d won’t pop up</item>
+    </plurals>
+    <string name="state_turned_off">Off</string>
+    <string name="notif_heads_up">Pops up</string>
+    <string name="notif_quiet">Shade only</string>
+    <string name="notif_app_on">Yunkai can send notifications</string>
+    <string name="notif_app_off">Yunkai can’t send notifications, so you won’t see progress or alerts</string>
+    <string name="notif_attention_when">When you need to take over, approve or answer</string>
+    <string name="notif_result_when">When a task finishes</string>
+    <string name="notif_progress_when">While a task runs, always in the shade</string>
+    <string name="notif_footer">On Android, only you can change whether each kind of notification pops up or makes a sound, in system settings. Tap any item above to open its settings page. Path: Settings › Apps › Yunkai › Notifications</string>
+    <string name="channel_result">Task results</string>
+    <string name="heads_up_action">Turn on</string>
+    <string name="heads_up_title">“%1$s” notifications won’t pop up</string>
+    <string name="heads_up_lead_attention">When you need to take over or approve</string>
+    <string name="heads_up_lead_result">When a task finishes</string>
+    <string name="heads_up_also">"The same goes for “%1$s”. "</string>
+    <string name="heads_up_body">%1$s, these notifications now land quietly in the shade and are easy to miss. %2$sTap “%3$s” and turn on “Pop on screen”.</string>
+    <string name="heads_up_path">Settings › Apps › Yunkai › Notifications › %1$s › Pop on screen (some phones call it “Banner” or “Floating notification”)</string>
+    <string name="banner_too_old">System version too old</string>
+    <string name="banner_too_old_detail">Yunkai needs Android 13 or later</string>
+    <string name="learn_more">Learn more</string>
+    <string name="banner_not_paired">Phone control isn’t set up</string>
+    <string name="banner_not_paired_detail">Set it up so Yunkai can use apps on your phone</string>
+    <string name="banner_wireless_off">Wireless debugging is off</string>
+    <string name="banner_wireless_off_detail">Turn it on and Yunkai will connect automatically</string>
+    <string name="banner_connecting">Connecting phone control</string>
+    <string name="banner_connecting_detail">Just a few seconds</string>
+    <string name="view">View</string>
+    <string name="banner_paused">Phone control paused</string>
+    <string name="banner_failed">Phone control has a problem</string>
+    <string name="fix_it">Fix</string>
+    <string name="banner_a11y_off">Accessibility service is off</string>
+    <string name="banner_a11y_off_detail">Yunkai uses it to read and control its virtual screen</string>
+    <string name="turn_on_go">Turn on</string>
+    <string name="banner_a11y_not_running">Accessibility service isn’t running</string>
+    <string name="banner_a11y_not_running_detail">Turn it off and on again</string>
+    <string name="banner_no_model">No usable model yet</string>
+    <string name="banner_no_model_detail">Add a model that supports tool calling</string>
+    <string name="add">Add</string>
+    <string name="banner_notif_off">Notifications not allowed</string>
+    <string name="banner_notif_off_detail">You won’t see progress or “Needs you” alerts</string>
+    <string name="allow">Allow</string>
+    <string name="banner_focus">On Android 13, background work may steal focus from your screen</string>
+    <string name="banner_focus_detail">Android 14+ recommended</string>
+    <string name="explain_too_old">Requires Android 13 or later</string>
+    <string name="explain_too_old_body">Yunkai uses apps on a separate virtual screen so you can keep using your phone. That needs Android 13 or later; this phone runs Android %1$s, so tasks can’t start yet.</string>
+    <string name="explain_a11y_off">Turn on the accessibility service</string>
+    <string name="explain_a11y_off_body">Yunkai uses the accessibility service to read and control its own virtual screen. Find Yunkai under Accessibility in system settings (on some phones it’s under “Downloaded apps” or “Installed services”) and turn it on.</string>
+    <string name="explain_a11y_not_running_body">System settings show Yunkai’s accessibility service as on, but it isn’t actually running (this often happens after Yunkai is force-stopped). Turn Yunkai off in accessibility settings, then on again.</string>
+    <string name="explain_no_model">Add a model</string>
+    <string name="explain_no_model_body">Yunkai needs a large language model with tool calling to think and act. Just enter the provider’s URL, the model name and an API key.</string>
+    <string name="explain_focus">Android 14 or later recommended</string>
+    <string name="explain_focus_body">On Android 13, background work may affect focus on your screen: when Yunkai opens an app or scrolls on the virtual screen, the field you’re typing in may briefly lose focus and need another tap. From Android 14 the virtual screen has its own focus. This phone runs Android %1$s; tasks still work normally.</string>
+    <string name="explain_notif">Allow notifications</string>
+    <string name="explain_notif_body">Once allowed, task progress and “Needs you” alerts show in the shade and on the lock screen. Yunkai works without them, you just won’t see these alerts.</string>
+    <string name="sandbox_command_prefix">"Working on files: "</string>
+    <string name="sandbox_script">Running a script</string>
+    <string name="sandbox_online">online</string>
+    <string name="runtime_preparing">Preparing</string>
+</resources>

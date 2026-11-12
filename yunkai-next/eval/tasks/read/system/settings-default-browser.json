@@ -1,0 +1,29 @@
+{
+  "id": "settings-default-browser",
+  "goal": "在系统设置里查一下现在的默认浏览器是哪个 App。只看,不要改任何设置",
+  "apps": [
+    "com.android.settings"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.android.settings"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "variants": [
+    {
+      "goal": "帮我看看系统设置里默认浏览器设的是哪个 App。只看,不要改任何设置"
+    },
+    {
+      "goal": "现在手机的默认浏览器是什么?去系统设置里查一下。只看,不要改任何设置"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+.superpowers/
+build/
+.gradle/
+local.properties
+*.apk
+.idea/
+*.iml
+.DS_Store
+*.local.txt
+.kotlin/
+
+# 本地 Agent 工作树与历史安装包
+.claude/
+dist/
+.omc/
+
+# 给 AI 编程助手的本地规则,只留在本机
+CLAUDE.md

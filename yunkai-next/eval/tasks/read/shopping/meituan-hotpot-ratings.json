@@ -1,0 +1,21 @@
+{
+  "id": "meituan-hotpot-ratings",
+  "goal": "在美团搜索「火锅」,告诉我结果里前两家店的店名和评分。只看,不要加购物车、不要下单、不要进「我的」页面,也不要领券",
+  "apps": [
+    "com.sankuai.meituan"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.sankuai.meituan"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

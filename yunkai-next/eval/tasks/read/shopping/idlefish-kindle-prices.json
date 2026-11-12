@@ -1,0 +1,21 @@
+{
+  "id": "idlefish-kindle-prices",
+  "goal": "在闲鱼搜索「Kindle」,告诉我搜索结果前两个商品的价格。只看,不要加购物车、不要下单、不要进「我的」页面,也不要联系卖家",
+  "apps": [
+    "com.taobao.idlefish"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.taobao.idlefish"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

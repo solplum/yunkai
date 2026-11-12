@@ -1,3 +1,5 @@
+> **开发分支说明：** Mika 底座新版位于 [`yunkai-next/`](yunkai-next/)，旧 Android/Harmony 保留。当前不是生产验收全绿；先读[同步与验证边界](docs/yunkai-next-publication.md)。新版包含 Apache-2.0 及其他第三方许可，下文旧项目 MIT 徽标不覆盖整个仓库。
+
 # 云开 Yunkai · 本地手机 AI Agent
 
 <p align="center">

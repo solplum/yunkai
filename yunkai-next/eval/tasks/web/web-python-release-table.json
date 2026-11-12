@@ -1,0 +1,23 @@
+{
+  "id": "web-python-release-table",
+  "goal": "打开 Python 官网下载页(https://www.python.org/downloads/),把「Active Python Releases」表格里至少三个版本的维护状态和停止支持日期列出来",
+  "apps": [],
+  "category": "read",
+  "partition": "holdout",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    },
+    {
+      "type": "answer_regex",
+      "pattern": "3\\.\\d{1,2}"
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 360,
+  "note": "桌面版页面上的表格读数;版本号、日期都要在读屏里"
+}

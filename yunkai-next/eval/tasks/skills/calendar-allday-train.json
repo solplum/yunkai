@@ -1,0 +1,25 @@
+{
+  "id": "calendar-allday-train",
+  "goal": "在手机自带的日历里新建一个后天的全天日程,标题写「Mika评测-{run}-全天甲」,不要邀请任何人",
+  "apps": [
+    "{app:calendar}"
+  ],
+  "category": "write",
+  "partition": "holdout",
+  "requires": [
+    "app:calendar"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "screen_has",
+      "packageName": "{app:calendar}",
+      "text": "Mika评测-{run}-全天甲"
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "marker": "Mika评测-{run}-全天甲",
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的",
+  "split": "train"
+}

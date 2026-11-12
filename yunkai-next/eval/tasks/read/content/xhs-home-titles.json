@@ -1,0 +1,21 @@
+{
+  "id": "xhs-home-titles",
+  "goal": "打开小红书,告诉我首页推荐里前三条笔记的标题。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "com.xingin.xhs"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.xingin.xhs"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

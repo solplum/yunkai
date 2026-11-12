@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<resources>
+    <string name="confirm_note">Spending, irreversible changes and unknown-risk actions need your OK each time in Ask mode.</string>
+    <string name="confirm_pay">Pay</string>
+    <string name="confirm_delete">Delete</string>
+    <string name="confirm_order">Place order</string>
+    <string name="confirm_submit">Submit</string>
+    <string name="confirm_other">Other action</string>
+    <string name="confirm_title">Needs your OK: %1$s</string>
+    <string name="confirm_in_app">In %1$s</string>
+    <string name="confirm_target">To: %1$s</string>
+    <string name="confirm_content">Content: %1$s</string>
+</resources>

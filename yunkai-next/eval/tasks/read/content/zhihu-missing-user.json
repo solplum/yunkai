@@ -1,0 +1,26 @@
+{
+  "id": "zhihu-missing-user",
+  "goal": "在知乎找到用户名正好叫「评测专用不存在用户zq9x7k」的人,告诉我他的关注者数量。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "com.zhihu.android"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.zhihu.android"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "不存在|未搜索到|没有找到"
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "note": "如实说「不存在」并给出读屏依据就是正确做法,所以按查信息题期望成功;2026-10-23 基线跑的是旧定义(impossible、expect=failed)"
+}

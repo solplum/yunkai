@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="metrics_model">模型思考</string>
+    <string name="metrics_observe">读屏</string>
+    <string name="metrics_act">操作</string>
+    <string name="metrics_other">其他（等待、重试）</string>
+    <string name="metrics_title">运行统计</string>
+    <string name="metrics_sub">最近几次运行的用时、来回次数和 Token</string>
+    <string name="metrics_empty">还没有运行统计。让 云开 办件事，这里就会记下。</string>
+    <string name="metrics_note">只统计这台手机上最近 %1$d 次运行；时间从 云开 开始处理算起，第一次反馈是第一次看到它在做什么的时候。</string>
+    <string name="metrics_copy">复制 JSON</string>
+    <string name="metrics_share">分享 JSON</string>
+    <string name="metrics_last_10">最近 10 次</string>
+    <plurals name="metrics_runs">
+        <item quantity="other">%1$d 次</item>
+    </plurals>
+    <string name="duration_h_m">%1$d 小时 %2$d 分</string>
+    <string name="metrics_total">共 %1$s</string>
+    <plurals name="metrics_round_trips">
+        <item quantity="other">和模型来回 %1$d 次</item>
+    </plurals>
+    <string name="metrics_first_feedback_at">第一次反馈 %1$s</string>
+    <string name="metrics_retry_wait">其中重试等待</string>
+    <string name="metrics_input_tokens">输入 Token</string>
+    <string name="metrics_output_tokens">输出 Token</string>
+    <string name="usage_cached">缓存命中</string>
+    <string name="metrics_no_usage">没报用量</string>
+    <string name="metrics_all_calls">全部模型请求</string>
+    <plurals name="metrics_all_calls_value">
+        <item quantity="other">%1$d 次（含旁路调用和重试）</item>
+    </plurals>
+    <string name="metrics_steps">步数</string>
+    <string name="metrics_observe_act">读屏 / 操作</string>
+    <string name="metrics_observe_act_value">%1$d 次 / %2$d 次</string>
+    <string name="metrics_counted">统计了</string>
+    <plurals name="metrics_n_runs">
+        <item quantity="other">%1$d 次运行</item>
+    </plurals>
+    <string name="metrics_success_rate">办成率</string>
+    <string name="metrics_success_value">%1$s（%2$d/%3$d）</string>
+    <string name="metrics_median_time">用时中位数</string>
+    <string name="metrics_median_feedback">第一次反馈中位数</string>
+    <string name="metrics_avg_round_trips">平均和模型来回</string>
+    <string name="metrics_avg_round_trips_value">%1$s 次</string>
+    <string name="metrics_avg_tokens">平均 Token</string>
+    <plurals name="metrics_copied">
+        <item quantity="other">已复制 %1$d 次运行的小结</item>
+    </plurals>
+    <string name="metrics_export_failed">没能导出，数据可能太大，换个小一点的范围试试。</string>
+    <string name="metrics_where_time">看时间花在哪</string>
+    <string name="metrics_overview">概况</string>
+    <string name="metrics_time_split">时间花在哪</string>
+    <string name="metrics_export">导出</string>
+    <plurals name="metrics_summary_of">
+        <item quantity="other">这 %1$d 次运行的小结</item>
+    </plurals>
+    <string name="metrics_summary_sub">每次一项，可以拿去自己分析</string>
+    <plurals name="chat_steps_n">
+        <item quantity="other">%1$d 步</item>
+    </plurals>
+</resources>

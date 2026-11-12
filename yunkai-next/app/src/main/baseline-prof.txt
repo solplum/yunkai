@@ -1,0 +1,10 @@
+# 预先编译清单:安装后系统按它把这些代码提前编译成机器码,第一次进各个页面就不用边解释边跑。
+# 界面库自带清单,这里只补 Mika 自己的代码:启动和各个页面(Application、界面、设置、对话存储)。
+HSPLcom/wangzan101/mika/MikaApp;->**(**)**
+HSPLcom/wangzan101/mika/ui/**;->**(**)**
+HSPLcom/wangzan101/mika/settings/**;->**(**)**
+HSPLcom/wangzan101/mika/chat/**;->**(**)**
+Lcom/wangzan101/mika/MikaApp;
+Lcom/wangzan101/mika/ui/**;
+Lcom/wangzan101/mika/settings/**;
+Lcom/wangzan101/mika/chat/**;

@@ -1,0 +1,34 @@
+{
+  "id": "settings-app-version-bilibili",
+  "goal": "在系统设置的应用管理里查一下「哔哩哔哩」这个 App 的版本号。只看,不要改任何设置,不要打开哔哩哔哩本身",
+  "apps": [
+    "com.android.settings"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.android.settings",
+    "installed:tv.danmaku.bili"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "\\d+(\\.\\d+){1,}"
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "variants": [
+    {
+      "goal": "去系统设置的应用管理里看看「哔哩哔哩」是什么版本。只看,不要改任何设置,不要打开哔哩哔哩本身"
+    },
+    {
+      "goal": "帮我在系统设置里查「哔哩哔哩」这个 App 的版本号是多少。只看,不要改任何设置,不要打开哔哩哔哩本身"
+    }
+  ]
+}

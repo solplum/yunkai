@@ -1,0 +1,18 @@
+{
+  "id": "web-unsupported-browser",
+  "goal": "用网页在小红书上搜「露营装备」,告诉我第一条笔记的标题",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 300,
+  "note": "原来按「网页版不支持、用户又点名网页,只能如实说做不成」出题;实测网页版能搜,挡路的是登录墙。按类别改判:登录墙只有用户能过,交给用户接管的单列成「交给用户:login」(不算办成),登录过时应读出第一条笔记的标题。id 保留,便于和历史结果对比"
+}

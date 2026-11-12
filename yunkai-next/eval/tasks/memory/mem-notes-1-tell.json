@@ -1,0 +1,23 @@
+{
+  "id": "mem-notes-1-tell",
+  "goal": "记住:我在备忘录里新建笔记时,内容都以「Mika评测-{run}-」开头。现在在手机自带的备忘录里新建一条笔记,内容写「Mika评测-{run}-周报」,写完保存",
+  "apps": [
+    "{app:notes}"
+  ],
+  "category": "write",
+  "partition": "tune",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "screen_has",
+      "packageName": "{app:notes}",
+      "text": "Mika评测-{run}-周报"
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "marker": "Mika评测-{run}-周报",
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的;第二题的目标里故意不写前缀,要靠记忆补上",
+  "session": "mem-notes"
+}

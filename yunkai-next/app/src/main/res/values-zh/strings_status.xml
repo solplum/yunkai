@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="progress_replay">按以往的做法快速执行中(第 %1$d/%2$d 步)</string>
+    <plurals name="progress_batch">
+        <item quantity="other">一次执行 %1$d 步</item>
+    </plurals>
+    <string name="payment_item">商品:%1$s</string>
+    <string name="payment_amount">金额:%1$s</string>
+    <string name="payment_address">地址:%1$s</string>
+    <string name="state_on">已开启</string>
+    <string name="state_off">未开启</string>
+    <string name="state_not_running">未运行</string>
+    <string name="stop_summarizing">正在整理已做的事…</string>
+    <string name="notifications_title">通知</string>
+    <string name="channel_progress">任务进度</string>
+    <string name="notif_normal">正常</string>
+    <plurals name="notif_lowered">
+        <item quantity="other">有 %1$d 项不会弹出</item>
+    </plurals>
+    <string name="state_turned_off">已关闭</string>
+    <string name="notif_heads_up">会弹出</string>
+    <string name="notif_quiet">只进通知栏</string>
+    <string name="notif_app_on">允许 云开 发通知</string>
+    <string name="notif_app_off">现在不允许 云开 发通知，进度和提醒都看不到</string>
+    <string name="notif_attention_when">需要你接管、确认、回答时</string>
+    <string name="notif_result_when">任务做完时</string>
+    <string name="notif_progress_when">任务进行中，一直显示在通知栏</string>
+    <string name="notif_footer">每类通知是否弹出、是否响铃，安卓规定只能由你在系统设置里改。点上面任意一项会直接打开它的系统设置页。路径：系统设置 › 应用 › 云开 › 通知</string>
+    <string name="channel_result">任务结果</string>
+    <string name="heads_up_action">去打开</string>
+    <string name="heads_up_title">「%1$s」的通知不会弹出</string>
+    <string name="heads_up_lead_attention">要你接手或同意时</string>
+    <string name="heads_up_lead_result">任务做完时</string>
+    <string name="heads_up_also">「%1$s」的通知也一样。</string>
+    <string name="heads_up_body">%1$s，这类通知现在只安静地进通知栏，容易错过。%2$s点「%3$s」，打开「在屏幕上弹出」。</string>
+    <string name="heads_up_path">系统设置 › 应用 › 云开 › 通知 › %1$s › 在屏幕上弹出（有的系统叫「横幅」「悬浮通知」）</string>
+    <string name="banner_too_old">系统版本太低</string>
+    <string name="banner_too_old_detail">云开 需要安卓 13 及以上</string>
+    <string name="learn_more">了解</string>
+    <string name="banner_not_paired">手机操作还没设置</string>
+    <string name="banner_not_paired_detail">设置后 云开 才能操作手机 App</string>
+    <string name="banner_wireless_off">无线调试关着</string>
+    <string name="banner_wireless_off_detail">打开后 云开 会自动连上</string>
+    <string name="banner_connecting">正在连接手机操作</string>
+    <string name="banner_connecting_detail">稍等几秒</string>
+    <string name="view">查看</string>
+    <string name="banner_paused">手机操作暂停了</string>
+    <string name="banner_failed">手机操作出了问题</string>
+    <string name="fix_it">去处理</string>
+    <string name="banner_a11y_off">无障碍服务未开启</string>
+    <string name="banner_a11y_off_detail">云开 要用它读取和操作虚拟屏</string>
+    <string name="turn_on_go">去开启</string>
+    <string name="banner_a11y_not_running">无障碍服务没有运行</string>
+    <string name="banner_a11y_not_running_detail">需要关掉再打开一次</string>
+    <string name="banner_no_model">还没有能用的模型</string>
+    <string name="banner_no_model_detail">添加一个支持工具调用的模型</string>
+    <string name="add">添加</string>
+    <string name="banner_notif_off">通知未允许</string>
+    <string name="banner_notif_off_detail">会看不到进度和「需要你」提醒</string>
+    <string name="allow">允许</string>
+    <string name="banner_focus">安卓 13 上后台操作可能影响主屏焦点</string>
+    <string name="banner_focus_detail">建议安卓 14+</string>
+    <string name="explain_too_old">需要安卓 13 及以上</string>
+    <string name="explain_too_old_body">云开 在一块单独的虚拟屏上操作 App，这样你可以照常用手机。这项能力从安卓 13 开始才有，这台手机是安卓 %1$s，所以暂时不能开始任务。</string>
+    <string name="explain_a11y_off">打开无障碍服务</string>
+    <string name="explain_a11y_off_body">云开 用无障碍服务读取和操作它自己的虚拟屏。在系统设置的「无障碍」里找到 云开（有的手机放在「已下载的应用」或「已安装的服务」里），把它打开。</string>
+    <string name="explain_a11y_not_running_body">系统设置里显示 云开 的无障碍服务是开着的，但它实际没有在运行（云开 被强行停止后常会这样）。请到无障碍设置里把 云开 关掉，再重新打开。</string>
+    <string name="explain_no_model">添加模型</string>
+    <string name="explain_no_model_body">云开 需要一个支持工具调用的大模型来思考和操作。填上服务商的地址、模型名和 API Key 即可。</string>
+    <string name="explain_focus">建议安卓 14 及以上</string>
+    <string name="explain_focus_body">安卓 13 上后台操作可能影响主屏焦点：云开 在虚拟屏上打开 App 或翻页时，你正在主屏输入的地方可能短暂失去焦点，需要再点一下。安卓 14 起虚拟屏有自己的焦点，不会这样。这台手机是安卓 %1$s，仍然可以正常开始任务。</string>
+    <string name="explain_notif">允许通知</string>
+    <string name="explain_notif_body">允许后，任务进度和「需要你处理」的提醒会出现在通知栏和锁屏上。不允许也能用，只是看不到这些提醒。</string>
+    <string name="sandbox_command_prefix">正在处理文件:</string>
+    <string name="sandbox_script">正在运行脚本</string>
+    <string name="sandbox_online">可联网</string>
+    <string name="runtime_preparing">正在准备</string>
+</resources>

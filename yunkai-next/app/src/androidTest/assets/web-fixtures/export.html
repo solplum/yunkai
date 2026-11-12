@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="导出夹具的描述">
+<meta property="og:title" content="导出夹具">
+<meta name="csrf-token" content="meta-secret-3">
+<title>export</title>
+<script type="application/ld+json">{"@type": "Product", "name": "测试商品", "offers": {"price": "9.90"}}</script>
+</head>
+<body>
+<h1>导出夹具</h1>
+<p>正文一段。</p>
+<a href="host.html">去宿主页</a>
+<img alt="一张图" src="pic.gif" width="10" height="10">
+<button id="act" onclick="alert('should-not-export')">按钮</button>
+<form id="f" action="host.html" method="post">
+  <label for="name">姓名</label><input id="name" name="name" value="张三">
+  <input type="password" id="pw" name="pw" value="pw-secret-1">
+  <input type="hidden" name="csrf" value="token-secret-2">
+  <select name="city"><option value="bj">北京</option><option value="sh" selected>上海</option></select>
+  <input type="checkbox" name="agree" checked>
+  <textarea name="note">备注内容</textarea>
+  <input name="card" autocomplete="cc-number" value="card-secret-6">
+  <input name="otp" autocomplete="one-time-code" value="otp-secret-4">
+  <input id="pw2" name="pw2" type="text" autocomplete="current-password" value="pw-secret-5">
+</form>
+<iframe id="pwframe" src="frame-pw.html" style="width:200px;height:60px;border:0"></iframe>
+<table>
+  <caption>价目表</caption>
+  <tr><th>品名</th><th>价格</th></tr>
+  <tr><td>苹果</td><td>3.50</td></tr>
+</table>
+<script>
+  window.revealPassword = function () { document.getElementById('pw').type = 'text'; };
+</script>
+</body>
+</html>

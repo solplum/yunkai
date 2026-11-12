@@ -1,0 +1,21 @@
+{
+  "id": "hongguo-drama-top",
+  "goal": "打开红果免费短剧,告诉我首页推荐里前两部短剧的剧名。只看,不要追剧、点赞或分享",
+  "apps": [
+    "com.phoenix.read"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.phoenix.read"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

@@ -1,0 +1,25 @@
+{
+  "id": "web-rivers-length-compare",
+  "goal": "用网页分别查一下长江和黄河的全长,告诉我哪条更长、大约长多少公里",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_contains",
+      "all": [
+        "长江"
+      ]
+    },
+    {
+      "type": "answer_regex",
+      "pattern": "\\d{3,4}\\s*(多)?\\s*(公里|千米|km)"
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "note": "多页汇总:两条河要分别查;长江约 6300 公里、黄河约 5464 公里,差约 800~900 公里,答案只核对结论和带单位的数"
+}

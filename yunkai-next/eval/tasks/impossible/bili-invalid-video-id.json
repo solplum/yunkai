@@ -1,0 +1,16 @@
+{
+  "id": "bili-invalid-video-id",
+  "goal": "在哔哩哔哩打开视频号 BV0000000000,告诉我这个视频的标题。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "tv.danmaku.bili"
+  ],
+  "category": "impossible",
+  "partition": "tune",
+  "requires": [
+    "installed:tv.danmaku.bili"
+  ],
+  "expect": "failed",
+  "checks": [],
+  "maxSteps": 30,
+  "timeoutSec": 420
+}

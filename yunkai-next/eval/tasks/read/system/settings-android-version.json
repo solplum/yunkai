@@ -1,0 +1,34 @@
+{
+  "id": "settings-android-version",
+  "goal": "帮我看一下这台手机的安卓版本是多少。只看,不要改任何设置",
+  "apps": [
+    "com.android.settings"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.android.settings"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_contains",
+      "all": [
+        "{probe:release}"
+      ]
+    }
+  ],
+  "maxSteps": 25,
+  "timeoutSec": 420,
+  "probesBefore": {
+    "release": "android_release"
+  },
+  "variants": [
+    {
+      "goal": "这台手机是安卓几?在设置里看一下告诉我。只看,不要改任何设置"
+    },
+    {
+      "goal": "打开系统设置,查一下安卓版本号。只看,不要改任何设置"
+    }
+  ]
+}

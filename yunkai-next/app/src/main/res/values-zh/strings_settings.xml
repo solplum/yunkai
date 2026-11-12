@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="language_title">语言</string>
+    <string name="language_system">跟随系统</string>
+    <string name="language_system_detail">系统是中文时用中文,其他语言时用英文</string>
+    <string name="settings_basic">基本</string>
+    <string name="settings_model">模型</string>
+    <string name="settings_not_set">未设置</string>
+    <string name="settings_phone_ops">手机操作</string>
+    <string name="settings_during_work">干活时</string>
+    <string name="settings_during_work_sub">屏幕常亮，被操作的 App 静音</string>
+    <string name="settings_notif_sub">什么时候弹出、去系统里改</string>
+    <string name="settings_privacy">隐私与数据</string>
+    <string name="settings_memory_sub">云开 记住的事、学到的技能</string>
+    <string name="settings_web_logins">网站登录</string>
+    <plurals name="settings_count_sites">
+        <item quantity="other">%1$d 个</item>
+    </plurals>
+    <string name="settings_advanced">高级</string>
+    <string name="settings_sandbox">文件与计算环境</string>
+    <string name="settings_routes">记住的操作路线</string>
+    <plurals name="settings_count_routes">
+        <item quantity="other">%1$d 条</item>
+    </plurals>
+    <string name="settings_recovery">恢复与修复</string>
+    <string name="settings_developer">开发者选项</string>
+    <string name="settings_about">关于云开</string>
+    <string name="pill_unsupported">不支持</string>
+    <string name="pill_available">可用</string>
+    <string name="pill_needs_attention">需要处理</string>
+    <string name="sandbox_ready">已就绪</string>
+    <string name="sandbox_preparing">准备中</string>
+    <string name="sandbox_not_prepared">未准备</string>
+    <string name="settings_all_ready_detail">模型已配置 · 手机操作可用</string>
+    <string name="settings_status">状态</string>
+    <string name="settings_a11y">无障碍服务</string>
+    <string name="settings_a11y_sub">读取和操作 云开 的虚拟屏</string>
+    <string name="settings_notif_progress_sub">进度和「需要你」提醒</string>
+    <string name="settings_system_version">系统版本</string>
+    <string name="settings_android_focus">安卓 %1$s · 安卓 13 上后台操作可能影响主屏焦点,建议安卓 14+</string>
+    <string name="settings_android">安卓 %1$s</string>
+    <string name="settings_meets">满足</string>
+    <string name="settings_notif_master">通知总开关</string>
+    <string name="settings_allowed">已允许</string>
+    <string name="settings_task_notifs">任务通知</string>
+    <string name="settings_keep_on">屏幕保持常亮</string>
+    <string name="settings_keep_on_sub">任务进行时屏幕不熄灭,结束后恢复</string>
+    <string name="settings_mute">被操作的 App 静音</string>
+    <string name="settings_mute_sub">云开 操作的 App 不出声,你接手时恢复声音</string>
+    <string name="settings_parallel">同时进行的任务</string>
+    <string name="settings_parallel_sub">不同对话的任务各占一块虚拟屏</string>
+    <plurals name="settings_count_tasks">
+        <item quantity="other">%1$d 个</item>
+    </plurals>
+    <string name="capsule_settings_title">悬浮胶囊</string>
+    <string name="capsule_settings_sub">用别的 App 时，在屏幕上看任务进展</string>
+    <string name="capsule_settings_foot">胶囊借用 云开 已开着的无障碍服务画在屏幕上，不用另外授权；无障碍服务没开或画不出来时，照旧用通知提醒你。</string>
+    <string name="capsule_mode_off">关闭</string>
+    <string name="capsule_mode_tasks">有任务时显示</string>
+    <string name="capsule_mode_always">一直显示</string>
+    <string name="capsule_mode_off_detail">只用通知</string>
+    <string name="capsule_mode_tasks_detail">有任务在跑或等你时出现，做完几秒后消失</string>
+    <string name="capsule_mode_always_detail">没有任务时也留一颗 云开 图标</string>
+    <string name="routes_saved">已记住的操作路线</string>
+    <string name="loading">正在读取</string>
+    <plurals name="routes_count">
+        <item quantity="other">%1$d 条 · 做过的事下次照着做,更快</item>
+    </plurals>
+    <string name="routes_clear_all">全部清除</string>
+    <string name="routes_clear_title">清除全部已记住的操作路线?</string>
+    <string name="routes_clear_body">清除后,做过的事下次会重新一步步来做,不影响别的设置。</string>
+    <string name="clear">清除</string>
+</resources>

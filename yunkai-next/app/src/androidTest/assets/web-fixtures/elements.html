@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>elements</title>
+<style>
+  * { margin: 0; padding: 0; font-size: 12px; line-height: 16px; }
+  body { padding: 4px; }
+  button, input, select { height: 20px; min-width: 40px; }
+  #b5 { width: 40px; }
+  #d12 { cursor: pointer; }
+</style>
+</head>
+<body>
+<div id="names">
+  <span id="lbl1">外部标签</span>
+  <button id="b1" aria-labelledby="lbl1" aria-label="不该用" title="不该用">文字</button>
+  <button id="b2" aria-label="区域标签" title="不该用">文字</button>
+  <label for="i3">关联标签</label><input id="i3" title="不该用" placeholder="不该用">
+  <img id="img4" alt="替代文字" title="不该用" width="40" height="20"
+       src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+  <button id="b5" title="提示标题"></button>
+  <input id="i6" placeholder="占位文字">
+  <button id="b7">按钮文字</button>
+  <a id="a8" href="https://example.com/x">链接文字</a>
+  <select id="s9"><option>选项一</option><option>选项二</option></select>
+  <input type="checkbox" id="c10" aria-label="勾选">
+  <h3 id="h11">三级标题</h3>
+  <div id="d12" onclick="void 0">可点区域</div>
+  <div id="ce13" contenteditable="true" aria-label="编辑区">已有内容</div>
+  <input type="password" id="pw" aria-label="密码" value="secret123">
+  <input type="file" id="file14" aria-label="选择文件">
+  <input type="password" id="pw2" role="button" value="hunter22">
+</div>
+<div id="hidden-cases">
+  <button id="h-none" style="display:none">隐藏一</button>
+  <button id="h-vis" style="visibility:hidden">隐藏二</button>
+  <button id="h-op" style="opacity:0">隐藏三</button>
+  <div style="opacity:0"><button id="h-op2">隐藏四</button></div>
+  <button id="h-zero" style="width:0;min-width:0;height:0;border:0;overflow:hidden">隐藏五</button>
+  <button id="h-off" style="position:absolute;left:-9999px">隐藏六</button>
+  <button id="h-below" style="position:absolute;top:5000px">隐藏七</button>
+</div>
+<div style="position:relative;height:40px">
+  <button id="under" style="position:absolute;left:0;top:0;width:120px;height:40px">被盖住</button>
+  <div id="cover" style="position:absolute;left:0;top:0;width:200px;height:40px;background:#eee">遮罩层</div>
+</div>
+<nav><a href="#n1">导航链接</a></nav>
+<main>
+  <h1>主标题</h1>
+  <p>正文第一段。</p>
+  <h2>小节标题</h2>
+  <p>正文第二段,<a href="long.html">正文链接</a>。</p>
+  <img alt="正文图片" width="20" height="10"
+       src="https://appassets.androidplatform.net/assets/web-fixtures/pic.gif">
+</main>
+<footer>页脚文字</footer>
+</body>
+</html>

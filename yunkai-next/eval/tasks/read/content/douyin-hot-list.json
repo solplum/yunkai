@@ -1,0 +1,21 @@
+{
+  "id": "douyin-hot-list",
+  "goal": "打开抖音的热榜,告诉我排名前三的热点标题。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "com.ss.android.ugc.aweme"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.ss.android.ugc.aweme"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

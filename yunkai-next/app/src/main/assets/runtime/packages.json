@@ -1,0 +1,582 @@
+{
+ "version": "3.22.7-c0ea8846e28a",
+ "alpine": "3.22.7",
+ "packages": [
+  {
+   "name": "ada-libs",
+   "version": "2.9.2-r4",
+   "license": "( Apache-2.0 OR MIT ) AND MPL-2.0",
+   "origin": "ada",
+   "url": "https://ada-url.github.io/ada",
+   "repo": "main",
+   "commit": "7a81e7ec2d2c790b4f6ab3d901b209c9df630995"
+  },
+  {
+   "name": "alpine-baselayout",
+   "version": "3.7.0-r0",
+   "license": "GPL-2.0-only",
+   "origin": "alpine-baselayout",
+   "url": "https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout",
+   "repo": "main",
+   "commit": "540d8477019887cc6534152e92c3b12676e35d7b"
+  },
+  {
+   "name": "alpine-baselayout-data",
+   "version": "3.7.0-r0",
+   "license": "GPL-2.0-only",
+   "origin": "alpine-baselayout",
+   "url": "https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout",
+   "repo": "main",
+   "commit": "540d8477019887cc6534152e92c3b12676e35d7b"
+  },
+  {
+   "name": "alpine-keys",
+   "version": "2.5-r0",
+   "license": "MIT",
+   "origin": "alpine-keys",
+   "url": "https://alpinelinux.org",
+   "repo": "main",
+   "commit": "6d473fb38effb2389f567b29fb7eb27039b3a279"
+  },
+  {
+   "name": "alpine-release",
+   "version": "3.22.7-r0",
+   "license": "MIT",
+   "origin": "alpine-base",
+   "url": "https://alpinelinux.org",
+   "repo": "main",
+   "commit": "d5ce2bfde5b90c0ee710a4bd0323a74671b2983b"
+  },
+  {
+   "name": "apk-tools",
+   "version": "2.14.12-r0",
+   "license": "GPL-2.0-only",
+   "origin": "apk-tools",
+   "url": "https://gitlab.alpinelinux.org/alpine/apk-tools",
+   "repo": "main",
+   "commit": "a53adea12086d36717300ea195ede9ad75f98e1f"
+  },
+  {
+   "name": "brotli-libs",
+   "version": "1.1.1-r0",
+   "license": "MIT",
+   "origin": "brotli",
+   "url": "https://github.com/google/brotli",
+   "repo": "main",
+   "commit": "0b8db0af6fbe8b8bc7e50e5f64b2f88bc0d6aa16"
+  },
+  {
+   "name": "busybox",
+   "version": "1.37.0-r20",
+   "license": "GPL-2.0-only",
+   "origin": "busybox",
+   "url": "https://busybox.net/",
+   "repo": "main",
+   "commit": "2e97d754a30d558f15524b8e422303c8a96832df"
+  },
+  {
+   "name": "busybox-binsh",
+   "version": "1.37.0-r20",
+   "license": "GPL-2.0-only",
+   "origin": "busybox",
+   "url": "https://busybox.net/",
+   "repo": "main",
+   "commit": "2e97d754a30d558f15524b8e422303c8a96832df"
+  },
+  {
+   "name": "c-ares",
+   "version": "1.34.9-r0",
+   "license": "MIT",
+   "origin": "c-ares",
+   "url": "https://c-ares.org/",
+   "repo": "main",
+   "commit": "2abc7d1defd146f59390a22caf74efe85e5130d9"
+  },
+  {
+   "name": "ca-certificates",
+   "version": "20261020-r0",
+   "license": "MPL-2.0 AND MIT",
+   "origin": "ca-certificates",
+   "url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+   "repo": "main",
+   "commit": "ce7bff87478cd936f5b7031ce822b02d4fdd313a"
+  },
+  {
+   "name": "ca-certificates-bundle",
+   "version": "20261020-r0",
+   "license": "MPL-2.0 AND MIT",
+   "origin": "ca-certificates",
+   "url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+   "repo": "main",
+   "commit": "ce7bff87478cd936f5b7031ce822b02d4fdd313a"
+  },
+  {
+   "name": "freetype",
+   "version": "2.13.3-r0",
+   "license": "FTL OR GPL-2.0-or-later",
+   "origin": "freetype",
+   "url": "https://www.freetype.org/",
+   "repo": "main",
+   "commit": "2d656868790548d7f0d43f6caf59c2b2e43eb251"
+  },
+  {
+   "name": "gdbm",
+   "version": "1.24-r0",
+   "license": "GPL-3.0-or-later",
+   "origin": "gdbm",
+   "url": "https://www.gnu.org/software/gdbm/",
+   "repo": "main",
+   "commit": "cf76e1b436494c60e0c188400007dbf78bbff5f0"
+  },
+  {
+   "name": "icu-data-en",
+   "version": "76.1-r1",
+   "license": "ICU",
+   "origin": "icu",
+   "url": "https://icu.unicode.org/",
+   "repo": "main",
+   "commit": "e62b56b09ba0bed460d61072fffd977992d936bc"
+  },
+  {
+   "name": "icu-libs",
+   "version": "76.1-r1",
+   "license": "ICU",
+   "origin": "icu",
+   "url": "https://icu.unicode.org/",
+   "repo": "main",
+   "commit": "e62b56b09ba0bed460d61072fffd977992d936bc"
+  },
+  {
+   "name": "lcms2",
+   "version": "2.19-r0",
+   "license": "MIT",
+   "origin": "lcms2",
+   "url": "https://www.littlecms.com",
+   "repo": "main",
+   "commit": "c18abc13b5191e9d886a47526415c5db490df195"
+  },
+  {
+   "name": "libapk2",
+   "version": "2.14.12-r0",
+   "license": "GPL-2.0-only",
+   "origin": "apk-tools",
+   "url": "https://gitlab.alpinelinux.org/alpine/apk-tools",
+   "repo": "main",
+   "commit": "a53adea12086d36717300ea195ede9ad75f98e1f"
+  },
+  {
+   "name": "libbsd",
+   "version": "0.12.2-r0",
+   "license": "BSD-3-Clause",
+   "origin": "libbsd",
+   "url": "https://libbsd.freedesktop.org/",
+   "repo": "main",
+   "commit": "02365e78d654a7beb23fd35d7d69f4a649009ede"
+  },
+  {
+   "name": "libbz2",
+   "version": "1.0.8-r6",
+   "license": "bzip2-1.0.6",
+   "origin": "bzip2",
+   "url": "https://sourceware.org/bzip2/",
+   "repo": "main",
+   "commit": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+   "name": "libcrypto3",
+   "version": "3.5.9-r0",
+   "license": "Apache-2.0",
+   "origin": "openssl",
+   "url": "https://www.openssl.org/",
+   "repo": "main",
+   "commit": "b6d0d5c5639c0034e9073c39e9ff139e28e71818"
+  },
+  {
+   "name": "libexpat",
+   "version": "2.9.0-r0",
+   "license": "MIT",
+   "origin": "expat",
+   "url": "https://libexpat.github.io/",
+   "repo": "main",
+   "commit": "f71ec7147f3df6e984064717d4200875fc8834c4"
+  },
+  {
+   "name": "libffi",
+   "version": "3.4.8-r0",
+   "license": "MIT",
+   "origin": "libffi",
+   "url": "https://sourceware.org/libffi/",
+   "repo": "main",
+   "commit": "be5e49159a2ccca93a3290af3d8ab25443523363"
+  },
+  {
+   "name": "libgcc",
+   "version": "14.2.0-r6",
+   "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+   "origin": "gcc",
+   "url": "https://gcc.gnu.org",
+   "repo": "main",
+   "commit": "fbf60319be3bbaf6dd32ef55cc6fb7189e05c266"
+  },
+  {
+   "name": "libimagequant",
+   "version": "4.2.2-r0",
+   "license": "GPL-3.0-or-later",
+   "origin": "libimagequant",
+   "url": "https://pngquant.org/lib/",
+   "repo": "community",
+   "commit": "064cfcfe13de2d00d9425e472a8ac9a78aed9766"
+  },
+  {
+   "name": "libjpeg-turbo",
+   "version": "3.1.0-r0",
+   "license": "BSD-3-Clause AND IJG AND Zlib",
+   "origin": "libjpeg-turbo",
+   "url": "https://libjpeg-turbo.org/",
+   "repo": "main",
+   "commit": "a78c772b57d3dd6b70cdfd239493112b396a0485"
+  },
+  {
+   "name": "libmd",
+   "version": "1.1.0-r0",
+   "license": "BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain",
+   "origin": "libmd",
+   "url": "https://www.hadrons.org/software/libmd/",
+   "repo": "main",
+   "commit": "73e716067b9edc32c4cc7818cb7d206e57fdde15"
+  },
+  {
+   "name": "libncursesw",
+   "version": "6.5_p20250503-r0",
+   "license": "X11",
+   "origin": "ncurses",
+   "url": "https://invisible-island.net/ncurses/",
+   "repo": "main",
+   "commit": "3fefbe8dda8b3e85458edb190e2f3a69ad16035c"
+  },
+  {
+   "name": "libpanelw",
+   "version": "6.5_p20250503-r0",
+   "license": "X11",
+   "origin": "ncurses",
+   "url": "https://invisible-island.net/ncurses/",
+   "repo": "main",
+   "commit": "3fefbe8dda8b3e85458edb190e2f3a69ad16035c"
+  },
+  {
+   "name": "libpng",
+   "version": "1.6.59-r0",
+   "license": "Libpng",
+   "origin": "libpng",
+   "url": "http://www.libpng.org",
+   "repo": "main",
+   "commit": "e95748873fa2f7e0e54cf27557fe0deff27b6c80"
+  },
+  {
+   "name": "libsharpyuv",
+   "version": "1.5.0-r0",
+   "license": "BSD-3-Clause",
+   "origin": "libwebp",
+   "url": "https://developers.google.com/speed/webp",
+   "repo": "main",
+   "commit": "5494fdecea7831c01f277cf8ca80719d02f47771"
+  },
+  {
+   "name": "libssl3",
+   "version": "3.5.9-r0",
+   "license": "Apache-2.0",
+   "origin": "openssl",
+   "url": "https://www.openssl.org/",
+   "repo": "main",
+   "commit": "b6d0d5c5639c0034e9073c39e9ff139e28e71818"
+  },
+  {
+   "name": "libstdc++",
+   "version": "14.2.0-r6",
+   "license": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+   "origin": "gcc",
+   "url": "https://gcc.gnu.org",
+   "repo": "main",
+   "commit": "fbf60319be3bbaf6dd32ef55cc6fb7189e05c266"
+  },
+  {
+   "name": "libwebp",
+   "version": "1.5.0-r0",
+   "license": "BSD-3-Clause",
+   "origin": "libwebp",
+   "url": "https://developers.google.com/speed/webp",
+   "repo": "main",
+   "commit": "5494fdecea7831c01f277cf8ca80719d02f47771"
+  },
+  {
+   "name": "libwebpdemux",
+   "version": "1.5.0-r0",
+   "license": "BSD-3-Clause",
+   "origin": "libwebp",
+   "url": "https://developers.google.com/speed/webp",
+   "repo": "main",
+   "commit": "5494fdecea7831c01f277cf8ca80719d02f47771"
+  },
+  {
+   "name": "libwebpmux",
+   "version": "1.5.0-r0",
+   "license": "BSD-3-Clause",
+   "origin": "libwebp",
+   "url": "https://developers.google.com/speed/webp",
+   "repo": "main",
+   "commit": "5494fdecea7831c01f277cf8ca80719d02f47771"
+  },
+  {
+   "name": "libxau",
+   "version": "1.0.12-r0",
+   "license": "MIT",
+   "origin": "libxau",
+   "url": "https://xorg.freedesktop.org/",
+   "repo": "main",
+   "commit": "c911b00ecb8f42c3281d4be61ce9acb4fe985a14"
+  },
+  {
+   "name": "libxcb",
+   "version": "1.17.0-r0",
+   "license": "MIT",
+   "origin": "libxcb",
+   "url": "https://xcb.freedesktop.org/",
+   "repo": "main",
+   "commit": "56abd9107430e190174cbc368cf4d9faa6bdd758"
+  },
+  {
+   "name": "libxdmcp",
+   "version": "1.1.5-r1",
+   "license": "MIT",
+   "origin": "libxdmcp",
+   "url": "https://xorg.freedesktop.org/",
+   "repo": "main",
+   "commit": "614e9166706cec427fc3d907b8d981390a42e088"
+  },
+  {
+   "name": "mpdecimal",
+   "version": "4.0.1-r0",
+   "license": "BSD-2-Clause",
+   "origin": "mpdecimal",
+   "url": "https://www.bytereef.org/mpdecimal/index.html",
+   "repo": "main",
+   "commit": "c0519b85456e9b838e3142e1d233aab0b433b476"
+  },
+  {
+   "name": "musl",
+   "version": "1.2.5-r13",
+   "license": "MIT",
+   "origin": "musl",
+   "url": "https://musl.libc.org/",
+   "repo": "main",
+   "commit": "ddaf59b84bc6983a37d6e24d2210c2c4791642bb"
+  },
+  {
+   "name": "musl-utils",
+   "version": "1.2.5-r13",
+   "license": "MIT AND BSD-2-Clause AND GPL-2.0-or-later",
+   "origin": "musl",
+   "url": "https://musl.libc.org/",
+   "repo": "main",
+   "commit": "ddaf59b84bc6983a37d6e24d2210c2c4791642bb"
+  },
+  {
+   "name": "ncurses-terminfo-base",
+   "version": "6.5_p20250503-r0",
+   "license": "X11",
+   "origin": "ncurses",
+   "url": "https://invisible-island.net/ncurses/",
+   "repo": "main",
+   "commit": "3fefbe8dda8b3e85458edb190e2f3a69ad16035c"
+  },
+  {
+   "name": "nghttp2-libs",
+   "version": "1.69.0-r0",
+   "license": "MIT",
+   "origin": "nghttp2",
+   "url": "https://nghttp2.org",
+   "repo": "main",
+   "commit": "87de39802b2c34c9a7c62a52b3e39e05af1c974e"
+  },
+  {
+   "name": "nodejs",
+   "version": "22.23.2-r0",
+   "license": "MIT",
+   "origin": "nodejs",
+   "url": "https://nodejs.org/",
+   "repo": "main",
+   "commit": "c788155709094e82d9e696656aef7a837ad11765"
+  },
+  {
+   "name": "openjpeg",
+   "version": "2.5.4-r1",
+   "license": "BSD-2-Clause",
+   "origin": "openjpeg",
+   "url": "https://www.openjpeg.org/",
+   "repo": "main",
+   "commit": "0b2a1af84c14676f5b4551eabf8f843d267255e6"
+  },
+  {
+   "name": "py3-pillow",
+   "version": "11.2.1-r0",
+   "license": "custom:PIL",
+   "origin": "py3-pillow",
+   "url": "https://python-pillow.org/",
+   "repo": "community",
+   "commit": "3bcc2aa819fe987f15a068a58c044159df647cb5"
+  },
+  {
+   "name": "py3-pillow-pyc",
+   "version": "11.2.1-r0",
+   "license": "custom:PIL",
+   "origin": "py3-pillow",
+   "url": "https://python-pillow.org/",
+   "repo": "community",
+   "commit": "3bcc2aa819fe987f15a068a58c044159df647cb5"
+  },
+  {
+   "name": "py3-pypdf",
+   "version": "5.3.1-r0",
+   "license": "BSD-3-Clause",
+   "origin": "py3-pypdf",
+   "url": "https://github.com/py-pdf/pypdf",
+   "repo": "community",
+   "commit": "f75f036ac9e025237ff7c99a153e7bf2cf275575"
+  },
+  {
+   "name": "py3-pypdf-pyc",
+   "version": "5.3.1-r0",
+   "license": "BSD-3-Clause",
+   "origin": "py3-pypdf",
+   "url": "https://github.com/py-pdf/pypdf",
+   "repo": "community",
+   "commit": "f75f036ac9e025237ff7c99a153e7bf2cf275575"
+  },
+  {
+   "name": "pyc",
+   "version": "3.12.15-r0",
+   "license": "PSF-2.0",
+   "origin": "python3",
+   "url": "https://www.python.org/",
+   "repo": "main",
+   "commit": "18ae07d47fb83eecf3343ba1d41fddb4b70b116d"
+  },
+  {
+   "name": "python3",
+   "version": "3.12.15-r0",
+   "license": "PSF-2.0",
+   "origin": "python3",
+   "url": "https://www.python.org/",
+   "repo": "main",
+   "commit": "18ae07d47fb83eecf3343ba1d41fddb4b70b116d"
+  },
+  {
+   "name": "python3-pyc",
+   "version": "3.12.15-r0",
+   "license": "PSF-2.0",
+   "origin": "python3",
+   "url": "https://www.python.org/",
+   "repo": "main",
+   "commit": "18ae07d47fb83eecf3343ba1d41fddb4b70b116d"
+  },
+  {
+   "name": "python3-pycache-pyc0",
+   "version": "3.12.15-r0",
+   "license": "PSF-2.0",
+   "origin": "python3",
+   "url": "https://www.python.org/",
+   "repo": "main",
+   "commit": "18ae07d47fb83eecf3343ba1d41fddb4b70b116d"
+  },
+  {
+   "name": "readline",
+   "version": "8.2.13-r1",
+   "license": "GPL-3.0-or-later",
+   "origin": "readline",
+   "url": "https://tiswww.cwru.edu/php/chet/readline/rltop.html",
+   "repo": "main",
+   "commit": "be0833caee3020f089f02c5d7223e971a9a11ffb"
+  },
+  {
+   "name": "scanelf",
+   "version": "1.3.8-r1",
+   "license": "GPL-2.0-only",
+   "origin": "pax-utils",
+   "url": "https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities",
+   "repo": "main",
+   "commit": "9818c555f344e3085d0dd1f3d917d8e23e244cb1"
+  },
+  {
+   "name": "simdjson",
+   "version": "3.12.0-r0",
+   "license": "Apache-2.0 OR MIT",
+   "origin": "simdjson",
+   "url": "https://simdjson.org/",
+   "repo": "main",
+   "commit": "2b5e2732388d9b1f35e9bcb835aa26b51607fe98"
+  },
+  {
+   "name": "simdutf",
+   "version": "7.2.1-r0",
+   "license": "Apache-2.0 OR MIT",
+   "origin": "simdutf",
+   "url": "https://simdutf.github.io/simdutf/",
+   "repo": "main",
+   "commit": "9d7ccba8d72623b0d62c39fdb2958c01fa7413fc"
+  },
+  {
+   "name": "sqlite-libs",
+   "version": "3.49.2-r1",
+   "license": "blessing",
+   "origin": "sqlite",
+   "url": "https://www.sqlite.org/",
+   "repo": "main",
+   "commit": "dac9cea7503a4e9b84d647aab2492d733ac4ac8c"
+  },
+  {
+   "name": "ssl_client",
+   "version": "1.37.0-r20",
+   "license": "GPL-2.0-only",
+   "origin": "busybox",
+   "url": "https://busybox.net/",
+   "repo": "main",
+   "commit": "2e97d754a30d558f15524b8e422303c8a96832df"
+  },
+  {
+   "name": "tiff",
+   "version": "4.7.2-r0",
+   "license": "libtiff",
+   "origin": "tiff",
+   "url": "https://gitlab.com/libtiff/libtiff",
+   "repo": "main",
+   "commit": "a19ba329cabf74e010b845cae4368898ba6dbc03"
+  },
+  {
+   "name": "xz-libs",
+   "version": "5.8.4-r0",
+   "license": "GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later",
+   "origin": "xz",
+   "url": "https://tukaani.org/xz/",
+   "repo": "main",
+   "commit": "4ad8da6dc8e2b7ed46653b9844835babc3a166ae"
+  },
+  {
+   "name": "zlib",
+   "version": "1.3.2-r1",
+   "license": "Zlib",
+   "origin": "zlib",
+   "url": "https://zlib.net/",
+   "repo": "main",
+   "commit": "121fc97db0e7c59db704891b6d7ef83ae5df2cc2"
+  },
+  {
+   "name": "zstd-libs",
+   "version": "1.5.7-r0",
+   "license": "BSD-3-Clause OR GPL-2.0-or-later",
+   "origin": "zstd",
+   "url": "https://facebook.github.io/zstd/",
+   "repo": "main",
+   "commit": "fc7fd35c7bf99156ae31962877c074f679f45b73"
+  }
+ ]
+}

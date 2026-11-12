@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="card_approve_once">只同意这一次</string>
+    <string name="card_see_process">回到 云开 看完整过程</string>
+    <string name="card_back_to_mika">回到 云开</string>
+    <string name="card_continue_last">接着上次聊</string>
+    <string name="card_screen">后台画面，点一下放大</string>
+    <string name="card_screen_label">后台</string>
+    <string name="card_zoomed">放大的后台画面，点一下关闭</string>
+    <string name="card_zoom_hint">云开 正在后台操作 · 点一下关闭</string>
+    <string name="card_continuing">接着「%1$s」聊</string>
+    <string name="card_queued_ahead">先处理完另一件的接管，再处理这件</string>
+    <string name="card_hint_answer">回答 云开…</string>
+    <string name="card_hint_continue">接着说…</string>
+    <plurals name="capsule_behind">
+        <item quantity="other">处理好这件后，还有 %1$d 件等你</item>
+    </plurals>
+    <string name="capsule_hold">先等等</string>
+    <string name="capsule_handed_over">你在处理</string>
+    <string name="capsule_running">在干活</string>
+    <string name="capsule_done">办好了</string>
+    <string name="capsule_failed">没办成</string>
+    <string name="capsule_stopped">已停止</string>
+    <string name="capsule_stop">不做了</string>
+    <string name="capsule_expand">展开看这件事</string>
+    <string name="capsule_talk">和 云开 说话</string>
+    <string name="capsule_swap_side">移到屏幕另一边</string>
+    <string name="capsule_desc_needs">%1$s，点开处理</string>
+    <string name="capsule_desc_running">云开 在干活：%1$s，点开看详情</string>
+    <string name="capsule_desc_other">云开 %1$s，点开看详情</string>
+    <string name="capsule_then_tap_right">弄好后点右边</string>
+    <string name="capsule_need_of_total">%1$d 件要你处理 · 共 %2$d 件</string>
+    <string name="capsule_of_total">%1$s · 共 %2$d 件</string>
+    <string name="capsule_done_tap">办好了 · 点开看结果</string>
+    <string name="capsule_failed_tap">没办成 · 点开看原因</string>
+    <string name="capsule_needs_you">需要你：%1$s</string>
+    <string name="capsule_handle_it">处理一下</string>
+    <string name="capsule_needs_ok">要你同意：%1$s</string>
+    <string name="capsule_asks">云开 问你：%1$s</string>
+    <string name="capsule_hold_why">先等等：%1$s</string>
+    <string name="capsule_you_handle">你来处理</string>
+    <string name="capsule_thinking">在想下一步</string>
+    <string name="capsule_continuing">接着往下做</string>
+    <string name="capsule_replay">照着路线做 %1$d/%2$d</string>
+    <plurals name="capsule_batch">
+        <item quantity="other">一次做 %1$d 步</item>
+    </plurals>
+    <string name="and_more">" 等"</string>
+</resources>

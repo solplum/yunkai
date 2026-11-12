@@ -1,0 +1,19 @@
+{
+  "id": "web-12306-trains",
+  "goal": "在 12306 上查明天上海到杭州的高铁有哪些车次,列出至少三个车次号",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "(G\\d{2,4}[\\s\\S]*){3}"
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480,
+  "note": "车次号要能在读到的页面里找到"
+}

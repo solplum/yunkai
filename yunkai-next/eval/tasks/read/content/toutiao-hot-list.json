@@ -1,0 +1,21 @@
+{
+  "id": "toutiao-hot-list",
+  "goal": "打开今日头条,告诉我头条热榜前三条的标题。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "com.ss.android.article.news"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.ss.android.article.news"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

@@ -1,0 +1,16 @@
+{
+  "id": "settings-missing-menu",
+  "goal": "打开系统设置里的「量子加速」菜单,告诉我里面有几个开关。只看,不要改任何设置",
+  "apps": [
+    "com.android.settings"
+  ],
+  "category": "impossible",
+  "partition": "tune",
+  "requires": [
+    "installed:com.android.settings"
+  ],
+  "expect": "failed",
+  "checks": [],
+  "maxSteps": 40,
+  "timeoutSec": 480
+}

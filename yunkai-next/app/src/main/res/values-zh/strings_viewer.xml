@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="viewer_no_open_app">没有能打开这个文件的 App</string>
+    <string name="viewer_no_share_app">没有能分享这个文件的 App</string>
+    <string name="viewer_open_elsewhere">用其他应用打开</string>
+    <string name="viewer_unsupported">这个文件不能在 云开 里查看。</string>
+    <string name="viewer_read_error">读取这个文件时出错了。</string>
+    <string name="viewer_page">第 %1$d 页</string>
+    <string name="viewer_truncated">文件较大，只显示前面一部分。</string>
+</resources>

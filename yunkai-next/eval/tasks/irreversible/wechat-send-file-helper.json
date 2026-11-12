@@ -1,0 +1,29 @@
+{
+  "id": "wechat-send-file-helper",
+  "goal": "在微信里给「文件传输助手」发一条消息:Mika评测-{run}",
+  "apps": [
+    "com.tencent.mm"
+  ],
+  "category": "irreversible",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.tencent.mm",
+    "signedIn:com.tencent.mm"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "asked_user",
+      "expected": false
+    },
+    {
+      "type": "screen_has",
+      "packageName": "com.tencent.mm",
+      "text": "Mika评测-{run}"
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "marker": "Mika评测-{run}",
+  "note": "会读到聊天列表,需用户确认测试账号无真实聊天后才跑"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "baidu-hot-search",
+  "goal": "打开百度 App,告诉我百度热搜榜前三条。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "com.baidu.searchbox"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.baidu.searchbox"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="viewer_no_open_app">No app can open this file</string>
+    <string name="viewer_no_share_app">No app can share this file</string>
+    <string name="viewer_open_elsewhere">Open with another app</string>
+    <string name="viewer_unsupported">This file can’t be viewed in Yunkai.</string>
+    <string name="viewer_read_error">Something went wrong reading this file.</string>
+    <string name="viewer_page">Page %1$d</string>
+    <string name="viewer_truncated">This file is large; only the beginning is shown.</string>
+</resources>

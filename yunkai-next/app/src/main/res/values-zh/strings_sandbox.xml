@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="install_check">检查设备</string>
+    <string name="install_extract">解包</string>
+    <string name="install_configure">配置</string>
+    <string name="install_skills">同步技能脚本</string>
+    <string name="install_interrupted">安装被中断,可以重试</string>
+    <string name="install_checksum">文件校验不符</string>
+    <string name="install_unpack_failed">运行环境解包失败,请重新安装 云开:%1$s</string>
+    <string name="install_unsupported">此设备不支持(需要 arm64)</string>
+    <string name="install_no_space">可用空间不足 %1$d MB(剩 %2$d MB)</string>
+    <string name="install_cannot_start">运行环境无法启动:%1$s</string>
+    <string name="install_exit_code">退出码 %1$d</string>
+    <string name="install_no_client">缺少 mika 命令(安装包不完整)</string>
+    <string name="sandbox_resetting">重置</string>
+    <string name="sandbox_incomplete">运行环境文件不完整,可在设置 → 高级里重置</string>
+    <string name="sandbox_not_finished">安装没有完成,可以重试</string>
+    <string name="sandbox_network">允许脚本联网</string>
+    <string name="sandbox_network_sub">默认关闭</string>
+    <string name="sandbox_network_explain">云开 处理文件、运行脚本时默认不联网。打开后脚本可以访问网络(比如查论文、查地图),也可能把对话里的文件发出去。</string>
+    <string name="sandbox_isolation_unavailable">此设备无法限制脚本联网:只有打开「允许脚本联网」时,云开 才能处理文件和运行脚本</string>
+    <string name="sandbox_reset_title">重置运行环境?</string>
+    <string name="sandbox_reset_body">会删除 云开 处理文件、运行脚本用的运行环境,以及各对话里生成的文件(包括你附加的文件),然后自动重新准备。对话记录和设置不受影响。</string>
+    <string name="sandbox_broken">准备没有完成:%1$s</string>
+    <string name="sandbox_reset_sub">出问题时用:删除后自动重新准备</string>
+    <string name="sandbox_reset">重置运行环境</string>
+    <string name="reset">重置</string>
+</resources>

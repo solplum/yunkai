@@ -1,0 +1,21 @@
+{
+  "id": "wholesale-canvas-bag",
+  "goal": "在阿里巴巴(1688)App 搜索「帆布袋」,告诉我第一个商品的价格。只看,不要加购物车、不要下单、不要进「我的」页面,也不要询价",
+  "apps": [
+    "com.alibaba.wireless"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.alibaba.wireless"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

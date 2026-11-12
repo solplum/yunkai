@@ -1,0 +1,22 @@
+{
+  "id": "jd-three-items-prices",
+  "goal": "在京东分别搜「电饭煲」「空气炸锅」「电热水壶」,告诉我每次搜索结果第一个商品的名称和价格。只看,不要加购物车、不要下单、不要进「我的」页面",
+  "apps": [
+    "com.jingdong.app.mall"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.jingdong.app.mall"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 60,
+  "timeoutSec": 900,
+  "note": "长链路:三次搜索,每次清空搜索框重搜"
+}

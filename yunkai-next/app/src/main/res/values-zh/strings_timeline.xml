@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timeline_expired">这次的记录已过期</string>
+    <string name="tag_approved">你同意了</string>
+    <string name="tag_declined">你没同意</string>
+    <string name="tag_needs_ok">要你同意</string>
+    <string name="tag_takeover">请你接手</string>
+    <string name="tag_barrier">遇到障碍</string>
+    <string name="timing_unrecorded">耗时未记录</string>
+    <string name="timing_total">约 %1$s</string>
+    <string name="timing_model">模型 %1$s</string>
+    <string name="timing_tool">操作 %1$s</string>
+    <string name="timing_retry">含重试 %1$s</string>
+    <string name="duration_ms">%1$d 毫秒</string>
+    <string name="duration_seconds_decimal">%1$s 秒</string>
+    <string name="result_error_detail">出错:%1$s</string>
+    <string name="result_error">出错了</string>
+    <string name="result_error_prefix">出错</string>
+    <string name="result_effective">生效</string>
+    <string name="result_unchanged">没变化</string>
+    <string name="result_completed">完成</string>
+    <string name="guard_stop">守卫停止</string>
+    <string name="guard_warn">守卫提醒</string>
+    <string name="guard_with_what">%1$s:%2$s</string>
+    <string name="guard_repeating">同一个操作反复做</string>
+    <string name="guard_no_progress">画面一直没变化</string>
+    <string name="guard_failures">操作连续失败</string>
+    <string name="err_ref_expired">界面已经变了,要重新看屏幕</string>
+    <string name="err_no_app">还没打开 App</string>
+    <string name="err_invalid_args">参数不对</string>
+    <string name="err_op_failed">操作没成功</string>
+    <string name="err_unknown_tool">没有这个工具</string>
+    <string name="err_protected">画面受保护,看不到</string>
+    <string name="err_confirm_required">要先征得你同意</string>
+    <string name="err_confirm_mismatch">和你同意的内容对不上</string>
+    <string name="err_confirm_declined">你没有同意</string>
+    <string name="err_not_applied">字没输进去</string>
+    <string name="verify_failed">核查没通过</string>
+    <string name="err_parallel_skipped">一次只能做一个操作</string>
+    <string name="err_no_screenshot">截不到图</string>
+    <string name="err_vision">看图没成功</string>
+    <string name="err_payment">付款要你来</string>
+    <string name="err_no_evidence">结果缺少依据</string>
+    <string name="err_double_click">不支持双击</string>
+    <string name="verify_passed">核查通过</string>
+    <string name="verify_unverified">没能核实</string>
+    <string name="verify_none">没有核查</string>
+    <string name="outcome_partial">只办成了一部分</string>
+    <string name="outcome_not_possible">没有办成</string>
+    <string name="outcome_succeeded">办成了</string>
+    <string name="outcome_unverified">办完了,没能核实</string>
+    <string name="outcome_failed">没有完成</string>
+    <string name="outcome_unfinished">没有结束</string>
+    <string name="duration_s">%1$d 秒</string>
+    <string name="duration_m_s">%1$d 分 %2$d 秒</string>
+    <string name="timeline_title">运行过程</string>
+    <plurals name="timeline_total_steps">
+        <item quantity="other">共 %1$d 步</item>
+    </plurals>
+    <string name="timeline_criteria">做成的标准</string>
+    <string name="timeline_outcome">结局</string>
+    <string name="timeline_check">核查</string>
+    <string name="timeline_duration">用时</string>
+    <string name="timeline_more">更多详情</string>
+    <string name="expand">展开</string>
+    <string name="timeline_model_calls">模型调用</string>
+    <plurals name="times">
+        <item quantity="other">%1$d 次</item>
+    </plurals>
+    <string name="timeline_memory_used">用到的记忆</string>
+    <plurals name="items">
+        <item quantity="other">%1$d 条</item>
+    </plurals>
+    <string name="timeline_timing_note">每步耗时按模型等待和工具执行统计，不含等你操作的时间。</string>
+    <plurals name="timeline_viewed_times">
+        <item quantity="other">查看了 %1$d 次</item>
+    </plurals>
+    <string name="effect_small_change">有变化</string>
+    <string name="timeline_hide_screen">收起画面</string>
+    <string name="timeline_show_screen">看当时的画面</string>
+    <string name="timeline_step_screen">第 %1$d 步的画面</string>
+</resources>

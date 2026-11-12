@@ -1,0 +1,27 @@
+{
+  "id": "mem-todo-2-use",
+  "goal": "在手机自带的备忘录的待办里新建一条待办「买菜」",
+  "apps": [
+    "{app:notes}"
+  ],
+  "category": "write",
+  "partition": "tune",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "screen_has",
+      "packageName": "{app:notes}",
+      "text": "Mika评测-{run}-买菜"
+    },
+    {
+      "type": "memory_used",
+      "min": 1
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "marker": "Mika评测-{run}-买菜",
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的;第二题的目标里故意不写前缀,要靠记忆补上",
+  "session": "mem-todo"
+}

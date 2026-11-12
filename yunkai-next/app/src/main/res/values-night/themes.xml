@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Mika" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/mika_bg</item>
+    </style>
+    <color name="mika_bg">#0E0E10</color>
+</resources>

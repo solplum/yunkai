@@ -1,0 +1,22 @@
+{
+  "id": "weibo-hot-three-posters",
+  "goal": "打开微博热搜榜,依次点开前三条热搜,告诉我每条热搜下排在最前面的那条微博的发布者昵称。只看,不要点赞、评论、转发或关注",
+  "apps": [
+    "com.sina.weibo"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.sina.weibo"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 50,
+  "timeoutSec": 720,
+  "note": "长链路:进出三次详情页,每次都要回到榜单"
+}

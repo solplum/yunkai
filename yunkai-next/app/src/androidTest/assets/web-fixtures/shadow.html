@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>shadow</title></head>
+<body>
+<div id="openhost"></div>
+<div id="closedhost"></div>
+<script>
+  document.getElementById('openhost').attachShadow({ mode: 'open' }).innerHTML = '<button id="inshadow">影子按钮</button>';
+  document.getElementById('closedhost').attachShadow({ mode: 'closed' }).innerHTML = '<button id="inclosed">封闭按钮</button>';
+</script>
+</body>
+</html>

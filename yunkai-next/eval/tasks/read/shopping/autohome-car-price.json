@@ -1,0 +1,21 @@
+{
+  "id": "autohome-car-price",
+  "goal": "在汽车之家查一下「比亚迪秦PLUS」的厂商指导价区间。只看,不要询底价、不要留手机号",
+  "apps": [
+    "com.cubic.autohome"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.cubic.autohome"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

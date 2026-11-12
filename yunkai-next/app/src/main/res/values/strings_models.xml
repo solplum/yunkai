@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="models_lead">Pick which model does each job under “Roles”; models come from the providers connected below.</string>
+    <string name="models_roles">Roles</string>
+    <string name="models_providers">Providers</string>
+    <string name="models_add_provider">Add provider</string>
+    <string name="models_key_note">API keys are stored only on this phone, encrypted.</string>
+    <string name="models_main_add_first">Add a provider first</string>
+    <string name="models_main_pick">Tap to choose one</string>
+    <string name="models_same_as_main">Use main model</string>
+    <string name="models_main_not_picked">Main model not chosen yet</string>
+    <string name="models_off">None</string>
+    <string name="models_off_note">Reads the screen as text only</string>
+    <string name="models_vision_same_note">Choose this if the main model can see images</string>
+    <string name="models_light_same_note">Same as the main model, nothing else to pick</string>
+    <string name="models_pick_from">Choose from connected providers</string>
+    <string name="models_filter_hint">Type part of a model name</string>
+    <string name="models_no_match">No model names match.</string>
+    <string name="models_model_name">Model name</string>
+    <string name="models_use">Use</string>
+    <string name="models_role_empty">No models to choose from yet. Add a provider first.</string>
+    <string name="models_picker_note">Tags come from the provider and are for reference only; the choice is yours.</string>
+    <string name="models_listing">Listing models…</string>
+    <string name="models_connection">Connection</string>
+    <string name="models_status">Status</string>
+    <string name="models_list_failed">Couldn’t list models</string>
+    <string name="models_url">URL</string>
+    <string name="models_key_saved">Saved</string>
+    <string name="models_key_none">Not entered</string>
+    <string name="models_change">Change</string>
+    <string name="models_change_key">Change API key</string>
+    <string name="models_new_key_hint">Paste the new key</string>
+    <string name="save">Save</string>
+    <string name="models_models">Models</string>
+    <string name="models_models_note">Tap a model to use it as the main, vision or light model.</string>
+    <string name="models_no_list_note">This provider has no model list. To use one of its models, enter the name from its docs under “Roles”.</string>
+    <string name="models_not_listed">This provider’s models haven’t been listed yet.</string>
+    <string name="refresh">Refresh</string>
+    <string name="models_in_use">In use</string>
+    <string name="models_delete">Delete this provider</string>
+    <string name="role_main">Main model</string>
+    <string name="role_vision">Vision model</string>
+    <string name="role_light">Light model</string>
+    <string name="role_main_what">Thinking and doing</string>
+    <string name="role_vision_what">Looks at screenshots</string>
+    <string name="role_light_what">Small jobs like checks and notes</string>
+    <string name="role_main_hint">Does all the thinking and acting. Pick a model with tool calling so tasks go reliably.</string>
+    <string name="role_vision_hint">Gets screenshots when reading the screen; more accurate on complex screens. Optional: without it Yunkai reads the screen as text.</string>
+    <string name="role_light_hint">Handles small jobs like checking whether a task is done and tidying memory. Cheap and fast is best.</string>
+    <string name="models_delete_title">Delete “%1$s”?</string>
+    <string name="models_delete_body">"Its API key will be deleted too. "</string>
+    <string name="models_delete_unused">It isn’t used for any role.</string>
+    <string name="models_delete_used">%1$s uses it; you’ll need to choose again after deleting.</string>
+    <plurals name="models_more">
+        <item quantity="one">%1$d more, type a name to filter</item>
+        <item quantity="other">%1$d more, type a name to filter</item>
+    </plurals>
+    <plurals name="models_view_all">
+        <item quantity="one">See all %1$d model</item>
+        <item quantity="other">See all %1$d models</item>
+    </plurals>
+    <string name="models_all_title">%1$s · All models</string>
+    <plurals name="models_all_note">
+        <item quantity="one">%1$d in total, models in use first. Refresh at the top right to fetch the list again.</item>
+        <item quantity="other">%1$d in total, models in use first. Refresh at the top right to fetch the list again.</item>
+    </plurals>
+    <string name="models_use_as">%1$s · Use as</string>
+    <string name="models_openai_compat">OpenAI-compatible</string>
+    <string name="models_no_list">No model list</string>
+    <plurals name="models_count">
+        <item quantity="one">%1$d model</item>
+        <item quantity="other">%1$d models</item>
+    </plurals>
+    <string name="models_used_by">used as %1$s</string>
+
+    <!-- 用 ChatGPT 登录 -->
+    <string name="chatgpt_use_plan_title">Use your ChatGPT plan</string>
+    <string name="chatgpt_use_plan_body">Complete eligible AI requests in this app with usage included in your ChatGPT plan or credits balance. Works with ChatGPT Plus and Pro. Yunkai itself is free; nothing is charged by Yunkai.</string>
+    <string name="chatgpt_continue">Continue with ChatGPT</string>
+    <string name="chatgpt_waiting">Finish signing in in your browser, then come back to Yunkai.</string>
+    <string name="chatgpt_welcome_title">You’re using your ChatGPT plan</string>
+    <string name="chatgpt_welcome_body">Eligible usage in this app uses your ChatGPT plan. Manage usage in your ChatGPT settings.</string>
+    <string name="chatgpt_got_it">Got it</string>
+    <string name="chatgpt_account">Account</string>
+    <string name="chatgpt_signed_in">Signed in</string>
+    <string name="chatgpt_signed_out">Signed out</string>
+    <string name="chatgpt_sign_out">Sign out</string>
+    <string name="chatgpt_manage_usage">Manage usage</string>
+    <string name="chatgpt_plan_note">Using ChatGPT plan. On Plus, the 5-hour limit is shared with other apps that use your plan; Pro has no 5-hour limit.</string>
+    <string name="chatgpt_signed_out_note">Signed out on this phone. Continue with ChatGPT to use your plan again; your model choices are kept.</string>
+    <string name="chatgpt_revoke_unconfirmed">Signed out on this phone, but ChatGPT didn’t confirm it. You can also disconnect the connected app in your ChatGPT settings.</string>
+    <string name="chatgpt_fail_denied">Sign-in was cancelled. If the page said the required permission isn’t available: using your plan needs ChatGPT Plus or Pro. With a free account, add another provider’s API key instead.</string>
+    <string name="chatgpt_fail_mismatch">The sign-in reply didn’t match this attempt. Please try again.</string>
+    <string name="chatgpt_fail_no_client">ChatGPT didn’t finish registering Yunkai. Please try again.</string>
+    <string name="chatgpt_fail_timed_out">Sign-in timed out. Please try again.</string>
+    <string name="chatgpt_fail_exchange">ChatGPT didn’t accept this sign-in. Using your plan in Yunkai needs ChatGPT Plus or Pro; if you have one, please try again.</string>
+    <string name="chatgpt_fail_id_token">Couldn’t verify your ChatGPT account. Please try again.</string>
+    <string name="chatgpt_fail_no_plan">Yunkai wasn’t allowed to use your ChatGPT plan. Sign in again and allow plan usage (needs Plus or Pro).</string>
+    <string name="chatgpt_fail_network">Couldn’t reach ChatGPT. Check your network and try again.</string>
+    <string name="chatgpt_page_title">Yunkai</string>
+    <string name="chatgpt_page_done">Signed in with ChatGPT. You can return to Yunkai.</string>
+    <string name="chatgpt_page_cancelled">Sign-in cancelled. You can return to Yunkai.</string>
+    <string name="chatgpt_page_back">Return to Yunkai</string>
+    <string name="chatgpt_no_browser">No browser found to sign in with ChatGPT.</string>
+    <string name="models_unverified">Not tested; tasks may fail</string>
+    <string name="models_unverified_note">This provider has no model list, and %1$s (in use) hasn’t passed a test, so tasks may fail. Tap “Test again” to make one test call with it.</string>
+    <string name="models_retest">Test again</string>
+</resources>

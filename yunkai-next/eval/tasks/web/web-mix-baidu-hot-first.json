@@ -1,0 +1,26 @@
+{
+  "id": "web-mix-baidu-hot-first",
+  "goal": "先用网页打开百度热搜(https://top.baidu.com/board),记下排第一的热搜;再打开百度 App 的热搜榜看第一条。告诉我两边的第一条各是什么、是不是同一条。只看,不要搜索别的、不要登录",
+  "apps": [
+    "com.baidu.searchbox"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.baidu.searchbox"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    },
+    {
+      "type": "answer_regex",
+      "pattern": "是同一|不是同一|一样|不一样|相同|不同"
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480,
+  "note": "网页和 App 两条路线各走一遍再对比;热搜随时会变,只核对回答里的名字出自读屏"
+}

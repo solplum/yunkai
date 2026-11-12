@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="browser_engine">Bing</string>
+    <string name="browser_recent_source">Recently opened</string>
+    <string name="browser_search_colon">Search: %1$s</string>
+    <string name="browser_search_q">Search “%1$s”</string>
+    <string name="browser_open_url">Open URL</string>
+    <string name="browser_just_now">Just now</string>
+    <plurals name="browser_minutes_ago">
+        <item quantity="one">%1$d minute ago</item>
+        <item quantity="other">%1$d minutes ago</item>
+    </plurals>
+    <string name="browser_today_at">Today %1$s</string>
+    <string name="browser_not_logged_in">The page doesn’t look signed in yet. Sign in, then tap “Signed in”.</string>
+    <string name="browser_external_link">This link opens another app, so the browser won’t open it.</string>
+    <string name="browser_bad_scheme">Can’t open this address: the browser only opens web pages (http, https).</string>
+    <string name="browser_blocked_app_link">Blocked a link that opens another app.</string>
+    <string name="browser_no_download">The browser can’t download files yet.</string>
+    <string name="browser_crashed">The page ran into a problem and was closed. You can open it again.</string>
+    <string name="browser_logged_in">Signed in — Yunkai can use it for tasks too.</string>
+    <string name="browser_desktop">Desktop</string>
+    <string name="browser_login_done">Signed in</string>
+    <string name="browser_close_page">Close page</string>
+    <string name="browser_edit_url">Edit URL</string>
+    <string name="browser_secure">Secure connection</string>
+    <string name="browser_forward">Forward</string>
+    <string name="browser_home">Start page</string>
+    <string name="share">Share</string>
+    <string name="more">More</string>
+    <string name="browser_login_for_mika">Sign in for Yunkai</string>
+    <string name="browser_login_for_mika_sub">" · opens the %1$s version Yunkai uses for tasks; once you sign in Yunkai can use it too"</string>
+    <string name="browser_mobile">Mobile</string>
+    <string name="browser_copy_link">Copy link</string>
+    <string name="browser_open_outside">Open in another browser</string>
+    <string name="browser_unfavorite">Remove from favorites</string>
+    <string name="browser_favorite">Add to favorites</string>
+    <string name="browser_to_mobile">Switch to mobile version</string>
+    <string name="browser_to_desktop">Switch to desktop version</string>
+    <string name="browser_keep_mobile">This site will use the mobile version next time too</string>
+    <string name="browser_keep_desktop">This site will use the desktop version next time too</string>
+    <string name="browser_removed">Removed “%1$s”</string>
+    <string name="browser_link_copied">Link copied</string>
+    <string name="browser_unfavorited">Removed from favorites</string>
+    <string name="browser_favorited">Added to favorites</string>
+    <string name="browser_switched_mobile">Switched to mobile; this site will use it next time too</string>
+    <string name="browser_switched_desktop">Switched to desktop; this site will use it next time too</string>
+    <string name="browser_no_share_app">No app to share with</string>
+    <string name="browser_no_other_browser">No other browser can open this page</string>
+    <string name="browser_leave_q">Leave this page?</string>
+    <string name="browser_page_says">This page says</string>
+    <string name="browser_leave_body">Changes you made on this page may not be saved.</string>
+    <string name="browser_leave">Leave</string>
+    <string name="browser_search_hint">Search or type a URL</string>
+    <string name="browser_engine_note">Search with Bing</string>
+    <string name="browser_typing_note">URLs open directly; anything else is searched with Bing</string>
+    <string name="browser_login_legend">Signed in — Yunkai can use it directly for tasks</string>
+    <string name="browser_add_hint">Open a site, then tap “Add to favorites” under “More”</string>
+    <string name="browser_edit_favorites">Edit favorites</string>
+    <string name="browser_tap_x">Tap the × at the top left to remove</string>
+    <string name="browser_long_press">You can also long-press a site to edit</string>
+    <string name="browser_favorites">Favorites</string>
+    <string name="browser_edit">Edit</string>
+    <string name="browser_clear_input">Clear</string>
+    <string name="browser_open_site">Open %1$s</string>
+    <string name="browser_remove_site">Remove %1$s</string>
+    <string name="browser_add_favorite">Add a favorite</string>
+    <string name="browser_no_recent">No pages opened yet</string>
+</resources>

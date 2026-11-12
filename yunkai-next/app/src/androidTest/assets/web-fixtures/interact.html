@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>interact</title>
+<style>
+  * { margin: 0; padding: 0; font-size: 14px; line-height: 20px; box-sizing: border-box; }
+  body { padding: 6px; }
+  button, input, select { display: block; height: 32px; width: 220px; margin-bottom: 6px; }
+  #menu { width: 220px; height: 32px; border: 1px solid #888; margin-bottom: 70px; position: relative; }
+  #menu .items { display: none; position: absolute; left: 0; top: 30px; width: 220px; background: #eee; }
+  #menu:hover .items { display: block; }
+  #menu .items button { margin: 0; }
+  #track { position: relative; width: 300px; height: 40px; background: #ddd; margin-bottom: 6px; touch-action: none; }
+  #knob { position: absolute; left: 0; top: 0; width: 40px; height: 40px; background: #36c; }
+  #log { white-space: pre; }
+</style>
+</head>
+<body>
+<button id="btn">按钮</button>
+<div id="menu" role="button" aria-label="悬停菜单">菜单<div class="items"><button id="item">菜单项</button></div></div>
+<select id="city" aria-label="城市">
+  <option value="">请选择</option>
+  <option value="bj">北京</option>
+  <option value="tj" disabled>天津</option>
+  <option value="sh">上海</option>
+</select>
+<input id="text" aria-label="文本">
+<div id="track"><div id="knob" role="slider" aria-label="滑块" aria-valuenow="0"></div></div>
+<div id="log"></div>
+<script>
+  window.clicks = 0; window.lastTrusted = null; window.lastPointer = null;
+  window.itemClicks = 0; window.change = null; window.keys = [];
+  window.dragX = 0; window.dragDone = false;
+  var btn = document.getElementById('btn');
+  btn.addEventListener('pointerdown', function (e) { window.lastPointer = e.pointerType; });
+  btn.addEventListener('click', function (e) { window.clicks++; window.lastTrusted = e.isTrusted; btn.textContent = '按钮 ' + window.clicks; });
+  document.getElementById('item').addEventListener('click', function (e) { if (e.isTrusted) window.itemClicks++; });
+  var city = document.getElementById('city');
+  city.addEventListener('change', function (e) { window.change = city.value + ':' + e.isTrusted; });
+  document.getElementById('text').addEventListener('keydown', function (e) {
+    window.keys.push((e.ctrlKey ? 'Control+' : '') + (e.shiftKey ? 'Shift+' : '') + e.key + ':' + e.isTrusted);
+  });
+  var knob = document.getElementById('knob'), start = null;
+  knob.addEventListener('pointerdown', function (e) { start = e.clientX - knob.offsetLeft; knob.setPointerCapture(e.pointerId); });
+  knob.addEventListener('pointermove', function (e) {
+    if (start === null) return;
+    window.dragX = Math.max(0, Math.min(260, e.clientX - start));
+    knob.style.left = window.dragX + 'px';
+  });
+  knob.addEventListener('pointerup', function (e) { if (start !== null && e.isTrusted) window.dragDone = true; start = null; });
+</script>
+</body>
+</html>

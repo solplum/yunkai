@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  允许明文 http:用户自己在本机或局域网跑的模型服务(如 http://192.168.1.10:11434/v1)多半只有 http。
+  证书信任照系统默认(只信系统证书)。内置浏览器因此也能直接打开 http 网页(不再先被系统拒绝、再换 https 重试)。
+  添加服务商时,不加密又不在本机、局域网的地址会提示一句(见 LocalHosts)。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

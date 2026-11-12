@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai Next isolated prototype (2026-10-30); see repository-root UPSTREAM.md. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 探针页把记录广播给 Mika 进程里的测试 -->
+    <queries>
+        <package android:name="com.zhuolin.yunkai.next" />
+        <!-- 重现「开到用户主屏上」的页面要拿别的 App 的启动入口 -->
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+    <application>
+        <!-- 测试用页面,由测试用 am start 打开到虚拟屏。它们运行在测试包自己的进程里、不带 Kotlin 标准库,
+             所以用 Java 写;类名必须和源文件里的一致(AndroidTestManifestTest 会查) -->
+        <activity android:name="com.wangzan101.mika.cap.phone.a11y.SecureTestActivity" android:exported="true" />
+        <activity android:name="com.wangzan101.mika.cap.phone.a11y.PlainTestActivity" android:exported="true" />
+        <activity android:name="com.wangzan101.mika.a11y.WebEditorTestActivity" android:exported="true" />
+        <activity android:name="com.wangzan101.mika.cap.phone.a11y.FieldsTestActivity" android:exported="true" />
+        <!-- 滚轮测试页:两个原版数字滚轮 -->
+        <activity android:name="com.wangzan101.mika.cap.phone.a11y.WheelPickerTestActivity" android:exported="true" />
+        <!-- 从应用上下文打开别的 App:重现「开到用户主屏上」 -->
+        <activity android:name="com.wangzan101.mika.cap.phone.a11y.SpillTestActivity" android:exported="true" />
+        <service android:name="com.wangzan101.mika.cap.phone.a11y.SpillLaunchService" android:process=":spill" android:exported="false" />
+        <!-- 外壳对照测试的探针页:startApp 走启动入口(INFO,不进桌面),startView 走自定义链接 -->
+        <activity android:name="com.wangzan101.mika.shell.ShellProbeActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="mika-parity" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

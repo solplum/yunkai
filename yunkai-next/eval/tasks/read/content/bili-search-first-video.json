@@ -1,0 +1,29 @@
+{
+  "id": "bili-search-first-video",
+  "goal": "在哔哩哔哩搜索「安卓开发入门」,告诉我第一个视频的标题和播放量。只看,不要点赞、评论、关注或分享,也不要投币",
+  "apps": [
+    "tv.danmaku.bili"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:tv.danmaku.bili"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480,
+  "variants": [
+    {
+      "goal": "打开哔哩哔哩搜「安卓开发入门」,把第一个视频的标题和播放量告诉我。只看,不要点赞、评论、关注或分享,也不要投币"
+    },
+    {
+      "goal": "在哔哩哔哩搜索「Kotlin 协程」,告诉我第一个视频的标题和播放量。只看,不要点赞、评论、关注或分享,也不要投币"
+    }
+  ]
+}

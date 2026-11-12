@@ -1,0 +1,25 @@
+{
+  "id": "weibo-account-followers",
+  "goal": "在微博搜索「人民日报」这个账号,告诉我它的粉丝数。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "com.sina.weibo"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.sina.weibo"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    },
+    {
+      "type": "answer_regex",
+      "pattern": "粉丝[^\\n\\d]{0,8}\\d|\\d[\\d.,]*\\s*[万亿]?\\s*(个|位|名)?\\s*粉丝"
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

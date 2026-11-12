@@ -1,0 +1,29 @@
+{
+  "id": "taobao-search-prices",
+  "goal": "在淘宝搜索「保温杯」,告诉我搜索结果前三个商品的价格。只看,不要加购物车、不要下单、不要进「我的」页面",
+  "apps": [
+    "com.taobao.taobao"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.taobao.taobao"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480,
+  "variants": [
+    {
+      "goal": "打开淘宝搜「保温杯」,把前三个商品的价格告诉我。只看,不要加购物车、不要下单、不要进「我的」页面"
+    },
+    {
+      "goal": "在淘宝搜索「保鲜盒」,告诉我搜索结果前三个商品的价格。只看,不要加购物车、不要下单、不要进「我的」页面"
+    }
+  ]
+}

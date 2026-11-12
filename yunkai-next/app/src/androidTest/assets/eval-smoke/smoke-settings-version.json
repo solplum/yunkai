@@ -1,0 +1,15 @@
+{
+  "id": "smoke-settings-version",
+  "goal": "帮我看一下这台手机的安卓版本是多少",
+  "apps": ["com.android.settings"],
+  "category": "read",
+  "requires": ["installed:com.android.settings"],
+  "expect": "succeeded",
+  "probesBefore": { "android_release": "android_release" },
+  "checks": [
+    { "type": "probe_equals", "probe": "android_release", "expected": "{probe:android_release}" },
+    { "type": "answer_contains", "all": ["{probe:android_release}"] }
+  ],
+  "maxSteps": 25,
+  "timeoutSec": 300
+}

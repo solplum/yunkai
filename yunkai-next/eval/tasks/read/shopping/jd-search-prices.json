@@ -1,0 +1,29 @@
+{
+  "id": "jd-search-prices",
+  "goal": "在京东搜索「机械键盘」,告诉我搜索结果前两个商品的名称和价格。只看,不要加购物车、不要下单、不要进「我的」页面",
+  "apps": [
+    "com.jingdong.app.mall"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.jingdong.app.mall"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480,
+  "variants": [
+    {
+      "goal": "打开京东搜「机械键盘」,把前两个商品的名称和价格告诉我。只看,不要加购物车、不要下单、不要进「我的」页面"
+    },
+    {
+      "goal": "在京东搜索「蓝牙耳机」,告诉我搜索结果前两个商品的名称和价格。只看,不要加购物车、不要下单、不要进「我的」页面"
+    }
+  ]
+}

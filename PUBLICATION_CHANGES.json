@@ -1,0 +1,806 @@
+{
+  "source_archive_commit": "6ad50fd38326746088aa76d89cc09435d465fc6f",
+  "note": "UPSTREAM_CHANGES.json retains original archive hashes; this manifest records publication-only notices.",
+  "files": [
+    {
+      "path": "yunkai-next/README.en.md",
+      "archived_sha256": "a3897348bcc1548d2db0c5b15d51e9ce6723af9c735c976416d9acf094d6ba3b",
+      "publication_sha256": "d27f485d35728f8a9ba1a3656853b617cb51cbd05b0bc53d40ddb54bf68d0e6e"
+    },
+    {
+      "path": "yunkai-next/README.md",
+      "archived_sha256": "4c2f097b378edbabf897cf99c585e4f0125d11d8fe8cb4f405d74506a36606a4",
+      "publication_sha256": "89cd3acd538f51c58936cbb91b0f2fe0d247d7faa66a607c2523b5a0f0922d2f"
+    },
+    {
+      "path": "yunkai-next/THIRD_PARTY_NOTICES.md",
+      "archived_sha256": "57f8ad6494f5fe9acf4f5d51d0c0fe7fe0972963b90036a96da1a54139202692",
+      "publication_sha256": "dd229f172c5370684c24a42bd989b43babb6e41ea1e6f936436705bdb5465218"
+    },
+    {
+      "path": "yunkai-next/app/build.gradle.kts",
+      "archived_sha256": "be60ac89f554c0309649c9f064a9fcb7f2c299a6bd7d24171fee55913be0dfd1",
+      "publication_sha256": "2b6c04fcd06fc39a7867121e8415e9c4c9d4934b2bf014ce482e3d690edc4c57"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/AndroidManifest.xml",
+      "archived_sha256": "630d35ceb9cd38f81ef5e33a7f092df09186c8ad5dd68035095b75bbeb86da22",
+      "publication_sha256": "0090f5f5ccbf514796134894efe5bdf5d4640fe6ec43208ce8ad8cff5a6a9826"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/acceptance/LiveRunTest.kt",
+      "archived_sha256": "f091d999942ef15db194e2ffb012a52fdc387fd388f39160570c5ab6dcc26ca1",
+      "publication_sha256": "0c9e6b11352c4ef1cc8f1f0b73594652f56fc7497ffaa2f61123751607438dbd"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/cap/phone/a11y/A11yOnDisplayTest.kt",
+      "archived_sha256": "94f1b17136148fdfeda3b09f07cba9e02ed76043b50b1d5562b99152a15ad8e6",
+      "publication_sha256": "f1f7660993bb094b9fd7f01bcd917484c69e7ac0619c066cd0becd928ca27a1c"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/cap/phone/a11y/DeviceSupport.kt",
+      "archived_sha256": "aa4b31a266d36f8c9deb38a6c5fdab02d36fec0e58a97bc3c2edbfb6497a23bf",
+      "publication_sha256": "012ed175d2931a03755f376c2ee588012a075dc66dc79e8d9da5465f056379a8"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/cap/phone/display/AgentDisplayTest.kt",
+      "archived_sha256": "4dffee1d69a9172d7a00d611ea50368ae51b43be493f3a16df2949b1bc1acf76",
+      "publication_sha256": "e815486fe4e1fe7cfe8c06ec82ce1cd94112c3bd63e60c28579fceef2db75af0"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/cap/phone/shell/ShellProbe.kt",
+      "archived_sha256": "1789368703aeca9d3349e126e98035b48c3bea324f3b0940e0b1e5a9fa60203b",
+      "publication_sha256": "ce8fb3fc9b86730855d6006af63a2d42011850c60132d7d656d6301ab73d0de2"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/cap/sandbox/BridgeDeviceTest.kt",
+      "archived_sha256": "360bc1b8354a1295dd8f848ae0ff4756fd84ddd4bbc330ab0fd1805a6b6ed372",
+      "publication_sha256": "b79e401d8e22b6de6c6d5a9b38025326807d8422fcb502ccc710aa1847f44138"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/cap/sandbox/ShareExporterDeviceTest.kt",
+      "archived_sha256": "f646b02e16492fa810b8b5c4a1d22f5dbd668466cd5acadab919159b19fe25ff",
+      "publication_sha256": "cc987063a5417f9c1747ffddc55d140b3fa540da1fe1f8adfcfae88dc666dba8"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/capsule/CapsuleContentTest.kt",
+      "archived_sha256": "59a94703f01ac2312e07713b2f31d4190d7c62d1d87f923b84f5e34af421ff0e",
+      "publication_sha256": "7d4fd93beac067654278764bcc4b8f574ea85670021594df999d12875af7c257"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/ui/AboutScreenTest.kt",
+      "archived_sha256": "d2ea6db58cf4039072cfbf65cc3ec4373c13d41530f9a03f796ad2808c8660f6",
+      "publication_sha256": "2fd0cbf4ea32fb92c19b4553fa9ffddf883072ad07e2ba26331d9aac065009cb"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/ui/AgentPipWebFrameTest.kt",
+      "archived_sha256": "1711ef5b823bd6e6166a765b29a976d60e25fddb7479ed40942cb0c83133911a",
+      "publication_sha256": "e8f6cf50c2ea4cafdd1ffff5e87934b4a50b13acccc6cf77e6e50502ccbf7b00"
+    },
+    {
+      "path": "yunkai-next/app/src/androidTest/java/com/wangzan101/mika/ui/ChatScreenDeviceTest.kt",
+      "archived_sha256": "0d30df6a7f1b6b7b350f3e1496a246bd1fbab3894de53c9b9f407a6ec6b5cdcc",
+      "publication_sha256": "12c04feb490668c4817275c1a9b46cfa39dc13617c5c231212973efac7eed10a"
+    },
+    {
+      "path": "yunkai-next/app/src/main/AndroidManifest.xml",
+      "archived_sha256": "466237163c5e111d20e6855a64bcd22c438de918b4184b660d0a2be58f5243ae",
+      "publication_sha256": "5580fb28bbf76f07b1fb64a1616d3bd6c5b81f785e27775b884c84af59a6cc9d"
+    },
+    {
+      "path": "yunkai-next/app/src/main/assets/sandbox/mika",
+      "archived_sha256": "e6469a3ce937dde27e5b52537516cb338b4bf976c1af217b20f5c2faa9f5c9d3",
+      "publication_sha256": "1c789e8e3f8565c1a8b9a9d5033e2f7aabc9a84c93526f80ec8037dc2777ff5e"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/MikaApp.kt",
+      "archived_sha256": "865add46dc2dc5b2aa27e95019bac89d1b99f723de950c119b787485dcb5a83b",
+      "publication_sha256": "56cd13cb607ad00d38b04b1ffe6f7865f3af05237010ffa6aec6ecc394f05726"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/about/Diagnostics.kt",
+      "archived_sha256": "a3afdfca42cb12aeeea8fa27b3627e7ed9717adc5806476283225e77c3792e7b",
+      "publication_sha256": "640dc3a0cbdfa489c24cb8f8541b90da6f26fc933d4d4a367e51369378157c7c"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/about/QrImage.kt",
+      "archived_sha256": "cffe546a93f786cab106b3c7d94a8e0ea9b3089f4bdf5b4ed970aaf782c18684",
+      "publication_sha256": "033050150088491cd5eb00119e616a454d2888ed7229210a2453eea23782d740"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/about/UpdateChecker.kt",
+      "archived_sha256": "fa0c0f78658c1a990bc60b5f08c7c524fd52cb682100b967aa22126b346653f8",
+      "publication_sha256": "c82686e85ce9e938bf00700a925bbfebd3dc516edc7332e854ff6bd3b64403d1"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/cap/sandbox/ShareExporter.kt",
+      "archived_sha256": "56e59d9fea95cede95bc48e6c8e2f5b8cdf87fb6d4fb014eb7d14b08988bb659",
+      "publication_sha256": "dd35a180f68d5c986538ee01daed5e87d549bdcdf125dd5b6e61d34ef6a25674"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/capsule/CapsuleCardContent.kt",
+      "archived_sha256": "c15715b35841dd62bc2e7efff993fcc7a578b3e76b3f237678845ebc684f0a39",
+      "publication_sha256": "876856515d0f40347ceff3894dc6fd1a4ed402d5939ec437665bcb70fdd6dbfd"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/capsule/CapsuleCardModel.kt",
+      "archived_sha256": "81a341483bd9b537163dd8dbeccedfd73aefd0f06a1ecda66cf94836a2c40883",
+      "publication_sha256": "a21058afe15e38a31888ac664102a2302106672e2c972899376af33a3cfddaaa"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/capsule/CapsuleContent.kt",
+      "archived_sha256": "18b7987c7d6aaf4f2852e9b4110f2f06de65f955eccea0ddb76a5e1f141a0f6f",
+      "publication_sha256": "612c4d4679d1dc5fd06a08c57828e49849be167260c90ee05f3bdd6a9d5c4342"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/task/TaskService.kt",
+      "archived_sha256": "1d9e0d7770a3010436d7d0a6c81a24b16bcd0873772f3e50ef5542b925ae952b",
+      "publication_sha256": "a9fd1687348d54eada1ad7c2d41bfda0d1338d8b5236553b87ed4d26b36dfa06"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/ui/AboutScreen.kt",
+      "archived_sha256": "615e0cdf2f7bf1e769ff7ccecabb715e41ae3fa09bdbd0cf6566b9f226cb2a92",
+      "publication_sha256": "1b90fdedbcd9c929772d047ab3478ab48ffb9bfed9a903510e6780211fa15426"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/ui/ChatCopy.kt",
+      "archived_sha256": "ab421ba171c3b188e0045f385f594c594c5c0826a48a6b4996dc00a807988ccc",
+      "publication_sha256": "7685524774c6041456bdd4de4ed814ed799923c24a03d373114282707dcdc150"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/ui/ChatDrawer.kt",
+      "archived_sha256": "69f65aa32ea14c92548429f4b345e0db4c52d9395f08b5a70a1af41dcc8136e4",
+      "publication_sha256": "ecff3155e5d8aff697a84faddb818011c2df2ccf0802c7218867d04e47755287"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/ui/LicensesScreen.kt",
+      "archived_sha256": "4f911ca0a4d4aa2217edbbdda3c03b4a290023b6e92cc8d733e117f98474b90c",
+      "publication_sha256": "ac3e977573a6a4216de4860358d587728d308162b0111872f03e1984aacf6f24"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/ui/MainActivity.kt",
+      "archived_sha256": "b2b47255898020027fd74df514296c681ad8a64c7969083da47d83da74696a7a",
+      "publication_sha256": "a84d067be8133e5e25653842cd5b6e602ff5d4bea44fedc0ffa651f39f2c2b54"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/ui/WelcomeScreen.kt",
+      "archived_sha256": "d33c045561b929d9832f8ad4be42b76dccfd0f17a570739e8bb600429024c77b",
+      "publication_sha256": "05bc30e3b2fb9fcca20800c10a514db2cc6d9c12a5f2e1bfb3de4fae6a2af165"
+    },
+    {
+      "path": "yunkai-next/app/src/main/java/com/wangzan101/mika/ui/components/Logo.kt",
+      "archived_sha256": "9ff44b4b0606548d1825677149812190fd11c41ccd724d3f098c6f807fb139dc",
+      "publication_sha256": "6d18eaa679b22beb3bc7219dbb84d06e1fbebd3acd4f019110420d3b1e6ced47"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "archived_sha256": "805e8ccf38a5198bf8c46cd6400c92ff4e04d23c0ce708feee7a51a267634162",
+      "publication_sha256": "6666ce8141407ad088b8201a311f1c1a68086b9444c2d3d21c538ab7f479cd28"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings.xml",
+      "archived_sha256": "068724eb4c78a3ebdaa38b8903fb16997be403a296e4e33c652a5bc4147749d1",
+      "publication_sha256": "a35fa5bc5259080ab336f51532be6efc67ea9c664e12ded4c73f2fa03ec477fe"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_about.xml",
+      "archived_sha256": "9afc69cbf55c517b50918ab4cdd01bf0383a57cad29cfe6ceb5971ffab467c0a",
+      "publication_sha256": "c82a4ea88df55f29cd8af2c703c4a86dd3a0015317ccd10d994519303aa2d055"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_browser.xml",
+      "archived_sha256": "46cbc02074e05114153721eb76fec6444b5508f1dbad9d35fe2cba40c3a6fc15",
+      "publication_sha256": "7c1fba0cdb048772e5fd77f6b9e2b5e1eadebce31d873f6d9d9f964c6d5797fa"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_capsule.xml",
+      "archived_sha256": "077cfa276ec1ce8e1dced3b8ec36aea7a7e1630a4c80079c178c86f563f6c30d",
+      "publication_sha256": "3303efa421f8f38598116202887aeada90941b037842fec2a6eb76ad9615735f"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_chat.xml",
+      "archived_sha256": "ac23e308bd2e6d7b535920e320720a9370ebe9972d4bdf863e55a53985c96175",
+      "publication_sha256": "ed8685896b6e58393b2757c2ed9ff785191c294975d053038df60d41678bfb8b"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_confirm.xml",
+      "archived_sha256": "4d4755df9cc6e54b72e0a8b21263cedf8d6d31e8fba1be6aef86d25a0f53ae6f",
+      "publication_sha256": "212c164da38b6420ecc2452ddf5bfe339507f04a0d48c1c2527909ed5eda8683"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_developer.xml",
+      "archived_sha256": "469ef9f2161ace10a41603c11122e17af15500cb473cb65fa2208bf1ea86b6f2",
+      "publication_sha256": "3c6dd4208074f7ad15e9ccdca4fb16b00077c29774c2643311759cd1d5577994"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_memory.xml",
+      "archived_sha256": "0adc5a89670cf3777cc64d83ebb3e6d084bcc7fe6bf18789be70da3879a7a1ea",
+      "publication_sha256": "e97d11ec89016b061fc59da92a7cb4c9ba6232c6e9e5c3b4ebd1744801bb746b"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_metrics.xml",
+      "archived_sha256": "16ec9b1dca712dbf5e382e9fe5fa5d2486921354cac55a87eacd9d5b521dac7d",
+      "publication_sha256": "4652537bdcef56c4607a0732030bd466d10a695af1c6d2cf865f8f76ff7dab98"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_models.xml",
+      "archived_sha256": "6e98d46f4851c9e4334eb4bc4d6ba7135d8833142474599671c6795ebd74363b",
+      "publication_sha256": "8114a9b1b570258915d691aedbbf5407b676c81c7c29ba65bc96e7f48463eeac"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_phone.xml",
+      "archived_sha256": "e8644648184415a3a647e5d97dd708d1e82d243ebc6a694991f62bec772c98da",
+      "publication_sha256": "42fac11898a734bca1939830a02aa579fd77035dbe186d4fd6a4d3ad69e272c2"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_plans.xml",
+      "archived_sha256": "6cc5b7b7f7335d1c7ee9d2d026b8fa0f7dec8761d1fd349c2c6f05d612853a4c",
+      "publication_sha256": "7794be79198efc4144b5182ca0349fe3890c3fad97cc8631cb47059c549f07b2"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_recovery.xml",
+      "archived_sha256": "5ecf9ff12cfce1eee0432141037d3c7e8dae2ba69c5ca0d30b8c0bbb3c9d68dd",
+      "publication_sha256": "2963028e449fce610406f9853ac9bc4790ed2080fe371e31afa25b7ed2dfb474"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_sandbox.xml",
+      "archived_sha256": "417f2198ba385d8056371192899892893acdf8d3887959c043c2b64513edb8cd",
+      "publication_sha256": "e9f4713fa95c39de14f27f641a8c8225922de31f490edbb1af48d85079458eeb"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_settings.xml",
+      "archived_sha256": "6999406d3f520149ba61dd3a8d84b112aa2465aa0e2791ce752f29baa0321c47",
+      "publication_sha256": "5d065500fa1bb05ad92c685aa0421dd4cf7102e9af1821b0691230ad50a0bcc0"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_setup.xml",
+      "archived_sha256": "db4728b15daca9e2838764c62e7647af5d4cb73325b228bd911a3a1d08d79b2b",
+      "publication_sha256": "4380457e538b81cb0ec7c1120f657e7f849ecb9d81bd0997121e36e3c3581e71"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_status.xml",
+      "archived_sha256": "13343354db323500ec21e7a4f15442fa547d1b68b95129b9ee8343bc099e9d79",
+      "publication_sha256": "d59df0c5dab1d0093b71c3f1c994eb82ce79d9093b9081b7d128c3e5e25fa342"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_task.xml",
+      "archived_sha256": "460e600000e8e43e231f42572896b6c0515722ca1863bcf2d6e5cc48d946513f",
+      "publication_sha256": "9631b70f887d680741e98937ba43a3368f866c1b7fd54afbcc5cb2f4fe28dd2b"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_usage.xml",
+      "archived_sha256": "9b832fbfa63255b005714dc7eaa7e83b7483398a7b83d1665455aeda6aa4fae0",
+      "publication_sha256": "51a44fa1ec9100914f0a674923212e470319a1ffade099c42b351724af631468"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_viewer.xml",
+      "archived_sha256": "b73df2f52c852b4d1b591ef9772d8ce89b5443e7da332d0a215c0cf6a33051ac",
+      "publication_sha256": "2f85fd946a9139045e9b3aa7a1ac8ed846450a26587d0f75313cf1b20c969b09"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values-zh/strings_web.xml",
+      "archived_sha256": "8475c5c09af9ea001aaafe83fd47a7739c76a87c1d453c4ec8348c3645f4eac4",
+      "publication_sha256": "a09eb3741d8472e499459fb2c44121f5c1739a8b8936035049f3d29fad3d67cd"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings.xml",
+      "archived_sha256": "a06d41bb3aa20ded7dfda363c1d94758f55b3f90fff5b8cb8a7c2268234d8712",
+      "publication_sha256": "9c3f941e4b051cde7852b2da033dab93510b43dea596f686c2c7d64f0ba69fdb"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_about.xml",
+      "archived_sha256": "e6d0acbedf447dce7e6659a0b05b753df5a6a41b03a9fb9546554a3593b8ae33",
+      "publication_sha256": "07f52f207fc6a6ae7a386ce8b87784d9032a54f68b55984fb0edd01367e9a48d"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_browser.xml",
+      "archived_sha256": "62caa5036bce36578fff91c2e9a43c970b2b7e3094616a619fa7afcc170df351",
+      "publication_sha256": "5ef957bb56a2823387ee74f0e1aa3c298fc88794ebb298518533528a88e2f64d"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_capsule.xml",
+      "archived_sha256": "a185847dad48d0a8bcfe54517ef4e1035435c9c35d5ebe7c9d017d8b898f3055",
+      "publication_sha256": "9a8a151582225d24b228ce397a6d6db271ce87c8a59474cfc048e717f4376adb"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_chat.xml",
+      "archived_sha256": "89fb11f1d3054c25b47dbcd51e628d081b84ad2335c6f8f3da8983f14c47d930",
+      "publication_sha256": "b1f60f592f9b37fcc4bdcb1fc3f99685fb7b7f80c7df643b51b566faf8585d59"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_confirm.xml",
+      "archived_sha256": "556ac47029dcefe184d36f89f6946003c248c68b2b3351cb6971f82e30ad3ac5",
+      "publication_sha256": "05d22bd9b69ec40a406fca486015fcf161c16870107af5efea272fff4355a483"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_developer.xml",
+      "archived_sha256": "f50eaeb979ff4262cf5063b78c0bb042a17818d3e4aef27e078a5b14b7c87888",
+      "publication_sha256": "07593b3b77b3a673393dcff3cce98bedb7416bb693fa415aa598ca2b61adc657"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_memory.xml",
+      "archived_sha256": "31f71e57aa16f9acfec8d922a45973d673475336d874598d149353c5a5e3cdd8",
+      "publication_sha256": "a68d2bca4dbf875e872d0b70c9e01bee7bd9af33ca7338468073e34460a2ed26"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_metrics.xml",
+      "archived_sha256": "20e4a6421ff93de39d591c8827590ecfe1368ea4d812481a755f559fe61599fb",
+      "publication_sha256": "c79164e68d8e2b3d3c3d5b03fad7eb84a9a4126cf070e949b4e79f04cdc405a1"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_models.xml",
+      "archived_sha256": "e7f9a2b1b2b9212a745280af467194df7286c8fc9fc96c5fb658ee7d5708c8f9",
+      "publication_sha256": "560a456076c41cc9205e6ac2bc6360fa23136560698ffe3c2d9a441bb29cae23"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_phone.xml",
+      "archived_sha256": "8980f8917fd154bcad47a8a8903c1aa6f52fc7709115f5c560215d803369993a",
+      "publication_sha256": "87aaaade5a3d1594fb85cef134a68bd0e8b32bca90baa57b8b967f2dc3fb644b"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_plans.xml",
+      "archived_sha256": "e79c7640d56a4498ada59a8f4d17efa705c8410a5fcc3379cf460f5041019dae",
+      "publication_sha256": "bf00a0fc23e6f1c358ea920470a755e9bd3b268faa6c333a2a4c441ea5c56cd1"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_recovery.xml",
+      "archived_sha256": "010afeeec1381ce264b1b6edcf50e10b438431b06d6526e15f6edb0601e0455f",
+      "publication_sha256": "928228ef1e656f302d64baf633275b0198d4441fc9a206d7510a0f560031650c"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_sandbox.xml",
+      "archived_sha256": "d55c5ddbd9b8372e9f46b7fd709c5f45a29ca8e69504f80b31afb05a2a758c6e",
+      "publication_sha256": "ff54f39d97d31a6281f14d8f59ee82f6c009ea035ecef5eb65eacea9b84ea815"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_settings.xml",
+      "archived_sha256": "779959cfd89196e942664ccd516f3383dae814a18c82bbf9799cdb297b5319fa",
+      "publication_sha256": "23031cd2c94a072849de717dc420fa3a3e8358519d178dd9958f133ead06c412"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_setup.xml",
+      "archived_sha256": "1df3e52a861533609222e309c4fbf99f41c0c1268c12b0465a6f7e632fd8cd56",
+      "publication_sha256": "8b389151290ef37a404e785227d1b0f7e1e632a76b2d40b7fa0d6a7db326da30"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_status.xml",
+      "archived_sha256": "d80e8d3855be246b607fc6cfd4448f1f159981fb979b22b20dc5ad743f181760",
+      "publication_sha256": "32878ce1e8c521a7195ab71cf00ee96a852f54d963175bccac9ecadf61e206f7"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_task.xml",
+      "archived_sha256": "10eee6b01286c8134023442332f77a44e2eba0dd6e5cef2f7fd541a14ea9605f",
+      "publication_sha256": "cda7ea43c07104652d9489f47706a5a8fbe84f032ac6233bc80437f8cd43c92e"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_usage.xml",
+      "archived_sha256": "0ee6dd102cc25b38cc30afc79ad0b36e19d051b057bb6612ecaf9d5ae87e9b91",
+      "publication_sha256": "4db849006d9913bcc29d6404b4a731818d691b9d84c88bbb87b8959733ddac48"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_viewer.xml",
+      "archived_sha256": "d46b07fd00ffc515cdc43c58e0ec147669fedbe87cd3b21fe5c3566b4319ca94",
+      "publication_sha256": "b81c8ea3c644ec4cafc05ca8bb2ca99519ab4374fc30c33ce1cf2f3d03f369d1"
+    },
+    {
+      "path": "yunkai-next/app/src/main/res/values/strings_web.xml",
+      "archived_sha256": "0b52b09b73eb76fcdd2f6a05207776f98fcc42a66bc17d04d3f9bcb4b35dc358",
+      "publication_sha256": "a83276748cf3a515553327b7c432cc878f44f9032d13306868fa34f6eb21e622"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/ManifestProvidersTest.kt",
+      "archived_sha256": "bd6f87f120c480f408d56b7ca0497cc18ff8fb2e9803149bf713f9a61114e27a",
+      "publication_sha256": "6fefe8c2c47af3bf8d082418962da1e8783f127501376e0bda92b32c69b10120"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/about/MikaLinksTest.kt",
+      "archived_sha256": "5062369c543b15a616445c3593eb15ebe77899a237740883c7de5af84eb86414",
+      "publication_sha256": "c2ca8241316366cabd27abdbd97515a89393b5f63d70e31d2668efcfe1051173"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/about/UpdateCheckerTest.kt",
+      "archived_sha256": "5ceb9155ea447617e142c16a656cec4b781cecefc3f3f441705a95c2f7bc038e",
+      "publication_sha256": "696ebeb9081943ee941adaf64e355bcd2703b8361cfe21b9fea64afbae6a354a"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/cap/sandbox/AndroidSandboxRunTest.kt",
+      "archived_sha256": "e08ca40a7b9b7d51eb2e35a615dbf7a9cdedecfbae10fa27c02e56ccce0de753",
+      "publication_sha256": "f0b70716c7917f9aa15e78dcd66a49c8ec9c08c1a011c2ff952ad51c1a270766"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/cap/sandbox/BridgeProtocolTest.kt",
+      "archived_sha256": "6e29fb277f00c4c4fb015deeadbe5c2a515566fb2863e92441e9d06f799ead86",
+      "publication_sha256": "8b0bd7a077e3ce6c002e2f149846bb26c6ea99d4ff0cb012c030f76ec2f17d88"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/capsule/CapsuleModelTest.kt",
+      "archived_sha256": "4948df3fdde6a76cd87f3227b83e137f65b8519ea22ddc330cf1614283906a6b",
+      "publication_sha256": "0ec1556a3a4cc90071962388fd3068be91d8cb1ad17adc4daa3d4d44bf7a7b5e"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/task/SedimentationWiringTest.kt",
+      "archived_sha256": "dd0bf4877771690ed65a7ef124f07fedb8cae33e3c51c2b733540c9ab6820255",
+      "publication_sha256": "ab0b6916e1df074f104c23a9b8e569ad4cfcef2364a89e8bf22f937649baa3c8"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/ui/ChatCopyTest.kt",
+      "archived_sha256": "beac6d197dab758ea3abe5019a5b44fa39e61c3e54d2382cb152ea211206628c",
+      "publication_sha256": "c9868c8de659a48e13982c9f6dc9d08bbc928c762c74fbd5eabb9b21929a7495"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/ui/EnglishCopyTest.kt",
+      "archived_sha256": "1401580d4296bbf9e0d8a9f46e39f4098b098fb65eebf8e0c23bbeb395f32a60",
+      "publication_sha256": "d0f374e015ac3d8b3647718930abc66919a3d6e18e49ce205fb6ed009a859b77"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/ui/LicensesTest.kt",
+      "archived_sha256": "79fae6882b70e7aa9bace9ec22de9aa003a5fb755380fcd9b119a713c3186602",
+      "publication_sha256": "0873119579fc9e047f1c94d639bd4e52d9ea33b67114a3660fab55f2cc639fac"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/ui/MemoryViewModelTest.kt",
+      "archived_sha256": "c6d28c77382f15e4c83f7bd3f7f7013d8e82714bbd08b8f57c42aa849b2fb4bd",
+      "publication_sha256": "cab8ec410d48e8cbbd252225ab4f17a2851921963dcb547a1d49ce86aef22041"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/ui/ModelSetupViewModelTest.kt",
+      "archived_sha256": "fffd59e7258714adb3f9de49cc8755ee14de97f050f0a51bc719c44bb3f8ecfb",
+      "publication_sha256": "9513c0303d1ed1961a6c93642692de7fd0af28a8c0e48e4477f46d23e3c77b2c"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/ui/PhoneSetupCopyTest.kt",
+      "archived_sha256": "945102bb044fcf1236226878839bd78eecc49a92a4b4dcaf33f90d2f836f29c8",
+      "publication_sha256": "6d196c2423cb55800354bdbd77f232019e2637aa7588512567ba38a3440631f3"
+    },
+    {
+      "path": "yunkai-next/app/src/test/java/com/wangzan101/mika/ui/StatusCopyTest.kt",
+      "archived_sha256": "d4e1dfe69df16ce6bc9356fa982a3039c21ce5bee25802fa8ea84b2c949c7185",
+      "publication_sha256": "68e1eda43acc54fc8b7e96330e5c13da7501f05a95ab1041536c67fa206e88ec"
+    },
+    {
+      "path": "yunkai-next/core/src/main/kotlin/com/wangzan101/mika/core/action/ActionExecutor.kt",
+      "archived_sha256": "c86c7b6bf834808408d4934dda012d6b255133b3d8b44dbf853385a9a1ff6214",
+      "publication_sha256": "b5755de9321a5478d19ef323a6529d99401eb3c38338e29af3eac17e331fe7a8"
+    },
+    {
+      "path": "yunkai-next/core/src/main/kotlin/com/wangzan101/mika/core/action/ActionOutcome.kt",
+      "archived_sha256": "2d14493540c73e14ee40b72b97519c803f75b1e8908763bb38ea74cd75110d04",
+      "publication_sha256": "6454a32edbf7a6c3ffd6e0f944e0ee0217233611b256c1869b4615c48bf873c3"
+    },
+    {
+      "path": "yunkai-next/core/src/main/kotlin/com/wangzan101/mika/core/action/Approval.kt",
+      "archived_sha256": "48b995e2bdea4e5e5366bf5bb48d232c5960f6df80ad690266195b78b6ce100d",
+      "publication_sha256": "c534b871483ecc0237a7f367b112b96c81c1c03e11969cff9b8dc22c214bea21"
+    },
+    {
+      "path": "yunkai-next/core/src/main/kotlin/com/wangzan101/mika/core/action/ConfirmDecision.kt",
+      "archived_sha256": "4ef2a6ca7c8044558cd85c8411270b30b96496a6f989a0063907eed17dd3236b",
+      "publication_sha256": "88770abb73dc37cb713f2732697c122d92b9df181f9cb73bcc1d42f6683e7db0"
+    },
+    {
+      "path": "yunkai-next/core/src/main/kotlin/com/wangzan101/mika/core/agent/AgentLoop.kt",
+      "archived_sha256": "3d351bf8947f1a5df2a06b24f026e7744e0a2b97a74f22b3c7b84456d0b06a90",
+      "publication_sha256": "309a3db449f68c9b39072dc7e7a0b8fed7064feb780b1fef29d2df4518f49a9a"
+    },
+    {
+      "path": "yunkai-next/core/src/main/kotlin/com/wangzan101/mika/core/cap/phone/PhoneRun.kt",
+      "archived_sha256": "899e1740cc66963a508c4437735f18dd395c19259dad222bb1726b446a7022bf",
+      "publication_sha256": "eb35e1558b2b100ef11ab630c74a161dba5df677b13c191dceab1f99bee3c116"
+    },
+    {
+      "path": "yunkai-next/core/src/main/kotlin/com/wangzan101/mika/core/cap/sandbox/SandboxPort.kt",
+      "archived_sha256": "b03f23965cc36e0fdab09e26e3986774524cddb5e0b410402a4f0a164e614965",
+      "publication_sha256": "2d6bbd64eecf15552eebc24481797b768323c948599bedea8bfeb079c3392ac4"
+    },
+    {
+      "path": "yunkai-next/core/src/main/kotlin/com/wangzan101/mika/core/cap/web/cdp/CdpSession.kt",
+      "archived_sha256": "76f262bc9d1103d6d0042b1ab6fe51d45c25bb003a8ef707bb81782b7c2a59cf",
+      "publication_sha256": "0f9e1e13c03bca39c3451de7684420b9f68bc62d937fa124a62748ddf07f794a"
+    },
+    {
+      "path": "yunkai-next/core/src/main/kotlin/com/wangzan101/mika/core/gate/ConfirmationGate.kt",
+      "archived_sha256": "e953974c011313f26f8fd9cdeecc71073f5aeb7476a17fa98462896492535a24",
+      "publication_sha256": "610e6a4f8b6c0a21c0f673a141c89f5e513b798ca4c9b02a02a910711d3d39ba"
+    },
+    {
+      "path": "yunkai-next/core/src/main/kotlin/com/wangzan101/mika/core/general/RequestConfirmation.kt",
+      "archived_sha256": "bb0e32bd0cdd06871e24ca894ed7fcfad3429e6d19b819ecf3c7fc1e3788c33b",
+      "publication_sha256": "40e47f4dd9a8fd22ed5667e9de721405a7aa626113eea8406572aedfef8a3304"
+    },
+    {
+      "path": "yunkai-next/core/src/main/resources/prompts/capabilities/handover.md",
+      "archived_sha256": "d2719fc04b2d1bff9d291452172c2a7b7167d7777c40e6d10ef50debc0f7dbc1",
+      "publication_sha256": "d2719fc04b2d1bff9d291452172c2a7b7167d7777c40e6d10ef50debc0f7dbc1"
+    },
+    {
+      "path": "yunkai-next/core/src/main/resources/prompts/capabilities/sandbox.md",
+      "archived_sha256": "7d52cbfca46b5b193b7f85a7eeffec2eb5f25c2d66144b801cc753015a0cae3d",
+      "publication_sha256": "7d52cbfca46b5b193b7f85a7eeffec2eb5f25c2d66144b801cc753015a0cae3d"
+    },
+    {
+      "path": "yunkai-next/core/src/main/resources/prompts/system/identity.md",
+      "archived_sha256": "eae26e971b1cd276cc3b75cc7c92730959292f6d7a278fa46c713467e0bf1c43",
+      "publication_sha256": "eae26e971b1cd276cc3b75cc7c92730959292f6d7a278fa46c713467e0bf1c43"
+    },
+    {
+      "path": "yunkai-next/core/src/main/resources/prompts/system/principles.md",
+      "archived_sha256": "cc27fc8496d0c41d05aa285a552a6e66a98225d3715da1786b1915288ea427ca",
+      "publication_sha256": "cc27fc8496d0c41d05aa285a552a6e66a98225d3715da1786b1915288ea427ca"
+    },
+    {
+      "path": "yunkai-next/core/src/main/resources/prompts/tools/phone_run.md",
+      "archived_sha256": "e9bf702b9ccac15a63c7ec3452f76d118fddf54c9a0a707c16f993d21f24f88c",
+      "publication_sha256": "e9bf702b9ccac15a63c7ec3452f76d118fddf54c9a0a707c16f993d21f24f88c"
+    },
+    {
+      "path": "yunkai-next/core/src/main/resources/prompts/tools/request_confirmation.md",
+      "archived_sha256": "f318f756dd0a35de81e5224d2bbeb4b4e0987d637ff0d5d38f241f12f08e4fa8",
+      "publication_sha256": "f318f756dd0a35de81e5224d2bbeb4b4e0987d637ff0d5d38f241f12f08e4fa8"
+    },
+    {
+      "path": "yunkai-next/core/src/main/resources/prompts/tools/share_file.md",
+      "archived_sha256": "953d5d92583fc02b74c631220e5a964075d33a08c9a1d2ab3a9067eade910f9b",
+      "publication_sha256": "953d5d92583fc02b74c631220e5a964075d33a08c9a1d2ab3a9067eade910f9b"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/action/ActionExecutorOriginsTest.kt",
+      "archived_sha256": "8fb4d96fe1b9ed8a1ab08d8baf89b34fd902764fbd3761afb02ac34e5ce21062",
+      "publication_sha256": "72e93015d2d2406e1e1257faf23c25127dbffa518889ae389196141de2e02c40"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/action/ApprovalPolicyTest.kt",
+      "archived_sha256": "c465eb410f65c0dbb2d258fdf5e4a6a04d8a189460011fe7c8c2cda7d20329d2",
+      "publication_sha256": "8c2bc0f9228ead00de936c729c1b67a405ab637744b12d51c98496370476fdac"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/action/DescribedActionsTest.kt",
+      "archived_sha256": "daa6d17710227073063387ff6cc3e29337a4a8d6b87c6b9f02a31304d7868a41",
+      "publication_sha256": "17bc9f3c83d702e1a9006b1c7f7e7cc5b3cdc9edcbb9a6da6e7241aaea0e4bcd"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/action/PaymentOnlyAskTest.kt",
+      "archived_sha256": "de67961b05b78a0436f0e56d433fdfb6c1f23ec5ea6a8881c8a2f0bda5d851c2",
+      "publication_sha256": "cf63c96b9864ab8fb0e7d7420a954aea22a5fcc3db8a0431b0d0846a6416d51b"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/agent/AgentLoopFrameTest.kt",
+      "archived_sha256": "4bb0ba6bb65cc1c986c6fe272d0fc9a51afe9c3706782ae93a657d8102cf292f",
+      "publication_sha256": "2265dd51c3d87ed7bb147152a7a0d4e10f021b9a9694f07b68f704b118c8bc2d"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/agent/AgentLoopTest.kt",
+      "archived_sha256": "d6e424eee7b8d4841033ac4123ed70ddb31d2051bf1ac3084e664837d324a24b",
+      "publication_sha256": "e7c21b3780b35e90815b238500234d628a9b3a3ae10b2a82ac6131585332da60"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/agent/LoopScenarioTest.kt",
+      "archived_sha256": "cac0d59d3c08923e8d382d243e7bb50bdffe685175ffa14f2ba03199014db029",
+      "publication_sha256": "5c9b84a1e28b793babd5b152cd7df786de2c6517f7c3403c52db8ea5fbf17ab2"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/agent/SystemPromptTest.kt",
+      "archived_sha256": "76ef8dc08b8017bf21b899c48d5db51c20703ced3334a6deaee32c393e9f42a3",
+      "publication_sha256": "81877ff70c78d9a31c3f4a9128b0cfbc263d1e2b1210c475f863c9ccd8752f0c"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/cap/sandbox/FakeSandbox.kt",
+      "archived_sha256": "feb4dc2342de1e88d0c4ba65f9f28fa5a875bd2c926c6c0b227398c8f388628a",
+      "publication_sha256": "0f2689628637e65c48f29b260674b79b869f409f82eaf3e42dc893dbeb8a0789"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/cap/web/cdp/CdpDeadlineTest.kt",
+      "archived_sha256": "14585bcaa5f4772c5ea444124f486aabeae640b89fa7e32b8ec28f5210845db7",
+      "publication_sha256": "f89ea0eff2515448f275c538a77e84bf3770807fbb48206fc2472dbfb519f9ef"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/gate/AgentLoopGateTest.kt",
+      "archived_sha256": "4c7bbe07891d483a0a9020e67301feb2d00f46005f406d9ae5bbfa28e9494b56",
+      "publication_sha256": "dc929a3121edbfbb160ee92650e7529fa17dc0b896e16e54609cb5a16c3a055e"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/gate/ConfirmationGateTest.kt",
+      "archived_sha256": "5c599ad563beebfd77009bd8a4130af76192004735fa083cde9e886173dfd1be",
+      "publication_sha256": "a8408bb3c2d8982931959c9c1054bcbc15a278620b4a7f3140e27a2d3c449917"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/knowledge/BundledKnowledgeTest.kt",
+      "archived_sha256": "317eb8cf6f97ddd44d00a02ae474ce324648ebc4660d1d7acaee091f885a32ea",
+      "publication_sha256": "d82fc26e71dd00c4d38ecc93a20b75496e1947bc9cc5bbcc9968d2d0bcb8c9f6"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/record/AgentLoopRecordTest.kt",
+      "archived_sha256": "1bda9ef8e548b5d8426d5bf2a28c897a9650053979d202923632899111104ea3",
+      "publication_sha256": "59de4023557b08d7fb382b2072a4a75fc4431ab85c69e616ddb07ae33909a36a"
+    },
+    {
+      "path": "yunkai-next/core/src/test/kotlin/com/wangzan101/mika/core/tool/ToolDispatcherSandboxTest.kt",
+      "archived_sha256": "049106369d6789da450e2ea83ce2db83692bbec646073c6c589bf4597e754322",
+      "publication_sha256": "bb9f43ebbee7d027341caa8346b1110d323cdda24d9f7835c00512db453bade2"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/a_simple_phone.txt",
+      "archived_sha256": "33a4d38775d4376c14ac4b397f4659a18098fcd0e1b5b56f31ce4e32b65372e8",
+      "publication_sha256": "33a4d38775d4376c14ac4b397f4659a18098fcd0e1b5b56f31ce4e32b65372e8"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/b_web_site_knowledge.txt",
+      "archived_sha256": "2faf232ac29453fbc2f60a1387ffb5c1b63bd2bf6c9f120bbfb8b5dedd12b441",
+      "publication_sha256": "2faf232ac29453fbc2f60a1387ffb5c1b63bd2bf6c9f120bbfb8b5dedd12b441"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/c_empty_reply_nudge.txt",
+      "archived_sha256": "943022f8b84869ab53943550feb5236a98d48c6309d40ef022cc3f000be95c57",
+      "publication_sha256": "943022f8b84869ab53943550feb5236a98d48c6309d40ef022cc3f000be95c57"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/d_ref_expired.txt",
+      "archived_sha256": "caa57b937417be23e5c17a61806d0253073875d5068a16187c73aee171685f2d",
+      "publication_sha256": "caa57b937417be23e5c17a61806d0253073875d5068a16187c73aee171685f2d"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/e_irreversible_declined.txt",
+      "archived_sha256": "b3b49f18ceeefcca89bc41abfbce320a540b4a637fda3d386be89c19efea99b9",
+      "publication_sha256": "b3b49f18ceeefcca89bc41abfbce320a540b4a637fda3d386be89c19efea99b9"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/f_batch_steps.txt",
+      "archived_sha256": "177c3feeecaf7a73bb2ae5787d20b9df6d94253db54f1db4f186f7d8b676f723",
+      "publication_sha256": "177c3feeecaf7a73bb2ae5787d20b9df6d94253db54f1db4f186f7d8b676f723"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/g_browser_script_gated.txt",
+      "archived_sha256": "c6a76010681a1b3eda4ab3779dcb90c3bdd8224d3258bf0efcd6c37a4706e768",
+      "publication_sha256": "c6a76010681a1b3eda4ab3779dcb90c3bdd8224d3258bf0efcd6c37a4706e768"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/h_provider_errors.txt",
+      "archived_sha256": "94b8f350a663eefadd0bc0ae4f2ae65b5f87f21d7e9f0f893fc9f6f16c0ca6a4",
+      "publication_sha256": "94b8f350a663eefadd0bc0ae4f2ae65b5f87f21d7e9f0f893fc9f6f16c0ca6a4"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/i_context_overflow.txt",
+      "archived_sha256": "fd139cab75b86bfe4424f6b2e9af9a87ee0798a9fb5ee0925add09483485d995",
+      "publication_sha256": "fd139cab75b86bfe4424f6b2e9af9a87ee0798a9fb5ee0925add09483485d995"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/j_step_budget.txt",
+      "archived_sha256": "2ddc5eedff950edc2fd5b20d52042111093d087e1a543dba229572be8d406301",
+      "publication_sha256": "2ddc5eedff950edc2fd5b20d52042111093d087e1a543dba229572be8d406301"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/k_truncated_malformed.txt",
+      "archived_sha256": "2c5daba3b265dc886c6bb525e40e97839799398ee4f7f77fcfbea69f84cef6a9",
+      "publication_sha256": "2c5daba3b265dc886c6bb525e40e97839799398ee4f7f77fcfbea69f84cef6a9"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/l_unconfirmed_labelled.txt",
+      "archived_sha256": "7979bcdea1f3a9ddff61b5a9f7717b41c374d099eb5417c98020e4869a6b227a",
+      "publication_sha256": "7979bcdea1f3a9ddff61b5a9f7717b41c374d099eb5417c98020e4869a6b227a"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/loop-snapshots/m_irreversible_verified.txt",
+      "archived_sha256": "aef2cef15c098df4b24e41422677bca380ca35b2bf93a048f5b1ead34ea5b967",
+      "publication_sha256": "aef2cef15c098df4b24e41422677bca380ca35b2bf93a048f5b1ead34ea5b967"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/feedback-loop.txt",
+      "archived_sha256": "bb21ceac4a027dee0bfd7349a5e451cfa565312a87ea241794da9f82c9cd595f",
+      "publication_sha256": "bb21ceac4a027dee0bfd7349a5e451cfa565312a87ea241794da9f82c9cd595f"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/feedback-tools.txt",
+      "archived_sha256": "adf5e1eba4357a581f543fdcc65b7880c8eb6e9ee5b8b38b7e9df68e8c34f29c",
+      "publication_sha256": "adf5e1eba4357a581f543fdcc65b7880c8eb6e9ee5b8b38b7e9df68e8c34f29c"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/layers/all.txt",
+      "archived_sha256": "85832d1f0c2eeb22fbab1224918d7150ac1181e0b27f9734693b9b20136fb393",
+      "publication_sha256": "85832d1f0c2eeb22fbab1224918d7150ac1181e0b27f9734693b9b20136fb393"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/layers/chat.txt",
+      "archived_sha256": "40c6122c1ea9de658e3b75352dfd10a54b909016ef9b1b90b2d0a3ff4eac7866",
+      "publication_sha256": "40c6122c1ea9de658e3b75352dfd10a54b909016ef9b1b90b2d0a3ff4eac7866"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/layers/phone.txt",
+      "archived_sha256": "e353122121c4b23b194a4985977ed4378b91a3f2c9a2be2d7349e9ea078524cd",
+      "publication_sha256": "e353122121c4b23b194a4985977ed4378b91a3f2c9a2be2d7349e9ea078524cd"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/layers/sizes.txt",
+      "archived_sha256": "8c3a27dd9089055da87275582019c52e1c4a1068ae88e5f2e05e0b272b217227",
+      "publication_sha256": "8c3a27dd9089055da87275582019c52e1c4a1068ae88e5f2e05e0b272b217227"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/layers/web.txt",
+      "archived_sha256": "fe1e2ec053a069fa67deaf50124c39c457946c756f0fd4d8166647961c91d091",
+      "publication_sha256": "fe1e2ec053a069fa67deaf50124c39c457946c756f0fd4d8166647961c91d091"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/sizes.txt",
+      "archived_sha256": "99d6b292b7bf506926ff1bc016ec2e561b901bb2c8aa28ef8f221c4ac1fa2990",
+      "publication_sha256": "99d6b292b7bf506926ff1bc016ec2e561b901bb2c8aa28ef8f221c4ac1fa2990"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/system/everything.txt",
+      "archived_sha256": "711243225638faa47660a831f774a9c6d8d03ebccc7a5a9d274ce0c3f1b5bc1b",
+      "publication_sha256": "711243225638faa47660a831f774a9c6d8d03ebccc7a5a9d274ce0c3f1b5bc1b"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/system/phone-inline-batch.txt",
+      "archived_sha256": "22e0e02a7e21d9e178dac7fb1896e3aadc308596001734af7b3f6d09aa595506",
+      "publication_sha256": "22e0e02a7e21d9e178dac7fb1896e3aadc308596001734af7b3f6d09aa595506"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/system/phone-sandbox-offline.txt",
+      "archived_sha256": "e0406123df3c04cc174cdb99457e0b0ac1cc5cbd7ee5ae4dc490cb72b3e20123",
+      "publication_sha256": "e0406123df3c04cc174cdb99457e0b0ac1cc5cbd7ee5ae4dc490cb72b3e20123"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/system/phone-sandbox-preparing.txt",
+      "archived_sha256": "363d293b6e7e4f3c4812029466544816972ea77a3cff4fdcd37bdd7e5b22cdd7",
+      "publication_sha256": "363d293b6e7e4f3c4812029466544816972ea77a3cff4fdcd37bdd7e5b22cdd7"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/system/phone-web-sandbox-online.txt",
+      "archived_sha256": "611a26a6ee5e5ad17274875a17a9b50900e91a83eac4b78311a1d579d66cc311",
+      "publication_sha256": "611a26a6ee5e5ad17274875a17a9b50900e91a83eac4b78311a1d579d66cc311"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/system/phone-web.txt",
+      "archived_sha256": "103d3f62015f43ec301e672743f7c75ec8664502f70db6b30b2f7ff83c636676",
+      "publication_sha256": "103d3f62015f43ec301e672743f7c75ec8664502f70db6b30b2f7ff83c636676"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/system/phone.txt",
+      "archived_sha256": "ebbbd2d88188d9628ab8417f5471b0e95ba1a13b88c3b74d69979030e94530d7",
+      "publication_sha256": "ebbbd2d88188d9628ab8417f5471b0e95ba1a13b88c3b74d69979030e94530d7"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompt-surface/tools.txt",
+      "archived_sha256": "67973570dd5c9464722886fb3092a07da3f4b2a82a88608772017a3dcbe03b5f",
+      "publication_sha256": "67973570dd5c9464722886fb3092a07da3f4b2a82a88608772017a3dcbe03b5f"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompts/golden/phone-inline-batch.txt",
+      "archived_sha256": "4285801265be02dd5671d4df75bf3706defc9ede6f22b52d3ebf5dfa1d8bfbeb",
+      "publication_sha256": "4285801265be02dd5671d4df75bf3706defc9ede6f22b52d3ebf5dfa1d8bfbeb"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompts/golden/phone-sandbox-offline.txt",
+      "archived_sha256": "680f7a8175262205737e6611763f41e8e1ad3a5bc7ce7a4c134578ae15556a49",
+      "publication_sha256": "680f7a8175262205737e6611763f41e8e1ad3a5bc7ce7a4c134578ae15556a49"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompts/golden/phone-sandbox-preparing.txt",
+      "archived_sha256": "ee023f0539713634bf1559fe68a832cdd8eb18dd154f0480b5308363e228dc5d",
+      "publication_sha256": "ee023f0539713634bf1559fe68a832cdd8eb18dd154f0480b5308363e228dc5d"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompts/golden/phone-web-sandbox-online.txt",
+      "archived_sha256": "13dd6f743bb6ebebd4bbd20669e08b4cf3d43e7fda5cab8c6bffc765bc3c4936",
+      "publication_sha256": "13dd6f743bb6ebebd4bbd20669e08b4cf3d43e7fda5cab8c6bffc765bc3c4936"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompts/golden/phone-web.txt",
+      "archived_sha256": "3f284cea34b1c349b779f3dc7a93b52fbf22b2dfa22747b61850dc61083105cf",
+      "publication_sha256": "3f284cea34b1c349b779f3dc7a93b52fbf22b2dfa22747b61850dc61083105cf"
+    },
+    {
+      "path": "yunkai-next/core/src/test/resources/prompts/golden/phone.txt",
+      "archived_sha256": "fd831b162f9179772db652d71e58c2912643526fba65eca3ce025dbd8494fe0f",
+      "publication_sha256": "fd831b162f9179772db652d71e58c2912643526fba65eca3ce025dbd8494fe0f"
+    },
+    {
+      "path": "yunkai-next/eval/README.md",
+      "archived_sha256": "104a309416836d52a2cc70c427bcd9f0a4ec354be68cce077b4d4ca5342638b5",
+      "publication_sha256": "c23a24c847a5905f13964a1b274b4a611177a271203c864bf2df36d33a8874fd"
+    },
+    {
+      "path": "yunkai-next/settings.gradle.kts",
+      "archived_sha256": "da951b8645b30428862323fc2575b1d035b11deccddbcce299c80015f9dbdd19",
+      "publication_sha256": "deb2a8a2c40e032bb123f83bab110c27bbbd7f222811afe668fcc27c8ad08f04"
+    }
+  ]
+}

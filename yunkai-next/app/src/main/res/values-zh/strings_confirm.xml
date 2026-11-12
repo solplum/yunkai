@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<resources>
+    <string name="confirm_note">询问模式下，花钱、不可逆和未知风险操作每次都要你同意。</string>
+    <string name="confirm_pay">付款</string>
+    <string name="confirm_delete">删除</string>
+    <string name="confirm_order">下单</string>
+    <string name="confirm_submit">提交</string>
+    <string name="confirm_other">其他操作</string>
+    <string name="confirm_title">要你同意:%1$s</string>
+    <string name="confirm_in_app">在 %1$s</string>
+    <string name="confirm_target">对象:%1$s</string>
+    <string name="confirm_content">内容:%1$s</string>
+</resources>

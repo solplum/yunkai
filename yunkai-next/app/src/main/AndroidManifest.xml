@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai Next isolated prototype (2026-10-30); see repository-root UPSTREAM.md. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 沙箱联网时读当前网络的 DNS 服务器 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <!-- phone_set_alarm / phone_set_timer:经安卓标准接口请时钟 App 设闹钟、计时器(普通权限,安装即有) -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <!-- 「重启后自动恢复」:开机时重新打开无线调试。这个授权普通安装拿不到,只在用户打开那个开关后
+         经已配对的连接授予;不在这里声明的话连授予都做不了 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 对话页附件面板里的「最近的照片」:安卓 13 起读照片,14 起可以只给部分照片,12 及以前读外部存储。
+         不给也能用系统照片选择器、文件选择器;拍照走系统相机,不要相机权限 -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- list_apps 列出可启动的 App;解析系统权限框所在的包,用于判断「被切走」 -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <intent>
+            <action android:name="android.content.pm.action.REQUEST_PERMISSIONS" />
+        </intent>
+        <!-- 系统动作:先查有没有时钟、日历 App 接,没有就退回去操作界面 -->
+        <intent>
+            <action android:name="android.intent.action.SET_ALARM" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SET_TIMER" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SHOW_ALARMS" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT" />
+            <data android:mimeType="vnd.android.cursor.dir/event" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="com.wangzan101.mika.MikaApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <!-- 界面只有一个:从桌面、通知、别的 App 或命令打开都回到这一个(新的打开交给 onNewIntent),不在上面叠出第二个 -->
+        <activity
+            android:name="com.wangzan101.mika.ui.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Mika"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 通知里接管按钮的落点:从通知启动 Activity 才会收起通知栏,让用户直接看到挪到主屏的 App -->
+        <activity
+            android:name="com.wangzan101.mika.takeover.TakeoverActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <!-- App 里的文件查看页(网页、Markdown、PDF、图片、文本) -->
+        <activity
+            android:name="com.wangzan101.mika.ui.viewer.FileViewerActivity"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard|uiMode|density"
+            android:exported="false"
+            android:theme="@style/Theme.Mika" />
+
+        <!-- 网页接管:把后台的网页标签(同一个 WebView)拿到主屏给用户处理 -->
+        <activity
+            android:name="com.wangzan101.mika.web.WebTakeoverActivity"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard|uiMode|density"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.wangzan101.mika.a11y.MikaAccessibilityService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service" />
+        </service>
+
+        <service
+            android:name="com.wangzan101.mika.task.TaskService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Runs a user-requested phone task on the app's own virtual display and shows its progress" />
+        </service>
+
+        <!-- 后台准备运行环境(解出随 APK 自带的根文件系统),只在准备期间运行 -->
+        <service
+            android:name="com.wangzan101.mika.sandbox.SandboxService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- 网页上传:把暂存的上传文件以只读 content:// 地址交给内置浏览器的文件选择框,不对外导出。
+             FileProvider 要求 grantUriPermissions=true,否则进程启动时就抛异常;
+             这里从不把地址授权给别的 App,读取方只有本进程里的 WebView。 -->
+        <provider
+            android:name="com.wangzan101.mika.web.WebFilesProvider"
+            android:authorities="${applicationId}.webfiles"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/web_files" />
+        </provider>
+
+        <!-- 对话页附件:相机把照片写进缓存里的 camera/,点开已发附件时复制出的一份在 viewing/;不对外导出,用到时临时授权 -->
+        <provider
+            android:name="com.wangzan101.mika.chat.AttachFilesProvider"
+            android:authorities="${applicationId}.attachfiles"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/attach_files" />
+        </provider>
+
+        <!-- 配对通知输入框填的配对码 -->
+        <receiver
+            android:name="com.wangzan101.mika.setup.PairingCodeReceiver"
+            android:exported="false" />
+
+        <!-- 内置助手(shell 身份)交接 Binder 的入口:shell 有这个权限,普通 App 没有;
+             进入后还要核对调用方 uid、一次性口令和 APK,见 HelperHub.offer -->
+        <provider
+            android:name="com.wangzan101.mika.shell.HelperHandoffProvider"
+            android:authorities="${applicationId}.helper"
+            android:exported="true"
+            android:multiprocess="false"
+            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+        <!-- 开机广播只由系统发出(受保护的广播),按要求导出 -->
+        <receiver
+            android:name="com.wangzan101.mika.setup.BootRestoreReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.wangzan101.mika.task.TriggerAlarmReceiver" android:exported="false" />
+    </application>
+
+</manifest>

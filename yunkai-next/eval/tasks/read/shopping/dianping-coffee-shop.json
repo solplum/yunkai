@@ -1,0 +1,21 @@
+{
+  "id": "dianping-coffee-shop",
+  "goal": "在大众点评搜索「咖啡」,告诉我第一家店的店名和人均价格。只看,不要加购物车、不要下单、不要进「我的」页面,也不要写评价",
+  "apps": [
+    "com.dianping.v1"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.dianping.v1"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 2
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

@@ -1,0 +1,27 @@
+{
+  "id": "web-mix-android-version-check",
+  "goal": "先用网页查一下 Android 目前最新的正式版是第几版,再到系统设置里看看这台手机的 Android 版本,告诉我两个版本号,以及这台手机是不是最新的。只看,不要改任何设置、不要点系统更新",
+  "apps": [
+    "com.android.settings"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.android.settings"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_contains",
+      "all": [
+        "{probe:rel}"
+      ]
+    }
+  ],
+  "maxSteps": 40,
+  "timeoutSec": 540,
+  "probesBefore": {
+    "rel": "android_release"
+  },
+  "note": "本机版本号用探针核对;最新正式版会变,不核对"
+}

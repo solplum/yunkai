@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 网页上传只交中转区里的副本(缓存目录下的 webupload/,沙箱碰不到);工作区本身不开放 -->
+<paths>
+    <cache-path name="webupload" path="webupload/" />
+</paths>

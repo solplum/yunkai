@@ -1,0 +1,20 @@
+{
+  "id": "web-sandbox-pdf-text",
+  "goal": "用网页下载 https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf,再用 Python 把这个 PDF 里的文字提取出来,告诉我原文",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_contains",
+      "all": [
+        "Dummy PDF file"
+      ]
+    }
+  ],
+  "maxSteps": 25,
+  "timeoutSec": 480,
+  "note": "PDF 文字提取要在沙箱里做,不能凭文件名猜;正文只有一行 Dummy PDF file"
+}

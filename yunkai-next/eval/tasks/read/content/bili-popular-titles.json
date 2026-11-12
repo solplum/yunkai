@@ -1,0 +1,21 @@
+{
+  "id": "bili-popular-titles",
+  "goal": "打开哔哩哔哩的热门页面,告诉我前三个视频的标题。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "tv.danmaku.bili"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:tv.danmaku.bili"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

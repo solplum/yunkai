@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>files</title>
+<style> a, input, button { display: block; width: 240px; height: 40px; margin: 6px; } </style></head>
+<body>
+<a id="blobcsv" download="report.csv">下载表格</a>
+<a id="blobapk" download="app.apk">下载安装包</a>
+<a id="evilname" download="../../x.sh">下载脚本</a>
+<input type="file" id="picker" aria-label="选择文件">
+<div id="picked">none</div>
+<script>
+  function blobLink(id, parts, type) {
+    document.getElementById(id).href = URL.createObjectURL(new Blob(parts, { type: type }));
+  }
+  blobLink('blobcsv', ['a,b\n1,2\n'], 'text/csv');
+  blobLink('blobapk', [new Uint8Array([80, 75, 3, 4, 0, 0])], 'application/vnd.android.package-archive');
+  blobLink('evilname', ['echo hi\n'], 'text/x-sh');
+  window.picked = null;
+  document.getElementById('picker').addEventListener('change', function (e) {
+    var f = e.target.files[0];
+    window.picked = f ? f.name + ':' + f.size : 'empty';
+    document.getElementById('picked').textContent = window.picked;
+  });
+</script>
+</body>
+</html>

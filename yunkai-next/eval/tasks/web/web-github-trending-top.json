@@ -1,0 +1,18 @@
+{
+  "id": "web-github-trending-top",
+  "goal": "用网页打开 GitHub Trending(https://github.com/trending),告诉我今天排名前三的仓库名称和各自的星标数。只看,不要登录、不要点 Star",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 360
+}

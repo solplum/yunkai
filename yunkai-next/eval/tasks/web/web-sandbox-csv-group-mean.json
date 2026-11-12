@@ -1,0 +1,22 @@
+{
+  "id": "web-sandbox-csv-group-mean",
+  "goal": "用网页下载 https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv,用 Python 统计 Sex 为 M 和 F 的各有多少人,再算出 F 的 Weight 平均值(保留两位小数)",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "123\\.29"
+    },
+    {
+      "type": "answer_regex",
+      "pattern": "11[\\s\\S]*(?<!\\d)7(?!\\d)|(?<!\\d)7(?!\\d)[\\s\\S]*11"
+    }
+  ],
+  "maxSteps": 25,
+  "timeoutSec": 480,
+  "note": "分组统计:M 11 人、F 7 人,F 的平均体重 123.285…;列名和值前后带空格,要按 CSV 正确解析"
+}

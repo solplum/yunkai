@@ -1,0 +1,44 @@
+{
+  "id": "calculator-divide",
+  "goal": "用手机自带的计算器算 98765 除以 25,告诉我结果",
+  "apps": [
+    "{app:calculator}"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "app:calculator"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "3,?950\\.6(?!\\d)"
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 420,
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的",
+  "variants": [
+    {
+      "goal": "打开手机自带的计算器,帮我算一下 98765 除以 25 等于多少"
+    },
+    {
+      "goal": "用手机自带的计算器算 1234 除以 8,告诉我结果",
+      "checks": [
+        {
+          "type": "answer_regex",
+          "pattern": "154\\.25(?!\\d)"
+        },
+        {
+          "type": "answer_grounded",
+          "minItems": 1
+        }
+      ]
+    }
+  ]
+}

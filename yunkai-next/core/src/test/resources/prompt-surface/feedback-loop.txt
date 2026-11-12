@@ -1,0 +1,69 @@
+### empty_reply
+Your reply was empty. Continue the task with your tools, or reply with your final answer to the user in text.
+### truncated_reply
+Your reply was cut off by the output limit before it was complete. Continue the task with your tools, or reply again with a shorter final answer.
+### unconfirmed_nudge
+Before this answer goes to the user:
+These items in your answer do not appear in anything you read during this task:
+- ¥89
+- 「已发送」
+Check this: read the place again if you can, then reply with your corrected final answer. Anything you still cannot confirm, say plainly in the answer that you could not confirm it instead of stating it as fact. This check happens once; your next answer goes to the user.
+### answer_or_failure
+If the result the task asks for needs a feature, menu, setting, page, item or value that is not there, call end_not_done listing what you checked. Only a yes/no question about whether something exists is answered by its absence: if the app's own search gave a definitive none, reply that it does not exist, quoting the text it showed.
+### give_up_advice
+You keep repeating without progress. Stop revisiting the same places. If a specific missing choice or detail from the user would decide the next route, call ask_user and ask it once. Otherwise, continue only with a concrete untried route; if there is none, call end_not_done with the confirmed partial result, what is still missing and what you checked. If the result the task asks for needs a feature, menu, setting, page, item or value that is not there, call end_not_done listing what you checked. Only a yes/no question about whether something exists is answered by its absence: if the app's own search gave a definitive none, reply that it does not exist, quoting the text it showed.
+### repeated_input_advice
+You have already typed "外卖" 3 times in this task; typing it again will show the same result. If what you have checked shows the target is not there, stop. If the result the task asks for needs a feature, menu, setting, page, item or value that is not there, call end_not_done listing what you checked. Only a yes/no question about whether something exists is answered by its absence: if the app's own search gave a definitive none, reply that it does not exist, quoting the text it showed.
+### progress_check
+Progress check: 10 of 20 steps used and the task is not finished. If what you have checked so far (search inside the app, its main menus) shows the target is not there or cannot be reached, stop now. If the result the task asks for needs a feature, menu, setting, page, item or value that is not there, call end_not_done listing what you checked. Only a yes/no question about whether something exists is answered by its absence: if the app's own search gave a definitive none, reply that it does not exist, quoting the text it showed. Continue only if you have a concrete, untried next place to look.
+### final_turn
+You are out of steps; no more phone actions are possible. If the task is done, reply to the user with the result in text, stating only what you read. If it is not done or only partly done, call end_not_done with the confirmed partial result, what you checked and what is missing.
+### screenshot_note
+Current screenshot for the observation above.
+### file_image_note
+The image file read above.
+### action_frame_note
+The screen right after the call above. Act with ref + snapshotId from the elements in that result's screen field; the image is only for understanding, and its screenshotId is for view_past_screens, never a snapshotId.
+### batch_view_note
+The screen after the steps above. Act with ref + snapshotId from these elements; the image (if any) is only for understanding, and its screenshotId is for view_past_screens, never a snapshotId.
+screen: 
+### recalled_note
+Recalled earlier screenshots, in the order of the view_past_screens result entries marked imageAttached. They show past screens, not the current one.
+### nudge_source
+没有给出回答
+### unconfirmed_source
+核对回答
+### progress_source
+步数自查
+### final_source
+步数用完
+### replay_source
+按以往的做法
+### approved_step_first
+先单独执行已同意的那一步:the user approved one action. Do exactly that action as a single tool call (not inside do_steps or web_script), then continue.
+### replay_screen_header
+当前界面(读取结果,编号可直接用):
+### replay_no_screen
+当前界面没能读出来,请先 observe 再接着做。
+### confirmation_declined
+用户没有同意,不要再尝试这个操作;汇报现状后结束
+### confirmation_approved
+用户同意了一次。马上做这一个操作,中间不要点别处、滑动、返回或切换 App(打字可以),3 步内有效;紧接着的下一个匹配操作无论成功与否都会用掉这次同意,再做要重新申请。
+### no_answer_message
+没有在时限内收到回答
+### handback_note
+交回只表示把手机还回来了,不代表这一步成功了。先读取当前界面核实结果,再继续或汇报。
+### no_handback_note
+没有发生交回。不要说成用户处理过了;如实汇报接管的结局,需要时换别的办法或结束。
+### user_finished_note
+用户说已自己完成
+### user_finished_prompt
+用户说已自己完成,请只 observe 读一下 App 现在的状态来核实:确认完成就直接回答用户读到的结果,无法确认就 end_not_done,不要再做其他操作。
+### loop result 1.o1
+{"ok":true,"currentApp":"com.x","snapshotId":"snap1","screenshotId":1,"screenChangedDuringRead":false,"viewport":{"width":1080,"height":2400},"elements":[{"ref":"@e1","role":"button","name":"搜索","center":{"x":500,"y":50},"bounds":[0,0,999,100],"resourceId":"a:id/s"}],"truncated":false,"moreTools":"From your next call on you also have the full phone tools (phone_observe, phone_list_elements, phone_tap, phone_scroll and the rest), with their descriptions and how to use them."}
+### loop result 1.o2
+{"ok":false,"error":"parallel_tool_call_skipped","message":"Phone actions run one at a time. Observe the result of the first action, then try again."}
+### loop result 1.c
+{"ok":false,"error":"confirmation_mismatch","message":"app com.y is not the app on screen now (com.x). Observe, then call request_confirmation again with the package of the app on screen.","recoverable":true}
+### loop result 2.c
+{"ok":false,"error":"unknown_tool","tool":"request_confirmation","message":"request_confirmation is not available.","recoverable":true}

@@ -1,0 +1,20 @@
+{
+  "id": "web-github-notifications",
+  "goal": "用网页看一下我 GitHub 上有几条未读通知",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "signedIn:github.com"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "\\d+"
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 300,
+  "note": "需要事先在设置「网站登录」里登录 GitHub;Agent 不该再要求登录"
+}

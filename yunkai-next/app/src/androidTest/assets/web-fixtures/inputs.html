@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>inputs</title>
+<style>
+  * { margin: 0; padding: 0; font-size: 14px; line-height: 20px; box-sizing: border-box; }
+  body { padding: 6px; }
+  input, button { display: block; height: 32px; width: 220px; margin-bottom: 6px; }
+  #editor { width: 220px; min-height: 32px; border: 1px solid #888; margin-bottom: 6px; }
+  #box { width: 220px; height: 80px; overflow-y: auto; border: 1px solid #888; margin-bottom: 6px; }
+  #shop { position: relative; width: 220px; height: 40px; margin-bottom: 6px; }
+  #buy { position: absolute; left: 0; top: 0; }
+  #cookie { position: absolute; left: 0; top: 0; width: 220px; height: 40px; background: #eee; }
+  #cookie button { width: 60px; height: 24px; display: inline-block; }
+</style>
+</head>
+<body>
+<input id="plain" aria-label="普通输入">
+<input id="phone" aria-label="手机号" inputmode="tel">
+<input id="thief" aria-label="会抢焦点" onfocus="document.getElementById('plain').focus()">
+<form id="pwform"><input type="password" id="pw" aria-label="密码"></form>
+<div id="editor" contenteditable="true" aria-label="编辑器"></div>
+<div id="status">inputs=0 text=</div>
+<button id="counter">计数</button>
+<button id="noop">没反应</button>
+<button id="target">目标按钮</button>
+<div id="shop">
+  <button id="buy">购买</button>
+  <div id="cookie">本站使用 Cookie <button id="accept">接受</button></div>
+</div>
+<div id="box"><div style="height:1000px">滚动内容</div></div>
+<div id="count">count=0</div>
+<script>
+  window.clicks = 0;
+  window.lastTrusted = null;
+  window.targetClicks = 0;
+  window.buyClicks = 0;
+  window.submits = 0;
+  document.getElementById('counter').addEventListener('click', function (e) {
+    window.clicks++;
+    window.lastTrusted = e.isTrusted;
+    document.getElementById('count').textContent = 'count=' + window.clicks;
+  });
+  document.getElementById('buy').addEventListener('click', function () { window.buyClicks++; });
+  function bindTarget() {
+    document.getElementById('target').addEventListener('click', function () { window.targetClicks++; });
+  }
+  bindTarget();
+  // 换掉同一个按钮(内容、位置都不变):手里的旧编号指向的元素已不在
+  window.rerender = function () {
+    document.getElementById('target').outerHTML = '<button id="target">目标按钮</button>';
+    bindTarget();
+  };
+  document.getElementById('pwform').addEventListener('submit', function (e) { e.preventDefault(); window.submits++; });
+
+  // 会改写输入的手机号框:按 3-4-4 自动加空格
+  var phone = document.getElementById('phone');
+  phone.addEventListener('input', function () {
+    var d = phone.value.replace(/\D/g, '').slice(0, 11);
+    phone.value = [d.slice(0, 3), d.slice(3, 7), d.slice(7)].filter(Boolean).join(' ');
+  });
+
+  // 只认真实输入事件的编辑器:内容只从 beforeinput 来,直接改 DOM 不算数
+  var editor = document.getElementById('editor');
+  var model = '';
+  var inputs = 0;
+  function render() {
+    editor.textContent = model;
+    document.getElementById('status').textContent = 'inputs=' + inputs + ' text=' + model;
+    var r = document.createRange();
+    r.selectNodeContents(editor);
+    r.collapse(false);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(r);
+  }
+  editor.addEventListener('beforeinput', function (e) {
+    e.preventDefault();
+    var all = window.getSelection().toString().length >= model.length && model.length > 0;
+    if (e.inputType.indexOf('insert') === 0) {
+      var data = e.data || (e.dataTransfer && e.dataTransfer.getData('text/plain')) || '';
+      model = all ? data : model + data;
+    } else if (e.inputType.indexOf('delete') === 0) {
+      model = all ? '' : model.slice(0, -1);
+    }
+    inputs++;
+    render();
+  });
+</script>
+</body>
+</html>

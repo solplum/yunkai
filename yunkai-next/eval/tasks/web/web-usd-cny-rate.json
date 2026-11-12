@@ -1,0 +1,18 @@
+{
+  "id": "web-usd-cny-rate",
+  "goal": "查一下今天美元兑人民币的汇率",
+  "apps": [],
+  "category": "read",
+  "partition": "holdout",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "\\d\\.\\d{2,4}"
+    }
+  ],
+  "maxSteps": 25,
+  "timeoutSec": 360
+}

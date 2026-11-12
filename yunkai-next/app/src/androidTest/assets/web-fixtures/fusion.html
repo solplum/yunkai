@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>fusion</title>
+<style>body{margin:8px;font:16px sans-serif} iframe{display:block;width:300px;height:80px;margin:4px 0;border:0}
+#lis{width:200px;height:40px;background:#cde;margin:6px 0}</style></head><body>
+<button id="plain" style="width:150px;height:40px">Plain</button>
+<div id="lis">Listener only</div>
+<div id="host"></div>
+<div id="closed"></div>
+<iframe id="same" src="fusion-child.html"></iframe>
+<iframe id="cross" src="https://fixtures2.androidplatform.net/assets/web-fixtures/fusion-xchild.html"></iframe>
+<script>
+// 全写在函数里:顶层 var 会撞上 window 自带的只读属性(如 window.closed),整段脚本就此中断
+window.__log = [];
+window.L = function (s) { window.__log.push(s); };
+(function () {
+  window.addEventListener('message', function (e) { L(String(e.data)); });
+  document.getElementById('plain').addEventListener('click', function () { L('plain'); });
+  document.getElementById('lis').addEventListener('click', function () { L('lis'); });
+  var openRoot = document.getElementById('host').attachShadow({ mode: 'open' });
+  openRoot.innerHTML = '<button id="sb" style="width:150px;height:40px">Shadow</button>';
+  openRoot.getElementById('sb').addEventListener('click', function () { L('shadow'); });
+  var closedRoot = document.getElementById('closed').attachShadow({ mode: 'closed' });
+  closedRoot.innerHTML = '<button style="width:150px;height:40px">Closed shadow</button>';
+  closedRoot.querySelector('button').addEventListener('click', function () { L('closed'); });
+  window.__ready = true;
+})();
+</script></body></html>

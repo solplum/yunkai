@@ -1,0 +1,15 @@
+{
+  "id": "weather-forecast-2030",
+  "goal": "用手机自带的天气 App 查一下 2030 年 1 月 1 日的天气预报。只看,不要添加城市",
+  "apps": [
+    "{app:weather}"
+  ],
+  "category": "impossible",
+  "partition": "holdout",
+  "requires": [],
+  "expect": "failed",
+  "checks": [],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的"
+}

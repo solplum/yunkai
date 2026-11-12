@@ -1,0 +1,23 @@
+{
+  "id": "wps-note-create",
+  "goal": "在 WPS 便签里新建一条便签,内容写「Mika评测-{run}-便签」,写完保存",
+  "apps": [
+    "cn.wps.note"
+  ],
+  "category": "write",
+  "partition": "tune",
+  "requires": [
+    "installed:cn.wps.note"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "screen_has",
+      "packageName": "cn.wps.note",
+      "text": "Mika评测-{run}-便签"
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "marker": "Mika评测-{run}-便签"
+}

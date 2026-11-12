@@ -1,0 +1,20 @@
+{
+  "id": "web-zhihu-nickname",
+  "goal": "用网页看一下我知乎账号的昵称是什么",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "signedIn:zhihu.com"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "\\S{2,}"
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 300,
+  "note": "需要事先在设置「网站登录」里登录知乎"
+}

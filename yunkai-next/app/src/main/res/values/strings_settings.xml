@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="language_title">Language</string>
+    <string name="language_system">Follow system</string>
+    <string name="language_system_detail">Chinese on a Chinese system, English otherwise</string>
+    <string name="language_chinese" translatable="false">中文</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="settings_basic">Basic</string>
+    <string name="settings_model">Model</string>
+    <string name="settings_not_set">Not set</string>
+    <string name="settings_phone_ops">Phone control</string>
+    <string name="settings_during_work">While working</string>
+    <string name="settings_during_work_sub">Screen stays on, the app being used is muted</string>
+    <string name="settings_notif_sub">When they pop up, change in system settings</string>
+    <string name="settings_privacy">Privacy &amp; data</string>
+    <string name="settings_memory_sub">What Yunkai remembers and the skills it learned</string>
+    <string name="settings_web_logins">Website sign-ins</string>
+    <plurals name="settings_count_sites">
+        <item quantity="one">%1$d site</item>
+        <item quantity="other">%1$d sites</item>
+    </plurals>
+    <string name="settings_advanced">Advanced</string>
+    <string name="settings_sandbox">Files &amp; computing environment</string>
+    <string name="settings_routes">Saved routes</string>
+    <plurals name="settings_count_routes">
+        <item quantity="one">%1$d route</item>
+        <item quantity="other">%1$d routes</item>
+    </plurals>
+    <string name="settings_recovery">Recovery &amp; repair</string>
+    <string name="settings_developer">Developer options</string>
+    <string name="settings_about">About Yunkai</string>
+    <string name="pill_unsupported">Not supported</string>
+    <string name="pill_available">Ready</string>
+    <string name="pill_needs_attention">Needs attention</string>
+    <string name="sandbox_ready">Ready</string>
+    <string name="sandbox_preparing">Preparing</string>
+    <string name="sandbox_not_prepared">Not set up</string>
+    <string name="settings_all_ready_detail">Model set up · Phone control ready</string>
+    <string name="settings_status">Status</string>
+    <string name="settings_a11y">Accessibility service</string>
+    <string name="settings_a11y_sub">Reads and controls Yunkai’s virtual screen</string>
+    <string name="settings_notif_progress_sub">Progress and “Needs you” alerts</string>
+    <string name="settings_system_version">System version</string>
+    <string name="settings_android_focus">Android %1$s · On Android 13 background work may steal focus from your screen; Android 14+ recommended</string>
+    <string name="settings_android">Android %1$s</string>
+    <string name="settings_meets">Supported</string>
+    <string name="settings_notif_master">All notifications</string>
+    <string name="settings_allowed">Allowed</string>
+    <string name="settings_task_notifs">Task notifications</string>
+    <string name="settings_keep_on">Keep screen on</string>
+    <string name="settings_keep_on_sub">The screen stays on while a task runs, then goes back to normal</string>
+    <string name="settings_mute">Mute the app being used</string>
+    <string name="settings_mute_sub">Apps Yunkai is using stay silent; sound returns when you take over</string>
+    <string name="settings_parallel">Tasks at once</string>
+    <string name="settings_parallel_sub">Tasks from different chats each get their own virtual screen</string>
+    <plurals name="settings_count_tasks">
+        <item quantity="one">%1$d</item>
+        <item quantity="other">%1$d</item>
+    </plurals>
+    <string name="capsule_settings_title">Floating capsule</string>
+    <string name="capsule_settings_sub">See task progress on screen while using other apps</string>
+    <string name="capsule_settings_foot">The capsule is drawn using Yunkai’s accessibility service that’s already on, so no extra permission is needed. If that service is off or can’t draw, you’ll still get notifications.</string>
+    <string name="capsule_mode_off">Off</string>
+    <string name="capsule_mode_tasks">During tasks</string>
+    <string name="capsule_mode_always">Always</string>
+    <string name="capsule_mode_off_detail">Notifications only</string>
+    <string name="capsule_mode_tasks_detail">Appears while a task runs or waits for you, and goes away a few seconds after</string>
+    <string name="capsule_mode_always_detail">Keeps a Yunkai icon on screen even with no tasks</string>
+    <string name="routes_saved">Saved routes</string>
+    <string name="loading">Loading</string>
+    <plurals name="routes_count">
+        <item quantity="one">%1$d route · repeats what worked before, faster</item>
+        <item quantity="other">%1$d routes · repeats what worked before, faster</item>
+    </plurals>
+    <string name="routes_clear_all">Clear all</string>
+    <string name="routes_clear_title">Clear all saved routes?</string>
+    <string name="routes_clear_body">After clearing, Yunkai works things out step by step again next time. Other settings aren’t affected.</string>
+    <string name="clear">Clear</string>
+</resources>

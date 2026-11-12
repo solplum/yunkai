@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>host</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #ff0000; }
+  #btn { position: absolute; left: 20%; top: 40%; width: 60%; height: 15%; font-size: 24px; }
+</style>
+</head>
+<body>
+<button id="btn">tap me</button>
+<script>
+  // 测试读这些值:定时器与动画帧计数、最近一次点击是否为可信事件
+  window.ticks = 0;
+  window.frames = 0;
+  window.clickTrusted = null;
+  setInterval(function () { window.ticks++; }, 100);
+  (function loop() { window.frames++; requestAnimationFrame(loop); })();
+  document.getElementById('btn').addEventListener('click', function (e) { window.clickTrusted = e.isTrusted; });
+</script>
+</body>
+</html>

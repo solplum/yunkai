@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>long</title>
+<style>
+  body { margin: 0; }
+  #grid { display: flex; flex-wrap: wrap; }
+  #grid button { width: 12px; height: 12px; padding: 0; margin: 0; border: 0; background: #ccc; }
+</style>
+</head>
+<body>
+<div id="grid"></div>
+<div style="height:200vh">间隔</div>
+<div id="lazy">懒加载占位</div>
+<div id="paras"></div>
+<script>
+  // 600 个都在视口里的小按钮(超过 400 上限),再加 4000 段带序号的正文,共 5000 个左右节点
+  var g = document.getElementById('grid');
+  for (var i = 1; i <= 600; i++) {
+    var b = document.createElement('button');
+    b.setAttribute('aria-label', 'g' + i);
+    g.appendChild(b);
+  }
+  var p = document.getElementById('paras');
+  for (var j = 1; j <= 4000; j++) {
+    var e = document.createElement('p');
+    e.textContent = 'P-' + String(j).padStart(4, '0') + ' 这是长正文的一段。';
+    p.appendChild(e);
+  }
+  var lazy = document.getElementById('lazy');
+  new IntersectionObserver(function (entries, o) {
+    if (entries.some(function (x) { return x.isIntersecting; })) {
+      lazy.textContent = 'LAZY-LOADED-SECTION';
+      o.disconnect();
+    }
+  }).observe(lazy);
+</script>
+</body>
+</html>

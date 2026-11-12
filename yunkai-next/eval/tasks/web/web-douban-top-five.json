@@ -1,0 +1,19 @@
+{
+  "id": "web-douban-top-five",
+  "goal": "用网页打开豆瓣电影 Top250(https://movie.douban.com/top250),告诉我排名前五的电影名和评分。只看,不要登录、不要标记想看",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 5
+    }
+  ],
+  "maxSteps": 20,
+  "timeoutSec": 360,
+  "note": "表格/列表读数:片名和评分都要在读到的页面里出现过"
+}

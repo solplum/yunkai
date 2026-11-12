@@ -1,0 +1,29 @@
+{
+  "id": "zhihu-search-question",
+  "goal": "在知乎搜索「如何学习 Kotlin」,告诉我搜索结果第一条的标题。只看,不要点赞、评论、关注或分享",
+  "apps": [
+    "com.zhihu.android"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.zhihu.android"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480,
+  "variants": [
+    {
+      "goal": "打开知乎搜「如何学习 Kotlin」,告诉我第一条结果的标题。只看,不要点赞、评论、关注或分享"
+    },
+    {
+      "goal": "在知乎搜索「如何学习 Rust」,告诉我搜索结果第一条的标题。只看,不要点赞、评论、关注或分享"
+    }
+  ]
+}

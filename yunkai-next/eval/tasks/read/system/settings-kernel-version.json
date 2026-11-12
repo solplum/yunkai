@@ -1,0 +1,33 @@
+{
+  "id": "settings-kernel-version",
+  "goal": "在系统设置的「关于手机」里找到内核版本,告诉我内核版本号。只看,不要改任何设置",
+  "apps": [
+    "com.android.settings"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.android.settings"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_regex",
+      "pattern": "\\d+(\\.\\d+){1,}"
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 1
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 420,
+  "variants": [
+    {
+      "goal": "打开系统设置的「关于手机」,看一下内核版本是多少。只看,不要改任何设置"
+    },
+    {
+      "goal": "这台手机的内核版本号是多少?在系统设置的「关于手机」里找一下。只看,不要改任何设置"
+    }
+  ]
+}

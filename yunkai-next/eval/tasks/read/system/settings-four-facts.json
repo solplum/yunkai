@@ -1,0 +1,31 @@
+{
+  "id": "settings-four-facts",
+  "goal": "在系统设置里分别查一下这台手机的型号、Android 版本、存储已用多少、当前电量,四项一起告诉我。只看,不要改任何设置",
+  "apps": [
+    "com.android.settings"
+  ],
+  "category": "read",
+  "partition": "holdout",
+  "requires": [
+    "installed:com.android.settings"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_contains",
+      "all": [
+        "{probe:rel}"
+      ]
+    },
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 45,
+  "timeoutSec": 600,
+  "probesBefore": {
+    "rel": "android_release"
+  },
+  "note": "长链路:四个信息在设置的不同页面;Android 版本用探针核对,其余要在读屏里"
+}

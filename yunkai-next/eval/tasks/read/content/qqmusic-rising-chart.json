@@ -1,0 +1,21 @@
+{
+  "id": "qqmusic-rising-chart",
+  "goal": "打开 QQ 音乐的排行榜,告诉我飙升榜前三首歌的歌名。只看,不要播放、收藏或下载",
+  "apps": [
+    "com.tencent.qqmusic"
+  ],
+  "category": "read",
+  "partition": "tune",
+  "requires": [
+    "installed:com.tencent.qqmusic"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480
+}

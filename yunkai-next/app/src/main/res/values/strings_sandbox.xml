@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Yunkai from Mika d68159366abaea523c5e4e6fd4dc83aad78f9698; see UPSTREAM.md and UPSTREAM_CHANGES.json at repository root. -->
+<!-- Modified for Yunkai product identity (2026-10-30); see repository-root UPSTREAM.md. -->
+<resources>
+    <string name="install_check">Checking device</string>
+    <string name="install_extract">Unpacking</string>
+    <string name="install_configure">Configuring</string>
+    <string name="install_skills">Syncing skill scripts</string>
+    <string name="install_interrupted">Setup was interrupted; you can retry</string>
+    <string name="install_checksum">File checksum mismatch</string>
+    <string name="install_unpack_failed">Couldn’t unpack the environment; please reinstall Yunkai: %1$s</string>
+    <string name="install_unsupported">Not supported on this device (needs arm64)</string>
+    <string name="install_no_space">Not enough space: needs %1$d MB (%2$d MB free)</string>
+    <string name="install_cannot_start">The environment won’t start: %1$s</string>
+    <string name="install_exit_code">exit code %1$d</string>
+    <string name="install_no_client">The mika command is missing (incomplete package)</string>
+    <string name="sandbox_resetting">Resetting</string>
+    <string name="sandbox_incomplete">Environment files are incomplete; you can reset it in Settings → Advanced</string>
+    <string name="sandbox_not_finished">Setup didn’t finish; you can retry</string>
+    <string name="sandbox_network">Allow scripts to go online</string>
+    <string name="sandbox_network_sub">Off by default</string>
+    <string name="sandbox_network_explain">By default Yunkai works with files and runs scripts offline. With this on, scripts can use the network (for example to look up papers or maps) and could also send out files from the chat.</string>
+    <string name="sandbox_isolation_unavailable">This device can’t keep scripts offline: Yunkai can only work with files and run scripts when “Allow scripts to go online” is on</string>
+    <string name="sandbox_reset_title">Reset the environment?</string>
+    <string name="sandbox_reset_body">Deletes the environment Yunkai uses for files and scripts, plus the files created in each chat (including ones you attached), then sets it up again automatically. Chats and settings aren’t affected.</string>
+    <string name="sandbox_broken">Setup didn’t finish: %1$s</string>
+    <string name="sandbox_reset_sub">For when something’s wrong: deletes it and sets it up again</string>
+    <string name="sandbox_reset">Reset environment</string>
+    <string name="reset">Reset</string>
+</resources>

@@ -1,0 +1,12 @@
+{
+  "id": "smoke-impossible-menu",
+  "goal": "打开系统设置里的「时光回溯」菜单,告诉我里面第一项叫什么。只看,不要改任何设置",
+  "apps": ["com.android.settings"],
+  "category": "impossible",
+  "requires": ["installed:com.android.settings"],
+  "expect": "failed",
+  "checks": [],
+  "maxSteps": 40,
+  "timeoutSec": 480,
+  "note": "有意保留的基线探针:菜单不存在,只有 Agent 自己 end_not_done 才算通过。首轮真机(DeepSeek)40 步内从不放弃,记为 step_limit;用它衡量「找遍了就如实说做不成」的改进。"
+}

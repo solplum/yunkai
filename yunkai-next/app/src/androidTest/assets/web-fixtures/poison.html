@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>poison</title>
+<script>
+  // 页面先把常用的全局入口改坏;文档开始注入的页面脚本应不受影响
+  Object.defineProperty = function (o) { return o; };
+  Object.getOwnPropertyDescriptor = function () { return undefined; };
+  Reflect.apply = function () { return 'poisoned'; };
+  JSON.stringify = function () { return '"poisoned"'; };
+  String.prototype.toLowerCase = function () { return 'poisoned'; };
+  Array.prototype.push = function () { return 0; };
+  RegExp.prototype.test = function () { return false; };
+  window.clicks = 0;
+</script>
+</head>
+<body>
+<button id="btn" onclick="window.clicks++">按钮</button>
+</body>
+</html>

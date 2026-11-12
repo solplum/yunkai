@@ -1,0 +1,27 @@
+{
+  "id": "web-weather-three-cities",
+  "goal": "用网页查中国天气网(weather.com.cn)上北京、上海、广州三个城市明天的最高气温,分别列出来",
+  "apps": [],
+  "category": "read",
+  "partition": "tune",
+  "channel": "web",
+  "requires": [],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "answer_grounded",
+      "minItems": 3
+    },
+    {
+      "type": "answer_contains",
+      "all": [
+        "北京",
+        "上海",
+        "广州"
+      ]
+    }
+  ],
+  "maxSteps": 35,
+  "timeoutSec": 480,
+  "note": "多页汇总:三个城市的页面各看一次;气温要在读屏里出现过"
+}

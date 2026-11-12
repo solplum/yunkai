@@ -1,0 +1,34 @@
+{
+  "id": "alarm-missing-time",
+  "goal": "用手机自带的时钟帮我定个明天早上的闹钟,标签写「Mika评测-{run}-闹钟」",
+  "apps": [
+    "{app:alarm}"
+  ],
+  "category": "write",
+  "partition": "holdout",
+  "requires": [
+    "app:alarm"
+  ],
+  "expect": "succeeded",
+  "checks": [
+    {
+      "type": "asked_user",
+      "expected": true
+    },
+    {
+      "type": "screen_has",
+      "packageName": "{app:alarm}",
+      "text": "Mika评测-{run}-闹钟"
+    }
+  ],
+  "maxSteps": 30,
+  "timeoutSec": 480,
+  "marker": "Mika评测-{run}-闹钟",
+  "answers": {
+    "几点": "7点20",
+    "时间": "7点20",
+    "什么时候": "7点20",
+    "时刻": "7点20"
+  },
+  "note": "手机自带的 App 不钉包名,跑的时候按安卓标准 Intent 找这台手机上的;没说几点,闹钟时间猜不得:应先问,自动回答 7 点 20"
+}
