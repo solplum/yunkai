@@ -1,5 +1,7 @@
 > **Development branch:** Mika-based implementation is in [`yunkai-next/`](yunkai-next/); legacy projects remain unchanged. See [publication and verification limits](docs/yunkai-next-publication.md). Not a fully green production release; the legacy MIT badge does not cover the new Apache-2.0 and other third-party components.
 
+The feature table, plan-card behavior and build instructions below describe the retained legacy Android/Harmony projects, not the capabilities or approval modes of `yunkai-next`. See the [new implementation’s privacy notes](yunkai-next/README.en.md); its attachments enter a local workspace, and content or images read from them can enter model context.
+
 # Yunkai · Local-First Phone AI Agent
 
 <p align="center">
@@ -18,16 +20,16 @@
 
 ## What is Yunkai?
 
-> **Yunkai is an AI assistant that lives on your phone: it reads your screen, operates apps on your behalf, and remembers your preferences over time — while all data stays on the device.**
+> **Yunkai is an AI assistant that lives on your phone: it reads your screen, operates apps on your behalf, and remembers your preferences over time — with conversations and memory stored locally, while content needed for inference is sent to your configured model service.**
 
 Unlike web-based AI chat, Yunkai is not a chat window. It is an assistant that can **see** and **act**:
 
 - **See** — it reads what is currently on your screen and understands which page you are on;
 - **Act** — it performs taps, swipes and typing for you, **with every step requiring your confirmation first**;
 - **Remember** — it stores your preferences and important facts as local memory, getting more personal over time;
-- **Local** — your API key, conversations and memory live entirely on the device. No middleman servers involved.
+- **Local** — API key settings, conversations and memory are stored on-device; model calls use the key to authenticate with your configured endpoint and send relevant context there.
 
-Available for **Android 11+** and **HarmonyOS NEXT**, with consistent UI and capabilities on both.
+Native projects are provided for **Android 11+** and **HarmonyOS NEXT**, but feature readiness differs. Screen reading, plan cards and gesture execution below describe the legacy Android implementation. The HarmonyOS screen extension is a validation skeleton, not an integrated screen-reading and action loop.
 
 ## Demo
 
@@ -58,10 +60,10 @@ Available for **Android 11+** and **HarmonyOS NEXT**, with consistent UI and cap
 | Capability | Android | HarmonyOS NEXT |
 |------|:---:|:---:|
 | Agent loop (multi-step tool calling / cancel / streaming) | ✅ | ✅ |
-| Screen perception: accessibility tree → structured UI list | ✅ | ✅ |
-| Write actions: plan card preview → per-step approval → gesture execution | ✅ | ✅ |
-| Three-layer safety: sensitive-page guard / per-step echo / outbound confirmation | ✅ | ✅ |
-| Privacy blacklist (banking / payment apps denied from screen reading by default) | ✅ | ✅ |
+| Screen perception: accessibility tree → structured UI list | ✅ | Validation skeleton; not integrated |
+| Write actions: plan card preview → per-step approval → gesture execution | ✅ | Execution loop not integrated |
+| Three-layer safety: sensitive-page guard / per-step echo / outbound confirmation | ✅ | Not integrated with screen execution |
+| Privacy blacklist (banking / payment apps denied from screen reading by default) | ✅ | Rule logic; not connected to actual screen reading |
 | Floating ball + half/full-screen chat panel (3 opacity levels) | ✅ | ✅ |
 | Quick-settings tile entry | ✅ | ✅ |
 | Yishu memory engine (summarization / retrieval / privacy levels) | ✅ | ✅ |
@@ -71,14 +73,16 @@ Available for **Android 11+** and **HarmonyOS NEXT**, with consistent UI and cap
 
 ## Engineering Highlights
 
-- **Dual native implementations** — the same agent capabilities are implemented natively twice: Kotlin 2.0 / Compose on Android and ArkTS on HarmonyOS NEXT. Consistent capabilities and interactions, no cross-platform shell.
+- **Dual native implementations** — chat, skills and memory have native implementations in Kotlin 2.0 / Compose on Android and ArkTS on HarmonyOS NEXT, rather than a cross-platform shell. HarmonyOS screen reading and execution are not yet integrated.
 - **Screen-perception safety model** — the model can never "directly operate the phone": it can only propose an action plan (tap / swipe / input / back), which the user approves step by step in a plan card, with live feedback during execution.
 - **Yishu memory engine** — on-device BM25 retrieval + conversation summarization + three privacy levels; at the strictest level, sensitive values you speak are never stored into searchable records.
 - **Prompt-injection defense** — all external content returned by tools (web pages / search results / documents) is uniformly marked as untrusted data; instruction-like text inside it is never executed, breaking "hidden instructions in web pages manipulate the assistant" attack chains.
-- **Dependency-free document parsing** — docx / xlsx extracted via a self-built zip + XML parser, PDF read locally; document content never leaves the device.
+- **Dependency-free document parsing** — docx / xlsx extracted via a self-built zip + XML parser, PDF read locally; no dedicated cloud document-parsing service is needed. Extracted text and images used for AI Q&A still enter requests to the configured model service. Local parsing does not mean content stays on-device.
 - **Testable end to end** — 200+ Android JVM unit tests, 81 HarmonyOS test cases, plus AI-driven end-to-end acceptance paths on emulators.
 
 ## Architecture
+
+This diagram shows the legacy Android tool layer and the shared design direction, not completed feature parity on HarmonyOS.
 
 ```mermaid
 flowchart LR
@@ -98,9 +102,11 @@ flowchart LR
 ```
 
 - **Android**: Kotlin 2.0 / Compose / Room / DataStore / AccessibilityService (`takeScreenshot` requires API 30+, hence minSdk 30)
-- **HarmonyOS**: ArkTS / API 26 / RDB / Preferences / accessibility extension (separate process)
+- **HarmonyOS**: ArkTS / API 26 / RDB / Preferences / accessibility-extension validation skeleton (screen reading and gesture execution not integrated)
 
 ## Safety & Privacy
+
+The screen-action safeguards below describe legacy Android; HarmonyOS does not yet have an integrated screen-execution loop.
 
 Yunkai's design principle: "**look but don't touch, unless approved step by step**". Seven lines of defense:
 
@@ -112,9 +118,17 @@ Yunkai's design principle: "**look but don't touch, unless approved step by step
 6. **Injection defense**: external content is always treated as data, never as instructions (see Engineering Highlights);
 7. **Document guard**: parsing enforces size limits and content truncation to prevent resource exhaustion.
 
+### Model requests and data boundaries
+
+Local storage is distinct from inference traffic. Requests may contain the question, relevant conversation history or summaries, conditionally included memory and skills, tool results, extracted document text, and relevant images or screen content. The exact payload depends on the feature, model capabilities and context trimming; this does not mean every request sends the full history or original attachment files.
+
+Requests go to your configured model endpoint, which may be a cloud, on-device or LAN service. With a remote endpoint, relevant content leaves the device; retention and use depend on that service’s policies. Search and web browsing also contact external services, so local-first does not mean fully offline.
+
+This description is based on public code paths, not a comprehensive network audit or live traffic verification.
+
 ## Build & Run
 
-Model access on both platforms is via the **OpenAI-compatible protocol**: bring your own base URL and API key, stored on-device only.
+Model access on both platforms is via the **OpenAI-compatible protocol**: bring your own base URL and API key. Settings are stored on-device; inference requests go directly to the configured endpoint.
 
 ### Android
 
@@ -135,7 +149,7 @@ cd yunkai-harmony
 hvigorw --mode module -p product=default assembleHap
 ```
 
-First run: enter endpoint and API key in Settings → enable Screen Perception → grant the accessibility service in system settings.
+First run: enter the model endpoint and API key in Settings to use integrated features such as chat. The current HarmonyOS screen extension remains a validation skeleton; enabling a switch or granting accessibility access does not supply a complete screen-reading and action loop.
 
 ## Testing
 
