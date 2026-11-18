@@ -21,7 +21,7 @@
 Unlike web-based AI chat, Yunkai is not a chat window. It is an assistant that can **see** and **act**:
 
 - **See** — it reads what is currently on your screen and understands which page you are on;
-- **Act** — it performs taps, swipes and typing for you, **with every step requiring your confirmation first**;
+- **Act** — it executes taps, swipes and typing according to the selected confirmation mode, pausing when its rules require approval; **not every step is confirmed**;
 - **Remember** — it stores your preferences and important facts as local memory, getting more personal over time;
 - **Local** — API key settings, conversations and memory are stored on-device; model calls use the key to authenticate with your configured endpoint and send relevant context there.
 
@@ -46,7 +46,7 @@ Native projects are provided for **Android 11+** and **HarmonyOS NEXT**, but fea
 | Scenario | What Yunkai does |
 |----------|------------------|
 | Ask something while inside any app | Tap the floating ball and chat in a half-screen panel without leaving the app |
-| "Send this message to Zhang" | Yunkai lists the exact steps it plans to perform; each step runs only after you approve it |
+| Operate a supported app | Validated plans start executing immediately; pauses depend on the confirmation mode. Legacy Android currently rejects plans declaring WeChat or QQ as their target |
 | Stop repeating yourself | It remembers your preferences and key facts, and brings them into new conversations automatically |
 | Drowning in documents | Hand it docx / PDF / xlsx / txt / images and just ask about the content |
 | Make AI an expert in your field | Import your own "skill" playbooks, or use the built-in explainer and advisor skills |
@@ -57,8 +57,8 @@ Native projects are provided for **Android 11+** and **HarmonyOS NEXT**, but fea
 |------|:---:|:---:|
 | Agent loop (multi-step tool calling / cancel / streaming) | ✅ | ✅ |
 | Screen perception: accessibility tree → structured UI list | ✅ | Validation skeleton; not integrated |
-| Write actions: plan card preview → per-step approval → gesture execution | ✅ | Execution loop not integrated |
-| Three-layer safety: sensitive-page guard / per-step echo / outbound confirmation | ✅ | Not integrated with screen execution |
+| Write actions: submit plan → mode-based execution/confirmation → result | ✅ | Execution loop not integrated |
+| Execution safeguards: mode-based sensitive pauses / step feedback / conditional confirmation | ✅ | Not integrated with screen execution |
 | Privacy blacklist (banking / payment apps denied from screen reading by default) | ✅ | Rule logic; not connected to actual screen reading |
 | Floating ball + half/full-screen chat panel (3 opacity levels) | ✅ | ✅ |
 | Quick-settings tile entry | ✅ | ✅ |
@@ -70,7 +70,7 @@ Native projects are provided for **Android 11+** and **HarmonyOS NEXT**, but fea
 ## Engineering Highlights
 
 - **Dual native implementations** — chat, skills and memory have native implementations in Kotlin 2.0 / Compose on Android and ArkTS on HarmonyOS NEXT, rather than a cross-platform shell. HarmonyOS screen reading and execution are not yet integrated.
-- **Screen-perception safety model** — the model can never "directly operate the phone": it can only propose an action plan (tap / swipe / input / back), which the user approves step by step in a plan card, with live feedback during execution.
+- **Screen-action execution model** — the model submits a plan (tap / swipe / input / back), which starts executing after validation. The executor applies the selected confirmation mode; the plan card shows progress and offers approval/continue and cancellation when paused.
 - **Yishu memory engine** — on-device BM25 retrieval + conversation summarization + three privacy levels; at the strictest level, sensitive values you speak are never stored into searchable records.
 - **Prompt-injection defense** — all external content returned by tools (web pages / search results / documents) is uniformly marked as untrusted data; instruction-like text inside it is never executed, breaking "hidden instructions in web pages manipulate the assistant" attack chains.
 - **Dependency-free document parsing** — docx / xlsx extracted via a self-built zip + XML parser, PDF read locally; no dedicated cloud document-parsing service is needed. Extracted text and images used for AI Q&A still enter requests to the configured model service. Local parsing does not mean content stays on-device.
@@ -88,7 +88,7 @@ flowchart LR
     subgraph Tools [Tool Layer]
         Builtin["Built-in tools\nSearch / web / document extraction"]
         Screen["Screen perception\nUI tree / screenshot / app list"]
-        Write["Write-action state machine\nplan card → approval → execution"]
+        Write["Write-action state machine\nsubmit plan → mode-based execution/pause → result"]
         Memory["Yishu memory\nsummarize / retrieve / archive"]
         Skill["Skill system\n@skill / routing / canvas"]
     end
@@ -104,12 +104,22 @@ flowchart LR
 
 The screen-action safeguards below describe legacy Android; HarmonyOS does not yet have an integrated screen-execution loop.
 
-Yunkai's design principle: "**look but don't touch, unless approved step by step**". Seven lines of defense:
+Validated legacy Android plans start executing immediately, without a whole-plan approval gate. The mode is selected in Settings and read for each new plan; changing it does not dynamically change an already submitted plan.
 
-1. **Plan cards**: write actions can only be submitted as a "plan", shown step by step in an in-chat card; execution starts only after you tap Run;
-2. **Sensitive guard**: when on-screen text hits sensitive keywords (payments / transfers / verification codes), the agent pauses and write actions stop;
-3. **Outbound confirmation**: actions involving typed text go through a separate double confirmation;
-4. **Blacklist by default**: banking / payment apps are denied from screen reading out of the box; users can add more;
+| Mode | Current implementation |
+|---|---|
+| SMART · AI review (default) | Pauses when sensitive checks trigger; otherwise pauses for model-flagged `confirm:true` actions or sensitive text input. Other actions may run automatically. |
+| STRICT · Ask frequently | Retains sensitive checks and pauses for every text-input action, not every tap or swipe. Currently, a model `confirm:true` flag alone does not pause non-input actions in this mode. |
+| FULL_AUTO · Full access | Skips execution-time sensitive checks and tiered confirmation, including pauses for blocked apps, password fields and unreadable pages. |
+
+**Important limits:** STRICT is not stricter than SMART in every respect. Sensitive checks depend on readable page information, password fields and keywords, and cannot guarantee detection of all high-risk actions. A sensitive pause can be approved to continue. FULL_AUTO does not remove every constraint: independent read-screen/screenshot blacklist checks, action validation, plan-count limits and failure termination still apply.
+
+The safeguards below describe the current implementation and its limits:
+
+1. **Plan cards**: show progress after submission, rather than waiting for whole-plan approval. Approval/continue and cancellation buttons appear on the card when execution is paused;
+2. **Sensitive guard**: SMART/STRICT pause for unreadable pages, blocked apps, password fields or sensitive keywords; approval lets that step continue. FULL_AUTO skips this execution-time check;
+3. **Input confirmation**: STRICT pauses for all text input; SMART pauses based on sensitive checks or model flags; FULL_AUTO does not pause. Once a sensitive pause is approved, that step does not also require tiered confirmation, so there is no universal double-confirmation rule for outbound text;
+4. **Screen-reading blacklist**: read-screen/screenshot tools reject blocked apps, and users can add entries. This is distinct from execution-time sensitive pauses, which FULL_AUTO skips;
 5. **Privacy levels**: screen and conversation content are redacted according to the chosen level; at the strictest level transcripts are not stored;
 6. **Injection defense**: external content is always treated as data, never as instructions (see Engineering Highlights);
 7. **Document guard**: parsing enforces size limits and content truncation to prevent resource exhaustion.
